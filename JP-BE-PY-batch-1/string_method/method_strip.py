@@ -21,3 +21,15 @@ txt = txt.strip("$")
 print(txt) # hello world
 
 
+# lstrip: remove spaces or specified characters from left of the strings
+txt = "---hello world---"
+txt = txt.lstrip("-")
+print(txt)  # hello world---
+
+
+# rstrip: remove spaces or specified characters from left of the strings
+txt = "---hello world---"
+txt = txt.rstrip("-")
+print(txt)  # ---hello world
+
+
