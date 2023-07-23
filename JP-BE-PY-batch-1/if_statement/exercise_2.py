@@ -1,0 +1,1 @@
+# Write a program to check char is vowel or not.
