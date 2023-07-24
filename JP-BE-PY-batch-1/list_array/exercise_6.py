@@ -1,0 +1,1 @@
+# Remove the item “chair” from the list [‘bed’, ‘table’, ‘chair’, ‘sofa’]

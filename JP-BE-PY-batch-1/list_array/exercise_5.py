@@ -1,0 +1,1 @@
+# Remove first item from the list [‘bed’, ‘table’, ‘chair’, ‘sofa’]

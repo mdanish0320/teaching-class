@@ -1,0 +1,1 @@
+# Create a list of juices, add 5 items using append
