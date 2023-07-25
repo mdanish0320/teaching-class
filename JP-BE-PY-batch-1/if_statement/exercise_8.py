@@ -1,0 +1,1 @@
+# Write a program to ask user its name and check whether name consists of 5 or more letters
