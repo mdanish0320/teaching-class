@@ -15,7 +15,7 @@ obj = {
   "name": "danish",
   "gender": "male"
 }
-for x, y in enumerate(obj.items()):
+for x, y in obj.items():
     print(x, y)
 
 # id 1
