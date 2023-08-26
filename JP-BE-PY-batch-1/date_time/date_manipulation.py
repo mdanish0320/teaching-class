@@ -52,7 +52,10 @@ print(x)
 # difference between timedelta and relativedelta
 """
 timedelta deals with day and smaller units i.e day, hour, minute, second etc
-relativedelta deals with units years, months, days
+relativedelta deals with units years, months, days.
+
+timedelta arguments are singular
+relativedelta arguments are plural
 """
 
 
