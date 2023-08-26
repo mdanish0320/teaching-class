@@ -48,12 +48,12 @@ dt_obj = datetime.fromisoformat(dt_str)
 dt_obj = dt_obj.replace(tzinfo=pytz.timezone("Asia/Karachi"))
 
 
-
 # wrong way of updating timezone detail
-dt_str = "2023-08-15 15:50:00"  # US/Pacific
-dt_obj = datetime.fromisoformat(dt_str)
-dt_obj = dt_obj.astimezone(pytz.timezone("US/Pacific"))
-
+dt_obj = datetime.utcnow() # timezone 00:00
+dt_obj_tz_aware = dt_obj.astimezone(pytz.timezone("Asia/Riyadh")) # this will assume UTC date as localtime
+print("utcnow converted to tz aware date object")
+print(dt_obj) # UTC
+print(dt_obj_tz_aware) # wrong tz converted hour. it should add 3 hours in utc date and not subtract 2 hours
 
 
 # changing date using replace/timedelta will not aware of the changing DST
