@@ -20,7 +20,10 @@ row = f.readline()  # return the next single line from file
 print(row)
 
 # read whole file line by line efficiently
+f = open("data/file_r.txt", "r")
 myline = f.readline()
 while myline:
+    print(myline)
     myline = f.readline()
+    
 f.close()
