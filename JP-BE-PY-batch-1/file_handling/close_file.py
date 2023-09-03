@@ -10,11 +10,11 @@ For the most part, not closing files is a bad idea, for the following reasons:
 """
 
 # write data into the file but cannot read
-f = open("new_file_2.txt", "a")
+f = open("data/file_1.txt", "a")
 f.write("abcd\n")
 f.write("efgh\n")
-f.read()
+# f.close()
 
-f = open("file_1.txt", "w")
-f.write("abcd")
+f = open("data/file_1.txt", "w")
+f.write("ijk")
 f.close()
