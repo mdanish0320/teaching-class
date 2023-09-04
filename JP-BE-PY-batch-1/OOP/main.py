@@ -112,6 +112,12 @@ archer = Character.create_archer("Robin Hood")
 # Developer(Employee) and Manager(Employee)
 # help(ClassName) function
 
+# homework topic
+# multiple inheritance
+# multi level inhertance
+# Hierarchical
+# Hybrid
+
 # from child class you can call the parent class init method in 2 ways
 # super().__init__()
 # MyClass().__init__()
@@ -159,3 +165,31 @@ archer = Character.create_archer("Robin Hood")
 # benefit: 
 # Modularity: Each employee type class can encapsulate its specific behavior, attributes, and responsibilities, making the code more modular and easier to maintain. This follows the Open-Closed Principle, allowing you to extend the system without modifying existing code.
 # Clear Separation: It provides a clear separation of concerns. Each employee type class can focus on its unique logic without worrying about other types.
+
+
+# polymorphism
+# method overloading -> x
+# method overriding -> yes
+
+# calculate_salary()
+# Developer has no allowance
+# Manager has fuel_allowance
+
+# calculate_annual_salary
+# full time employee
+# def calculate_annual_salary(self):
+#         return self.monthly_salary * 12
+
+# part time employee
+# def calculate_annual_salary(self):
+#     return self.hourly_rate * self.hours_worked_per_month * 12
+
+
+
+
+# Abstraction
+# sending email example
+
+
+
+#exercise
