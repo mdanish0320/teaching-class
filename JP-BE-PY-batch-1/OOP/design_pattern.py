@@ -153,3 +153,198 @@ Software Quality: Understanding design patterns can lead to higher-quality softw
 
 Therefore, while teaching the fundamental OOP concepts is crucial, introducing students to design patterns complements their education by preparing them for real-world software development challenges and industry expectations. However, it's essential to strike a balance and ensure that students have a strong understanding of the basics before diving into more advanced topics like design patterns. The order and depth of teaching these topics may vary depending on the curriculum and the students' skill levels.
 """
+
+
+"Design Patterns provide solution to the commonly occuring problems in efficient and scalable manner"
+"""
+Pattern Name
+Purpose
+Implementation
+Example
+"""
+
+"""
+3 Basic Type of Design Patterns
+- Creational
+- Structural
+- Behavioral
+"""
+
+"""
+Creational
+- SignleTone
+- Factory
+- Builder
+- Prototype
+"""
+
+"""
+Structural
+- Adaptor
+- Decorator
+- Facade
+- Proxy
+"""
+
+"""
+Behavioral
+- Strategy
+- Observer
+- State
+- Chain of responisbility
+- Template
+- Flyweight
+"""
+
+"""
+Concurrency Design Pattern
+- read/write lock patterns
+- thread pool pattern
+- etc
+"""
+
+
+"""
+Characteristics
+- language independent
+- created by experts
+"""
+
+"""
+Singleton Pattern
+use to have only one instance of the class. It will not allow creating multiple instances of same class
+
+There is simple way and there are still 3 more ways to achieve the same purpose. For now, we will go with simple one
+"""
+
+"""
+Factory Pattern
+use to create instances of class
+FactoryClass will get exposed to dev and dev will use this class to create instance of someother class i.e
+DatabaseFactory() can give use the conn instance of mysql, postgress, mongodb etc
+by using factoryClass we will not need to import mysql, postgress or mongodb in every modules. We will only import factoryClass module
+
+Factory Class Patterns vs Factory Method Patter
+
+
+When to use Factory Patterns: Scenarios
+
+Certainly! Here are ten examples where the Factory Design Pattern can be applied:
+
+UI Element Creation: Creating different types of user interface elements, such as buttons, text fields, and checkboxes.
+
+Logging: Generating different types of loggers, like file loggers, database loggers, and console loggers.
+
+Payment Methods: Implementing various payment methods, including credit card, PayPal, and Bitcoin.
+
+Notification Services: Creating notifications for different channels like email, SMS, and push notifications.
+
+Authentication Providers: Handling authentication with different providers like OAuth, LDAP, and custom authentication systems.
+
+Document Generation: Generating documents in various formats, such as PDFs, Word documents, and HTML reports.
+
+Connection Pools: Managing database connection pools for different database systems like MySQL, PostgreSQL, and MongoDB.
+
+Image Processing Filters: Applying different image filters or transformations, like grayscale, sepia, and blur.
+
+Vehicle Manufacturing: Building different types of vehicles like cars, motorcycles, and trucks in an automotive production system.
+
+Notification Subscribers: Creating subscribers for various notification channels, such as email subscribers, SMS subscribers, and webhook subscribers.
+
+
+
+
+Difference between Factory Class Pattern (simple) and Factory Method Pattern (complex)
+
+class Animal:
+    def speak(self):
+        pass
+class Dog(Vehicle):
+    def speak(self):
+        return "mewo"
+class Cat(Vehicle):
+    def speak(self):
+        return "woof"
+
+class AnimalFactory:
+    @staticmethod
+    def create_animal(animal_type):
+        if animal_type == "cat":
+            return Cat()
+        elif animal_type == "dog":
+            return Dog()
+        else:
+            raise ValueError("Invalid Animal type")
+
+# Client code
+factory = AnimalFactory()
+cat = factory.create_animal("cat")
+dog = factory.create_animal("dog")
+
+print(cat.speak())  # Output: Car is moving
+print(dog.speak())  # Output: Motorcycle is moving
+
+
+
+class Animal:
+    def speak(self):
+        pass
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+class AnimalCreator:
+    def create_animal(self):
+        pass
+class DogCreator(AnimalCreator):
+    def create_animal(self):
+        return Dog()
+class CatCreator(AnimalCreator):
+    def create_animal(self):
+        return Cat()
+
+# Client code
+dog_creator = DogCreator()
+cat_creator = CatCreator()
+
+dog = dog_creator.create_animal()
+cat = cat_creator.create_animal()
+
+print(dog.speak())  # Output: Woof!
+print(cat.speak())  # Output: Meow!
+
+
+
+
+Now try to extend both of the above examples by adding a new Animal type "Lion".
+in Factory Method Pattern this will go smoothly, without needed to modify any existing code
+class Lion(Animal):
+    def speak(self):
+        return "Roar!"
+
+class LionCreator(AnimalCreator):
+    def create_animal(self):
+        return Lion()
+
+# Client code
+lion_creator = LionCreator()
+lion = lion_creator.create_animal()
+
+print(lion.speak())  # Output: Roar!
+
+
+Benefit of Factory Method Pattern
+Open-Closed Principle:
+Single Responsibility Principle:
+
+
+Factory Class Method can also be extending but an if condition also needed to be added in AnimalFactory core logic.
+The complexity will grow if we have 100 types then 100 if condition needed to be added.
+But
+In Factory Method Pattern each type will have their own sub_class as well as sub_creator_class. And for this to work we just need to inherit both class with appropriate class
+
+
+"""
