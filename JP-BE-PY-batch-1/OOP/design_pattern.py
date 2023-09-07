@@ -211,7 +211,9 @@ Characteristics
 """
 
 """
-Singleton Pattern
+Design Pattern: Singleton and Factory (Creational Deisng Pattern)
+
+Singleton Pattern 
 use to have only one instance of the class. It will not allow creating multiple instances of same class
 
 There is simple way and there are still 3 more ways to achieve the same purpose. For now, we will go with simple one
@@ -345,6 +347,69 @@ Factory Class Method can also be extending but an if condition also needed to be
 The complexity will grow if we have 100 types then 100 if condition needed to be added.
 But
 In Factory Method Pattern each type will have their own sub_class as well as sub_creator_class. And for this to work we just need to inherit both class with appropriate class
+
+
+"""
+
+"""
+Design Pattern Proxy and Facade (Structual Deisng Pattern)
+Proxy Pattern: It is used when you need to control access to an object, delay its creation, or add additional functionality before or after the underlying object's operations. Common use cases include lazy loading, access control, logging, and caching.
+11:23
+Facade Pattern: In the Facade Pattern, you have a facade class that provides a higher-level interface to a set of subsystems or interfaces. Clients interact with the facade, which internally communicates with the subsystems.
+11:24
+Connect TV, Audio and DVD player together is an example of facade
+11:28
+Yes, you can think of the Facade Pattern as a way to connect and simplify the interactions between multiple components or subsystems using a wrapper class. The main goal of the Facade Pattern is to provide a unified and simplified interface to a complex system or a set of related classes or components.
+In essence, the Facade acts as a "facade" or entry point to the subsystems, allowing clients to interact with the system without needing to know the intricate details of how those subsystems work or are connected. It abstracts the complexities and provides a higher-level interface.
+So, when you create a wrapper class that connects several components together and presents a simplified interface to clients, you are indeed employing the Facade Pattern to improve the usability and maintainability of your code. This pattern is especially useful when dealing with complex systems or when you want to shield clients from unnecessary intricacies.
+
+"""
+
+
+
+"""
+Design Pattern: Strategy and Observer (Behavoural Deisng Pattern)
+
+
+
+
+
+
+
+
+Diff between Factory and Strategy Design Pattern 
+
+Factory Class/Method Design Patterns deals with creational of object
+Strategy Design Patterns deals with behaviour
+
+Factory Class/Method Design Patterns deal with how difference classes (that are similar in terms of inheritance) objects are created
+Strategy Desgin Patterns deals with how different methods of the class can be added in the class in a way that class is scalable
+
+
+
+Question:
+lets say we have an example and call it example 1.
+We have 2 class, DocumentText and DocumentPDF. When we want to create a pdf we will create an instance from DocumentPDF and for textfile we will create instance from DocumentText.
+Here we cannot use strategy pattern since they both class exists separately and therefore we will have to use Factory Method Design Pattern.
+
+now take another example and call it example 2.
+We are designing a class where we need to add both behaviour that we can create pdf by calling the method create_pdf and we can create text file by calling the method create_text_file.
+In this scenario we shouldn't add 2 methods in this class instead we should use strategy pattern here.
+
+Am I correct in my assumption?
+
+Answer:
+Yes, your assumption is correct. The choice between using the Factory Method Design Pattern and the Strategy Design Pattern depends on the specific requirements and context of your design.
+
+In **Example 1**:
+
+- If you have two separate classes, `DocumentText` and `DocumentPDF`, each responsible for creating different types of documents, it makes sense to use the Factory Method Design Pattern. Each class acts as a factory for creating a specific type of object (text or PDF document). You would create instances of `DocumentText` or `DocumentPDF` based on the type of document you need.
+
+In **Example 2**:
+
+- If you have a single class responsible for creating both PDF and text documents and you want to make the choice of which document type to create dynamically, then using the Strategy Design Pattern is a better approach. You can define different strategies (PDF creation strategy and text file creation strategy) and encapsulate them as interchangeable behaviors. The `create_pdf` and `create_text_file` methods can delegate the actual creation logic to the selected strategy.
+
+So, your choice of design pattern should align with the specific requirements and the level of flexibility and extensibility you need in your system. Example 1 represents a case where different classes handle the creation of different types, while Example 2 represents a case where a single class should be flexible in its behavior, making it suitable for the Strategy pattern.
 
 
 """
