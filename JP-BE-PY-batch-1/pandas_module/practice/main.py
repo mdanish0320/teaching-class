@@ -135,12 +135,13 @@ df = pd.read_csv('pokemon_data.csv')
 # print(new_df.head(20))
 
 
-# join,  Merge, Join
 # Modify
+# join,  Merge, Join
 # str contains
 # deleting duplicates
 
-# employee example
+# example data
+# https://github.com/KeithGalli/Pandas-Data-Science-Tasks/tree/master/SalesAnalysis/Sales_Data
 
 
 
