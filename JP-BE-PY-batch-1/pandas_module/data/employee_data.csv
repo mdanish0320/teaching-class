@@ -1,0 +1,32 @@
+EmployeeID,Name,Department,Salary,Age,Gender,YearsOfService,EducationLevel,MaritalStatus
+1,Employee1,HR,62298,45,Female,13,High School,Divorced
+2,Employee2,HR,58210,58,Male,11,Master,Divorced
+3,Employee3,IT Department,50189,34,Male,7,Bachelor,Divorced
+33,Employee3,IT Head,50189,34,Male,7,Bachelor,Divorced
+4,Employee4,Finance,54110,26,Male,10,High School,Single
+5,Employee5,Finance,90036,24,Female,2,Master,Divorced
+6,Employee6,Finance,62059,36,Female,7,Bachelor,Married
+7,Employee7,HR,46698,40,Female,7,Bachelor,Married
+8,Employee8,Sales,46078,27,Male,10,Master,Divorced
+9,Employee9,HR,64898,36,Male,8,Bachelor,Divorced
+10,Employee10,Sales,46338,28,Female,9,High School,Married
+11,Employee11,Marketing,63526,46,Male,5,Master,Married
+12,Employee12,HR,95541,39,Female,9,PhD,Divorced
+13,Employee13,HR,62541,51,Female,14,High School,Married
+14,Employee14,HR,79565,45,Female,1,High School,Single
+15,Employee15,Finance,57335,32,Male,11,Master,Single
+16,Employee16,Finance,92895,45,Female,12,Master,Single
+17,Employee17,Sales,42847,44,Male,2,Bachelor,Single
+18,Employee18,Sales,87823,35,Male,11,High School,Married
+19,Employee19,HR,70108,39,Female,15,Bachelor,Single
+20,Employee20,Sales,75142,26,Female,9,High School,Divorced
+21,Employee21,Finance,48180,60,Female,13,High School,Divorced
+22,Employee22,Sales,64807,32,Female,5,PhD,Single
+23,Employee23,Marketing,45164,56,Male,13,High School,Divorced
+24,Employee24,Finance,76178,37,Male,11,Bachelor,Single
+25,Employee25,Marketing,59213,32,Female,6,Bachelor,Single
+26,Employee26,Sales,94355,51,Male,2,PhD,Single
+27,Employee27,IT Engineer,81198,46,Male,5,Bachelor,Divorced
+28,Employee28,HR,80535,39,Male,7,Master,Divorced
+29,Employee29,Finance,98028,57,Male,3,PhD,Single
+30,Employee30,Marketing,96472,36,Male,8,Bachelor,Single
