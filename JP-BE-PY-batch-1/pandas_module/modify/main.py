@@ -17,10 +17,5 @@
 # filt = (df['email' == 'danish@abc.com'])
 # df.loc[filt, 'email'] = 'new_email@gmail.co'
 
-# # convert str to datetime
-# df['date'] = pd.to_datetime(df['date'])
-# filtering based on date
-# df[(df['date'] > '2013-01-01') & (df['date'] < '2013-02-01')]
-
 # df.drop('col_name', axis=1) # delete column
 # df.drop(index_name, axis=0) # delete row named “0”
