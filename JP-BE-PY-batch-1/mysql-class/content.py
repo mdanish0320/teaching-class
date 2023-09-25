@@ -110,6 +110,9 @@
 
 
 # data dump: https://bit.ly/3rvtqdO
+# data dump: https://blog.sqlauthority.com/2020/02/15/mysql-download-sample-database-sakila-world-employee/
+# data dump: https://github.com/hhorak/mysql-sample-db/blob/master/mysqlsampledatabase.sql
+# data dump: https://www.mysqltutorial.org/wp-content/uploads/2018/03/mysqlsampledatabase.zip
 
 
 # relationship
