@@ -5,6 +5,9 @@
 # sql is known of declarative programming langugage - non-procedural
 # structure Query Language
 # - you focused on what and not how part
+
+# data stroed in db is much like spread sheet
+
 # main components
 # - DDL -> table level - create, alter, drop
 # - DML -> data level - select, insert, update, delete
@@ -15,7 +18,29 @@
     # Mysql - open sourced
     # Sql Server
     # Oracle
+    # SQLite
+    # PostgreSQL
+    # MariaDB
     # etc
+
+# datatype
+    # numeric
+    # string (char vs varchar)
+    # datetime
+    # blob
+    # json
+
+
+# What is Storage Engine
+    # Innodb
+    # MyISAM
+
+# Reasons that you may have to use certain storage engine
+    # amount of data
+    # speed and performance
+    # functionality
+    # max number of rows
+    # data integrity
 
 # table name singular or plural
 # column name singular or plural
@@ -32,11 +57,23 @@
     # 4BCNF
 
 
+# mysql features
+    # forieng key support
+    # triggers
+    # SP
+    # FULL TEXT INDEXING    AND SEARCHING
+    # QUERY CAHCING
+    # 
+
+
 # constraint
-    # column NOT NULL
+    # NOT NULL
     # primary key
-    # composite key
-    # auto increment
+    # Foreign Key
+    # unique
+    # Check
+
+# is auto increment field is a constraint?
 
 # column alias
 # order by 
