@@ -1,4 +1,6 @@
 # install mysql workbench
+    # https://www.youtube.com/watch?v=2om3byn2lxs
+    # https://www.youtube.com/watch?v=GwHpIl0vqY4
 # connect to database
 # import db file
 # data stroed in db is much like spread sheet
@@ -25,6 +27,7 @@
 # column alias
 # order by 
 # limit
+# offset -> for pagination
 
 
 # WHERE
@@ -53,13 +56,25 @@
 
 
 # sub queries
+    # placement inside
+        # select clause
+        # from clause
+        # where clause
+        # Correlated subqueries  are slower as it run for each row
+    # select * ( select AVG(salary) from table ) from table
+    # select * from table where salary > ( select salary from table )
+    # to select data based on other table like join i.e IN Clause
+    # display last 5 rows without changing the order
+        # SELECT * FROM (SELECT * FROM actor ORDER BY actor_id DESC LIMIT 10) as t1 ORDER BY actor_id ASC;
+    # select t1.col1, t1.col2, (select name from clinics where id = t1.clinic_id) from table t1
+    # types: https://www.scaler.com/topics/sql/types-of-subqueries-in-sql/
+# Group By
+    # having
 
 # function
     # distinct
-    # date(), MONTH(), YEAR()
+    # https://www.w3schools.com/mysql/mysql_ref_functions.asp
 
-# Group By
-    # having
 
 # insert single
 # insert multiple
@@ -129,7 +144,6 @@
     # SP
     # FULL TEXT INDEXING AND SEARCHING
     # QUERY CAHCING
-    # 
 
 
 # exercise: https://github.com/WebDevSimplified/Learn-SQL
