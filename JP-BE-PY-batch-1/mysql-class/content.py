@@ -20,40 +20,26 @@
 # Topics
 # Use Database
 # Select * from table
+    # select * from customers;
+    # select * from products;
+    # select * from orders;
 # Select few columns from table
-# select * from table limit 10
-# select * from table order by id ASC or DESC
-
+# LIMIT: select * from table limit 10
+# ORDER BY: select * from table order by name ASC or DESC
+# OFFSET: it means start retrive the data AFTER the mentioned number
 # column alias
-# order by 
-# limit
-# offset -> for pagination
 
 
 # WHERE
-# single condition
-# multip condition
-# not condition
-# NULL condition
-# IN, NOT In Operator
-# LIKE
-# where
-    # And
-    # or
-    # between
-    # is null
+    # single and multiple condition
+    # And # # select * from customers where country = "USA" and city = "NYC";
+    # or # select * from customers where city = "NYC" OR city = "Brickhaven";
+    # != (not equal to)
+    # IN, NOT IN
+    # is null, not null
     # like
+    # between
     # date comparison
-
-# JOIN
-# inner join
-# left join
-# right join
-# outer join
-# cross join
-# multiple join
-# relationship: one-to-many etc
-
 
 # sub queries
     # placement inside
@@ -68,20 +54,59 @@
         # SELECT * FROM (SELECT * FROM actor ORDER BY actor_id DESC LIMIT 10) as t1 ORDER BY actor_id ASC;
     # select t1.col1, t1.col2, (select name from clinics where id = t1.clinic_id) from table t1
     # types: https://www.scaler.com/topics/sql/types-of-subqueries-in-sql/
+
 # Group By
     # having
+    # https://www.youtube.com/watch?v=FztbYXeOEQ4
+    # https://www.youtube.com/watch?v=fR5rxzqEv7o
+    # https://www.youtube.com/watch?v=SvJLXj05cow
+    # https://www.youtube.com/watch?v=Se2RAkEc944
+    # https://www.youtube.com/watch?v=VJZpPgxd3zw
+
+# difference between where and having
+"""
+A HAVING clause is like a WHERE clause, but applies only to groups as a whole (that is, to the rows in the result set representing groups), whereas the WHERE clause applies to individual rows. A query can contain both a WHERE clause and a HAVING clause. In that case:
+
+The WHERE clause is applied first to the individual rows in the tables or table-valued objects in the Diagram pane. Only the rows that meet the conditions in the WHERE clause are grouped.
+
+The HAVING clause is then applied to the rows in the result set. Only the groups that meet the HAVING conditions appear in the query output. You can apply a HAVING clause only to columns that also appear in the GROUP BY clause or in an aggregate function.
+"""
+
 
 # function
     # distinct
+    # concat, group_concat
+    # lower case, upper case
+    # Year(), MONTH(), DAY(), DATE()
+    # Date_subtract() https://www.w3schools.com/sql/func_mysql_date_sub.asp
+    # DATE_ADD() https://www.w3schools.com/sql/func_mysql_date_add.asp
     # https://www.w3schools.com/mysql/mysql_ref_functions.asp
 
 
-# insert single
-# insert multiple
-# insert into select from
+# JOIN
+    # inner join
+    # left join
+    # right join
+    # outer join
+    # cross join
+    # multiple join
+    # relationship: one-to-many etc
+
+
+# INSERT
+    # insert into table_name values(1,2,3)
+    # insert into table_name (col1, col2, col3) values(1,2,3)
+    # MULTI INSERT
+    # insert into table_name values (1,2,3), (4,5,6), (7,8,9)
+    # SHOW VARIABLES LIKE 'max_allowed_packet'; bytes
+    # INSERT INTO table2 SELECT * FROM table1; no impact of max_allowed_packet
 
 # update table
 # delete from table
+
+# https://www.youtube.com/watch?v=xipnW2w5EfE
+# https://www.youtube.com/watch?v=7S_tz1z_5bA
+
 
 # datatype
     # numeric, int, float
@@ -102,7 +127,6 @@
     # Check
 
 # is auto increment field is a constraint?
-
 
 # Arithmatic Operation i.e addition and subtraction
 
@@ -145,12 +169,18 @@
     # FULL TEXT INDEXING AND SEARCHING
     # QUERY CAHCING
 
+# INDEX
+    # single column index
+    # multi column index (composite index)
 
-# exercise: https://github.com/WebDevSimplified/Learn-SQL
-# data dump: https://bit.ly/3rvtqdO
-# data dump: https://blog.sqlauthority.com/2020/02/15/mysql-download-sample-database-sakila-world-employee/
-# data dump: https://github.com/hhorak/mysql-sample-db/blob/master/mysqlsampledatabase.sql
-# data dump: https://www.mysqltutorial.org/wp-content/uploads/2018/03/mysqlsampledatabase.zip
+# Explain query
+
+# Partition
+# Sharding
+# Master Slave
+# Autoscaling
+
+
 
 # what is database
 # collection of data stored in a format that can easily be accessed
