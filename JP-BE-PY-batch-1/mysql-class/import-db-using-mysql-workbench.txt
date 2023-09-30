@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=7Cbm5vPQvNI
+
+# import below sample database
+
+# sample database 1
+# mysql-class/sample-database/e-commerce-vehicles/vehicle-store-db.sql
+
+# sample database 2
+# mysql-class/sample-database/e-commerce-movies-rental/schema.sql
+# mysql-class/sample-database/e-commerce-movies-rental/data.sql

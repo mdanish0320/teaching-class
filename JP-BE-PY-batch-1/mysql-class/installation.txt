@@ -1,0 +1,4 @@
+# install mysql server, mysql client (workbench), mysql shell
+
+# https://www.youtube.com/watch?v=2om3byn2lxs
+# https://www.youtube.com/watch?v=GwHpIl0vqY4

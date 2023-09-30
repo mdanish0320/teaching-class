@@ -1,0 +1,32 @@
+## Basic 
+# select the database sakila
+
+# display all the data in the table film
+
+# display only 2 columns "title" and "releas_year"
+
+# display first 2 rows from the table film
+
+# display last 2 rows from the table film
+
+# display the the third movie (only 1 row) from the list that is sorted by rating
+
+# display 5 movies from the table film that is sorted by movie name
+# display the other 5 moves  
+# display further 5 more moves 
+
+# display the 10 movies that is sorted by movie name and the please also omit the first 50 movies;
+
+# display all the data from the table file and also display the column "title" something like "movie_name"
+
+
+## WHERE
+# display the movie that has the rent 0.99
+
+# display the movie that has the rent 0.99 and rating would be PG
+
+# display the movie that has the rent 0.99 and rating would be PG or PG-13
+
+# display all movies that has the movie length ranging from 50 to 100
+
+# display the movie that contains the value "Deleted Scenes" any where in column special_feature
