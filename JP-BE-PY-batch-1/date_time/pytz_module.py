@@ -74,3 +74,10 @@ dt_str = "2020-03-09 15:00:00"  # US/Pacific
 dt_obj = datetime.fromisoformat(dt_str)
 tz_aware_dt = tz_detail.localize(dt_obj)
 print(tz_aware_dt, "DST Activated on this day and date obj is aware")
+
+
+## convert current time to another timezone
+# what time is it in Riyadh?
+datetime.now(pytz.timezone("Asia/Riyadh")) # datetime.datetime(2023, 10, 2, 16, 45, 17, 682475, tzinfo=<DstTzInfo 'Asia/Riyadh' +03+3:00:00 STD>)
+
+
