@@ -1,0 +1,31 @@
+# sample-databases/hr_db/db.sql
+
+exercise on the topic Select
+
+# table: employees
+
+# Write a query to select first 10 records from a table.
+# Write a query to display the names (first_name, last_name) using alias name "First Name", "Last Name"
+# Get unique department id list
+# Write a query to get all employee details from the employee table order by first name, descending.
+# Write a query to display fullname and salary
+# display all employee salary wise from lowest to highest
+# how much money the company is spending on employees on salary
+# show min, max and avg salary of comapny staff
+# show employee name, their salary and the avg salary of all staff
+# how many emplyee does the company have, display the count
+# show the number of employees in the company and the avg salary of all staff
+# Write a query to get the number of jobs available in the employees table.
+# Write a query get all first name from employees table in upper case.
+# Write a query to get first name from employees table after removing white spaces from both side.
+# Write a query to get monthly salary (round 2 decimal places) of each and every employee
+# Note : Assume the salary field provides the 'annual salary' information.
+# find the 3rd highest paid employee
+# NOTE: the query should return 1 row only
+
+# Write a query to display the fullname (first_name, last_name) and salary for all employees whose salary is in the range $10,000 through $15,000.
+# Write a query to display the fullname (first_name, last_name) and department ID of all employees in departments 30 or 100. sort the resulting data in ascending order department wise.
+# Write a query to display the fullname (first_name, last_name) and salary for all employees whose salary is in the range $10,000 through $15,000 and are in department 30 or 100.
+# Write a query to display the fullname (first_name, last_name) and hire date for all employees who were hired in 1987.
+# Write a query to display the last name, job, and salary for all employees whose job is that of a Programmer or a Shipping Clerk, and whose salary is not equal to $4,500, $10,000, or $15,000.
+# Write a query to select all record from employees where last name in 'BLAKE', 'SCOTT', 'KING' and 'FORD'.
