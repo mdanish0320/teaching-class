@@ -1,1 +1,21 @@
+# Basic
 https://www.youtube.com/watch?v=7S_tz1z_5bA
+
+# sub query
+https://www.youtube.com/watch?v=nJIEIzF7tDw
+https://www.youtube.com/watch?v=i5acg3Hvu6g
+
+
+# Aggregation
+https://www.youtube.com/watch?v=4H0rrb0ooB0
+
+# Group By
+https://www.youtube.com/watch?v=fR5rxzqEv7o
+https://www.youtube.com/watch?v=RJbP_oTbwNw
+https://www.youtube.com/watch?v=6j7XB62eHYA
+https://www.youtube.com/watch?v=FztbYXeOEQ4
+https://www.youtube.com/watch?v=SvJLXj05cow
+https://www.youtube.com/watch?v=x2_mOJ3skSc
+
+# Group by - lastest record
+https://www.youtube.com/watch?v=Se2RAkEc944
