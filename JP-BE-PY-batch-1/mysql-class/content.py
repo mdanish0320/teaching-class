@@ -93,7 +93,14 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
     # relationship: one-to-many etc
 
 
-# INSERT
+# main components
+# - DDL -> data definition language -> table level - create, alter, drop 
+# - DML -> date manipulation language -> data level - select, insert, update, delete
+# - DCL -> date control language -> Grant 
+# - TCL -> transaction control language ->  commit, rollback
+
+
+## INSERT
     # insert into table_name values(1,2,3)
     # insert into table_name (col1, col2, col3) values(1,2,3)
     # MULTI INSERT
@@ -101,56 +108,71 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
     # SHOW VARIABLES LIKE 'max_allowed_packet'; bytes
     # INSERT INTO table2 SELECT * FROM table1; no impact of max_allowed_packet
 
-# update table
-# delete from table
+## constraint
+    # NOT NULL
+    # primary key
+    # Foreign Key
+    # unique
 
-# https://www.youtube.com/watch?v=xipnW2w5EfE
-# https://www.youtube.com/watch?v=7S_tz1z_5bA
 
+## update table
+## delete from table
 
-# datatype
+## TRANSACTION
+
+# SET SQL_SAFE_UPDATES = 0;
+# SET AUTOCOMMIT = OFF
+# SET AUTOCOMMIT = ON
+
+# ALTER TABLE t1 ENGINE = InnoDB;
+
+# START TRANSACTION
+# QUERY
+# COMMIT/ROLLBACK
+
+## datatype -> existing db
     # numeric, int, float
     # string (char vs varchar), text
     # datetime
     # blob
     # json
 
-# Table level queries
-    # # table name singular or plural
-    # column name singular or plural
+# char vs varchar vs text
+# char -> fixed length stored in db even if the value is too small -> faster
+# varchar -> variable length, calculate the incoming data and store the bytes respectively -> slower than char but faster than text
+# text -> store data elsewere and save only the ref in mysql table -> slower -> indexing not possible innodb
 
-# constraint
-    # NOT NULL
-    # primary key
-    # Foreign Key
-    # unique
-    # Check
+
+# CREATE/ALTER TABLE
+    # table name singular or plural -> singular
+    # column name singular or plural -> singular
+
 
 # is auto increment field is a constraint?
-
 # Arithmatic Operation i.e addition and subtraction
 
-# main components
-# - DDL -> table level - create, alter, drop
-# - DML -> data level - select, insert, update, delete
-# - DCL -> Grant 
-# - TCL -> commit, rollback
 
 # What is Storage Engine
     # Innodb
     # MyISAM
 
 # Reasons that you may have to use certain storage engine
-    # amount of data
-    # speed and performance
-    # functionality
-    # max number of rows
-    # data integrity
+    # row/table level locking
+    # foreign key
+    # transactions
+    # ACID Compliance - Atomicity (transaction), Consistency (data integrity), Isolation (concurrency) and Durability (data can be recovered after crash)
 
 # relational database
 # sql is known of declarative programming langugage - non-procedural
 # structure Query Language
 # - you focused on what and not how part
+
+# INDEX
+    # single column index
+    # multi column index (composite index)
+
+# SIMPLE DATABASE DESIGN
+# __________________________________________________________________________________________________________
 
 
 # Schema
@@ -168,10 +190,6 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
     # SP
     # FULL TEXT INDEXING AND SEARCHING
     # QUERY CAHCING
-
-# INDEX
-    # single column index
-    # multi column index (composite index)
 
 # Explain query
 
