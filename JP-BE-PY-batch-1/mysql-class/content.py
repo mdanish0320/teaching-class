@@ -93,6 +93,10 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
     # relationship: one-to-many etc
 
 
+## python script to connect to mysql
+# pymysql
+
+
 # main components
 # - DDL -> data definition language -> table level - create, alter, drop 
 # - DML -> date manipulation language -> data level - select, insert, update, delete
