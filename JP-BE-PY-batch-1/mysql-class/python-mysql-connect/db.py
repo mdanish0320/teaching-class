@@ -10,7 +10,7 @@ def mysqlconnect():
         db='hr_db',
         cursorclass=pymysql.cursors.DictCursor
     )
-
+    print("db connected")
     return conn
     # cur = conn.cursor()
     # cur.execute("select @@version")
