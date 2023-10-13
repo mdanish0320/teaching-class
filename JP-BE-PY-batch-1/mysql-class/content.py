@@ -95,7 +95,8 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
 
 ## python script to connect to mysql
 # pymysql
-
+# client server architecture
+# sequence diagram
 
 # main components
 # - DDL -> data definition language -> table level - create, alter, drop 
@@ -115,9 +116,27 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
 ## constraint
     # NOT NULL
     # primary key
-    # Foreign Key
     # unique
+    # Foreign Key
+USE hr_db;
+# duplicate entry on primary key
+insert into employees values ('100', 'Neena', 'Kochhar', 'NKOCHHAR', '515.123.4568', '1987-06-18', 'AD_VP', '17000.00', '0.00', '100', '90'
+);
+# duplicate entry on email
+insert into employees values ('100000', 'Neena', 'Kochhar', 'NKOCHHAR', '515.123.4568', '1987-06-18', 'AD_VP', '17000.00', '0.00', '100', '90'
+);
+# inserted
+insert into employees values ('100000', 'Neena', 'Kochhar', 'NKOCHHAR@gmail.com', '515.123.4568', '1987-06-18', 'AD_VP', '17000.00', '0.00', '100', '90'
+);
+# last name cannot be null
+insert into employees values ('100000', 'Neena', NULL, 'NKOCHHAR@gmail.com', '515.123.4568', '1987-06-18', 'AD_VP', '17000.00', '0.00', '100', '90'
+);
 
+# Foreign Key example
+USE classicmodels
+insert into customers values(
+	'100001', 'Atelier graphique', 'Schmitt', 'Carine ', '40.32.2555', '54, rue Royale', NULL, 'Nantes', NULL, '44000', 'France', '13700', '21000.00'
+)
 
 ## update table
 ## delete from table
@@ -145,6 +164,8 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
 # char -> fixed length stored in db even if the value is too small -> faster
 # varchar -> variable length, calculate the incoming data and store the bytes respectively -> slower than char but faster than text
 # text -> store data elsewere and save only the ref in mysql table -> slower -> indexing not possible innodb
+
+# fulltext search ie. match()
 
 
 # CREATE/ALTER TABLE
