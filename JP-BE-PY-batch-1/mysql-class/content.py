@@ -98,6 +98,20 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
 # client server architecture
 # sequence diagram
 
+## logs 
+SHOW VARIABLES LIKE '%file%';
+SHOW VARIABLES LIKE '%dir%';
+
+SELECT @@general_log;
+SELECT @@general_log_file;
+
+# MySQL version > 5 # set at runtime
+SET GLOBAL log_output = "FILE"; # "Table"
+SET GLOBAL general_log = 'OFF';
+SET GLOBAL general_log_file = "/opt/homebrew/var/mysql/danish.log";
+SET GLOBAL general_log = 'ON';
+
+
 # main components
 # - DDL -> data definition language -> table level - create, alter, drop 
 # - DML -> date manipulation language -> data level - select, insert, update, delete
