@@ -99,6 +99,10 @@ The HAVING clause is then applied to the rows in the result set. Only the groups
 # sequence diagram
 
 ## logs 
+# General Query Log.
+# Slow Query Log.
+# Error Log.
+	
 SHOW VARIABLES LIKE '%file%';
 SHOW VARIABLES LIKE '%dir%';
 
@@ -110,6 +114,9 @@ SET GLOBAL log_output = "FILE"; # "Table"
 SET GLOBAL general_log = 'OFF';
 SET GLOBAL general_log_file = "/opt/homebrew/var/mysql/danish.log";
 SET GLOBAL general_log = 'ON';
+
+show full processlist;
+kill 20;
 
 
 # main components
