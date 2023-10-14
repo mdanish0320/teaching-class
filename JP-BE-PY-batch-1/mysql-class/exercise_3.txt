@@ -1,0 +1,37 @@
+# delete the data in following tables by following commands using mysql-workbench
+use classicmodels
+TRUNCATE TABLE orderdetails;
+TRUNCATE TABLE orders;
+TRUNCATE TABLE customers;
+TRUNCATE TABLE employees;
+
+## create a python script that ask following questions
+
+# press 1 to add employee
+# press 2 to add customers
+# press 3 to add orders
+# press 4 to add payment detail
+# press 5 to show dashboard stats
+# press 6 to show all employees
+# press 7 to show all employees (name) along with the city and country name they are working and their job title
+# press 8 to show all product name and price and product category name
+# press 9 to show all employees name who captures the customer
+# press 10 to show all employees who didn't suceed in capturing the customer
+# press 11 to show the employee names along with the sale they managed to capture by customer
+
+
+# using the python script please do the following actions to fill up the data in database
+
+# insert 10 employees
+# insert 5 customers
+# insert 3 orders of customer_1 and customer_2 only
+# insert payment of only 1 customer_1
+
+# dashboard stats
+# total employees
+# total customers
+# total orders recieved this month
+# total payments recieved this month (amount)
+# total num of payments pending
+# which product sold the most
+
