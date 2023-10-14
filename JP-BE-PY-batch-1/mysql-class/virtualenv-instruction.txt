@@ -1,0 +1,17 @@
+## activate virtualenv on windows
+
+# Open Power Shell as administrator and then run following command
+Set-ExecutionPolicy Unrestricted
+
+# pip install virtualenv
+OR
+# pip3 install virtualenv
+
+# open your project and open the indegrated terminal and run the following command in windows
+virtualenv venv --python=python3
+
+# now you will see the new folder named "venv"
+
+
+# to activate virtualenv, enter following command in terminal
+venv/Scripts/activate
