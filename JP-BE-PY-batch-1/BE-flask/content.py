@@ -3,15 +3,18 @@
 # run server
 # explain server port (again)
 # create APIs without class view or blueprint
+  # test APIs
+  # in-memory CRUD
+  # assignment: CRUD on persistent storage file and db 
+  # assignment: create 2 API login (GET API) and signup (POST API)
 # use postman to invoke api
 # explain HTTP Methods
-# Create CRUD in-memory
 
-# small project management
+# project file-structure: small project management
 # create apis with view as function
 # create apis with class view
 
-# big project magagement
+# project file-structure: big project magagement
 # create apis with blueprint with view fuction
   # # Blueprint
   # give you a feature to group endpoints and then you can add that group in the flask app
@@ -19,6 +22,10 @@
 
 # Data Validation + Swagger API Documention
 # flask-smorest Requires: Python >=3.8
+
+# login/signup with session
+  # session cookie and jwt
+# authentication methods
 
 ## Concept
 # OSI Model
