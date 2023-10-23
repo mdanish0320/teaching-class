@@ -1,0 +1,29 @@
+Desgin a database of e-commerce application
+# tables
+- user
+- category
+- product
+- order_product
+- order
+- payment
+
+
+Desgin a database of Human Resource Managment application
+# Requirements
+# a superadmin (sa) can add admin and superadmin
+# sa or admin can add employees
+# sa or admin can mark leave of employee
+# sa or admin can mark an employee absent
+# sa or admin can add entry of salary every month
+
+
+Desgin a database of another e-commerce application closesly related to Daraz
+Features
+- user creation
+- agent creation
+- merchant creation
+- product
+- category
+- order_product
+- order
+- payment
