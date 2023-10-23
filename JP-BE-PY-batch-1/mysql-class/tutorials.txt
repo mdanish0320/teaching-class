@@ -29,3 +29,31 @@ https://www.youtube.com/watch?v=0OQJDd3QqQM
 
 # logs
 https://www.youtube.com/watch?v=LtjbK7pn5ww
+
+# diff between InnoDB and MyISAM engine
+https://www.youtube.com/watch?v=UezH5KrjL5U
+
+# Index
+https://www.youtube.com/watch?v=MS70fZbOuqo
+https://www.youtube.com/watch?v=t0grczCICMk
+https://www.youtube.com/watch?v=BIlFTFrEFOI
+https://www.youtube.com/watch?v=kv3jC0P4gOc
+https://www.youtube.com/watch?v=YuRO9-rOgv4
+https://www.youtube.com/watch?v=Z-yFjC_qMQo
+https://www.youtube.com/watch?v=NI9wYuVIYcA
+https://www.youtube.com/watch?v=OyBwIjnQLtI
+https://www.youtube.com/watch?v=UzHl2VzyZS4
+
+# database design Relationship
+https://www.youtube.com/watch?v=NvrpuBAMddw
+https://www.youtube.com/watch?v=O1bi5MjqsAc
+https://www.youtube.com/watch?v=4q-keGvUnag
+https://www.youtube.com/watch?v=GFQaEYEc8_8
+
+# database design practical examples
+rental model: https://www.youtube.com/watch?v=yldrIdoXiYk
+instagram: https://www.youtube.com/watch?v=i_1CbyzzlDk
+chat app: https://www.youtube.com/watch?v=xL_tYrEcP9M
+e-commerce: https://www.youtube.com/watch?v=1HamqOuv2Cw
+Your idea: https://www.youtube.com/watch?v=5RpUmDEsn1k
+
