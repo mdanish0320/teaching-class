@@ -44,7 +44,7 @@ https://www.youtube.com/watch?v=NI9wYuVIYcA
 https://www.youtube.com/watch?v=OyBwIjnQLtI
 https://www.youtube.com/watch?v=UzHl2VzyZS4
 
-# database design Relationship
+# Data Normalization
 https://www.youtube.com/watch?v=NvrpuBAMddw
 https://www.youtube.com/watch?v=O1bi5MjqsAc
 https://www.youtube.com/watch?v=4q-keGvUnag
@@ -56,4 +56,10 @@ instagram: https://www.youtube.com/watch?v=i_1CbyzzlDk
 chat app: https://www.youtube.com/watch?v=xL_tYrEcP9M
 e-commerce: https://www.youtube.com/watch?v=1HamqOuv2Cw
 Your idea: https://www.youtube.com/watch?v=5RpUmDEsn1k
+
+# binary search algo
+https://www.youtube.com/watch?v=pQlDYlUrmoM
+https://www.youtube.com/watch?v=VL03KD-RxZc
+https://www.youtube.com/watch?v=G1Rqp92ymhA
+https://www.youtube.com/watch?v=ZHCP9vFOJiU
 
