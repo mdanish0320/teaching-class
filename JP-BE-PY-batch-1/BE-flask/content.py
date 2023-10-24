@@ -24,6 +24,19 @@
   # session cookie and jwt
 # authentication methods
 
+# Hashing Passwords With Werkzeug
+# pagination
+# logging
+# error handling: http errors
+# pytest
+# signal
+# https://flask.palletsprojects.com/en/3.0.x/patterns/streaming/
+# https://flask.palletsprojects.com/en/3.0.x/security/
+# async await
+
+# sql-alchemy
+# production ready server - wsgi/gunicor 
+# deployment
 
 # project file-structure: small project management
 # create apis with view as function
