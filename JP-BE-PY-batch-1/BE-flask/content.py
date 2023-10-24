@@ -14,29 +14,32 @@
 
 # assignment
   # persistent storage CRUD on file and db using proper get/post/put/delete methods
+
+# error handling: http errors
+
+# Postman request/response console logs
 # explain HTTP Methods
   # invoke api via command line
   # invoke api via postman
   # invoke api via python request module
 
 
+# assignment: 
+  # search filter
+  # pagination
+
+## class_2 ##
+# logging
+# pytest
 # login/signup with session
   # session cookie and jwt
-# authentication methods
-
-# Hashing Passwords With Werkzeug
-# pagination
-# logging
-# error handling: http errors
-# pytest
-# signal
-# https://flask.palletsprojects.com/en/3.0.x/patterns/streaming/
-# https://flask.palletsprojects.com/en/3.0.x/security/
-# async await
-
-# sql-alchemy
+  # Hashing Passwords With Werkzeug
+# authentication methods - request headers
 # production ready server - wsgi/gunicor 
 # deployment
+
+## class_3 ##
+# sql-alchemy
 
 # project file-structure: small project management
 # create apis with view as function
@@ -73,6 +76,11 @@
   # Rest vs soap
   # Rest vs restful - https://www.youtube.com/watch?v=UJgq1tEwMBk
 
+
+# signal
+# https://flask.palletsprojects.com/en/3.0.x/patterns/streaming/
+# https://flask.palletsprojects.com/en/3.0.x/security/
+# async await
 
 
 
