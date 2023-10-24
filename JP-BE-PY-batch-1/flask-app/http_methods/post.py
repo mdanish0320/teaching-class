@@ -28,18 +28,30 @@ def input_post_raw():
     return data
 
 
-@app.route("/input/post/form-data/upload-files", methods=['POST'])
+@app.route("/input/post/form-data/upload-file", methods=['POST'])
 def input_post_form_data_upload_files():
     import os
     
     print(request.files)
+    print(request.form)
+    
     f = request.files['my_json_file']
     cwd = os.getcwd() # /Users/danish/teaching-class/JP-BE-PY-batch-1/flask-app/http_methods
     # print(f.read())
-    f.save(cwd + "/files/file_3.json")
+    f.save(cwd + "/files/single_file.json")
+    return "hello"
 
-    
 
+@app.route("/input/post/form-data/upload-multiple-files", methods=['POST'])
+def input_post_form_data_upload_multiple_files():
+    import os
+    cwd = os.getcwd() # /Users/danish/teaching-class/JP-BE-PY-batch-1/flask-app/http_methods
+    print(request.files)
+    print(request.form)
+    files = request.files.getlist("my_json_file")
+    for f in files:
+        print(f.filename)
+        f.save(cwd + "/files/" + f.filename)
     return "hello"
 
 if __name__ == "__main__":
