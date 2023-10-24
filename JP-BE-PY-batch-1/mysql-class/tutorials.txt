@@ -50,6 +50,9 @@ https://www.youtube.com/watch?v=O1bi5MjqsAc
 https://www.youtube.com/watch?v=4q-keGvUnag
 https://www.youtube.com/watch?v=GFQaEYEc8_8
 
+# Hot to avoid: Many to Many Relationship - Joining Table
+https://www.youtube.com/watch?v=1eUn6lsZ7c4
+
 # database design practical examples
 rental model: https://www.youtube.com/watch?v=yldrIdoXiYk
 instagram: https://www.youtube.com/watch?v=i_1CbyzzlDk
