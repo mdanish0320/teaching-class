@@ -7,19 +7,18 @@
   # /home and /profile and /add_employee and /get_employee
 # HTTP Methods and use postman to invoke api
   # GET query string and path_parameters
-  # POST BODY and form-url-encoded
-  # PUT and Patch
-  # Delete
+  # POST form-data and form-url-encoded and raw
+  # class-assignment: in-memory CRUD using get, post PUT and Patch and Delete
+  # class assignment: create 3 API login (POST API), signup (POST API) and /my_profile with db
+    # data validation
+
 # assignment
-  # in-memory CRUD using GET method
-  # persistent storage CRUD on file and db  using proper get/post/put/delete methods
+  # persistent storage CRUD on file and db using proper get/post/put/delete methods
 # explain HTTP Methods
   # invoke api via command line
   # invoke api via postman
   # invoke api via python request module
-# assignment: class assignment
-  # create 3 API login (POST API), signup (POST API) and /my_profile with db
-    # data validation
+
 
 # login/signup with session
   # session cookie and jwt
