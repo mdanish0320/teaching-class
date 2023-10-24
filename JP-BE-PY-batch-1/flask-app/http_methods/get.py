@@ -10,7 +10,7 @@ def hello():
 @app.route("/input/get/query_string")
 def user_input_with_query_string():
     print(request.args)
-    print(request.args.get("x"))
+    print(request.args.get("name"))
     return "hello"
 
 
