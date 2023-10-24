@@ -1,3 +1,9 @@
+# bloging
+# Simple TODO app
+# google NOTE app
+# chat app
+
+
 1. **Student Information Management System:**
    - Manage student profiles, grades, attendance, and other relevant information.
    - Implement user authentication and authorization for teachers, students, and administrators.
