@@ -29,6 +29,7 @@
   # pagination
 
 ## class_2 ##
+# .env
 # logging
 # pytest
 # login/signup with session
@@ -38,8 +39,10 @@
 # production ready server - wsgi/gunicor 
 # deployment
 
+# assignment: sql-alchemy
+
 ## class_3 ##
-# sql-alchemy
+# migration
 
 # project file-structure: small project management
 # create apis with view as function
