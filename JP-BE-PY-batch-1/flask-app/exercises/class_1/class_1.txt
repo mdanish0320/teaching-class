@@ -1,0 +1,30 @@
+creat a database named "exercise_class_1"
+create a table "user"
+columns
+- id          -> required
+- name        -> required
+- email       -> required
+- password    -> required
+- dob         -> required
+- phone       -> required
+- created_at  -> required
+
+create a flask application that should be able to singup, login and display all users
+APIs
+- POST: /register
+- GET: /users
+- PATCH: /change-password
+- POST: /login
+
+Responses
+/register: "user added successfully"
+/change-password: "password updated successfully"
+/login: "user login successfully"
+/users: {
+  "id": int,
+  "name": string,
+  "email": string,
+  "dob": string,
+  "phone": string,
+  "created_at": string
+}
