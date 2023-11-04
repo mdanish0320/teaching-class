@@ -1,2 +1,6 @@
 # CRUD in-memory using Flask
 https://www.youtube.com/watch?v=n4orudncbTs
+
+# deployment
+https://www.youtube.com/watch?v=6p7GBfHgJq8
+https://www.youtube.com/watch?v=GAF8omF6W0Y
