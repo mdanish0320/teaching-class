@@ -54,4 +54,4 @@ def add_new_employee(db_conn, data):
     # save the changes permanently
     db_conn.commit()
     
-    return True
+    return cur.lastrowid

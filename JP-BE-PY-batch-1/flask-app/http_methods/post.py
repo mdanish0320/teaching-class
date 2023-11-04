@@ -20,7 +20,7 @@ def input_post_form_url_encoded():
     return "hello"
 
 
-@app.route("/input/post/raw", methods=['POST'])
+@app.route("/input/post/json", methods=['POST'])
 def input_post_raw():
     data = request.get_json()
     print(data)

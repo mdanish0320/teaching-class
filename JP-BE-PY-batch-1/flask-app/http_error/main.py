@@ -20,30 +20,39 @@ def get_employees():
     db.disconnect(conn)
     
     if len(employees) == 0:
-        log.warning("no data found")
-        return make_response("no data found", 200)
+        log.warning("employee not found")
+        return {
+            "data": [],
+            "message": "employee not found"
+        }, 200
 
-    return employees
+    return {
+        "data": employees
+    }, 200
 
 
-@app.route("/employee/<id>", methods=['GET'])
-def get_employee_profile(id):
-    
-    if int(id) <= 0:
+@app.route("/employee/<user_id>", methods=['GET'])
+def get_employee_profile(user_id):
+    print("user_id", user_id)
+    if user_id.isdigit() == False or int(user_id) <= 0:
         log.error("invalid ID")
-        return make_response("Invalid ID", 400)
+        return {
+            "error": {"message": "invalid id"}
+        }, 400
 
     conn = db.mysqlconnect()
-    employee = db.get_employee_by_id(conn, id)
+    employee = db.get_employee_by_id(conn, user_id)
     db.disconnect(conn)
 
     if employee is None:
-        log.warning("no data found")
-        return make_response(
-            "Employee not found", 200
-        )
+        log.warning("employee not found")
+        return {
+            "error": {"message": "employee not found"}
+        }, 400
 
-    return employee
+    return {
+        "data": employee
+    }, 200
 
 
 def is_valid_employee_data(data):
@@ -63,17 +72,24 @@ def is_valid_employee_data(data):
 @app.route("/employee", methods=['POST'])
 def add_new_employee():
     if not request.is_json:
-        return make_response("API accepts json data", 400)
+        return {
+            "error": {"message": "API Accepts json data"}
+        }, 400
     
     data = request.get_json()
     if (error := is_valid_employee_data(data)) is not None:
-        return make_response(error, 400)
+        return {
+            "error": {"message": error}
+        }, 400
     
     conn = db.mysqlconnect()
-    employee = db.add_new_employee(conn, data)
+    employee_id = db.add_new_employee(conn, data)
     db.disconnect(conn)
 
-    return "success"
+    log.info("new employee added")
+    return {
+        "data": {"id": employee_id}
+    }, 200
 
 
 app.run(
