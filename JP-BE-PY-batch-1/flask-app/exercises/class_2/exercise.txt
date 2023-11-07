@@ -1,0 +1,65 @@
+Extend the existing application that contains the APIs to create and display single and all employees.
+Add following functionality to the app
+- create customer
+- show all customers
+- display 1 customer by its id
+- allow customer to puchase service
+- allow customer to add payment against the service
+- display all customers of 1 employee
+
+
+- And also export the Entity Relationship Diagram (ERD) and db schema in the folder mysql. Don't forget to add foreign keys where necessary.
+- Deploy the application on https://www.pythonanywhere.com
+- data entry should be done by automation script
+
+
+create a table named "customer"
+columns
+- id          -> required
+- name        -> required
+- dob         -> Allow NULL
+- phone       -> required
+- created_at  -> required
+- *add missing columns*
+
+create a table "service"
+columns
+- id          -> required
+- name        -> required
+- price       -> required
+- created_at  -> required
+
+
+create a table "order"
+columns
+- id          -> required
+- created_at  -> required
+- *add missing columns*
+
+APIs endpoint
+# Customers
+- POST: /customer
+- GET: /customer
+    # This endpoint should also allow filtering using query string i.e ?employee_id=1123123 and also with customer name
+- GET: /customer/<id>
+- DELETE: /customer/<id>
+- PUT: /customer/<id>
+
+# service
+- POST: /service
+- GET: /service
+- GET: /service/<id>
+- DELETE: /customer/<id>
+- PUT: /customer/<id>
+
+# order
+- POST: /order
+- GET: /order
+    # This endpoint should also allow filtering using query string i.e ?customer_id=1123123 and service_id
+- GET: /order/<id>
+- DELETE: /order/<id>
+
+
+NOTE: input and output both should be in JSON format only including the error message.
+
+
