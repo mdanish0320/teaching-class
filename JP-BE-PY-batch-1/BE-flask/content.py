@@ -50,6 +50,7 @@
 # create apis with class view
 
 ## class_4 ##
+# .env - how to pass env variable to application
 # project file-structure: big project magagement
 # create apis with blueprint with view fuction
   # # Blueprint
@@ -58,12 +59,14 @@
 # Data Validation + Swagger API Documention
 # flask-smorest Requires: Python >=3.8
 # Traceback
+# Use Debugger
 # production ready server - wsgi/gunicor 
-# migration
+
+# assignment: redis
+# assignment: migration
 # assignment: sql-alchemy
 
 ## Concept
-# .env
 # OSI Model
 # TCP Connection and its possible values
 # TCP -> HTTP, Text, Email, video streaming services
