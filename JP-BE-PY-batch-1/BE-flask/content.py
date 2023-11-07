@@ -29,13 +29,13 @@
   # pagination
 
 ## class_2 ##
-Deployment
-wsgi introduction
-Data validation
-POST API Json
-http error
-Logging
-Invoke api from script
+# Deployment
+# wsgi introduction
+# Data validation
+# POST API Json
+# http error
+# Logging
+# Invoke api from script
 
 
 ## class_3 ##
@@ -45,13 +45,11 @@ Invoke api from script
   # Hashing Passwords With Werkzeug
 # authentication methods - request headers
 # pytest - functional-or-end-to-end-test
-
 # project file-structure: small project management
 # create apis with view as function
 # create apis with class view
 
 ## class_4 ##
-
 # project file-structure: big project magagement
 # create apis with blueprint with view fuction
   # # Blueprint
