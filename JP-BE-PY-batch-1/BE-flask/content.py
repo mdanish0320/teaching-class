@@ -29,35 +29,43 @@
   # pagination
 
 ## class_2 ##
-# .env
-# logging
-# pytest
+Deployment
+wsgi introduction
+Data validation
+POST API Json
+http error
+Logging
+Invoke api from script
+
+
+## class_3 ##
+# File upload
 # login/signup with session
   # session cookie and jwt
   # Hashing Passwords With Werkzeug
 # authentication methods - request headers
-# production ready server - wsgi/gunicor 
-# deployment
-
-# assignment: sql-alchemy
-
-## class_3 ##
-# migration
+# pytest - functional-or-end-to-end-test
 
 # project file-structure: small project management
 # create apis with view as function
 # create apis with class view
+
+## class_4 ##
 
 # project file-structure: big project magagement
 # create apis with blueprint with view fuction
   # # Blueprint
   # give you a feature to group endpoints and then you can add that group in the flask app
 # create apis with blueprint with class view
-
 # Data Validation + Swagger API Documention
 # flask-smorest Requires: Python >=3.8
+# Traceback
+# production ready server - wsgi/gunicor 
+# migration
+# assignment: sql-alchemy
 
 ## Concept
+# .env
 # OSI Model
 # TCP Connection and its possible values
 # TCP -> HTTP, Text, Email, video streaming services
