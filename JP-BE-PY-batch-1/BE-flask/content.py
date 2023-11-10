@@ -52,6 +52,7 @@
   # session cookie and jwt
   # Hashing Passwords With Werkzeug
 # authentication methods - request headers
+# basic auth, digest, token, api_key
 # pytest - functional-or-end-to-end-test
 # project file-structure: small project management
 # create apis with view as function
