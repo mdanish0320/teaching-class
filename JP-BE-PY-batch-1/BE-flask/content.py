@@ -40,6 +40,8 @@
 
 ## class_3 ##
 # File upload
+  # form-data - binary data
+  # string - base64 encoded
 # login/signup with session
   # session cookie and jwt
   # Hashing Passwords With Werkzeug
