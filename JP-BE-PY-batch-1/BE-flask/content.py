@@ -43,6 +43,7 @@
   # form-data - binary data
   # string - base64 encoded
 # encryption AES VS RSA
+# storing password in plain-text, encryption, hash and special hash function i.e bcrypt etc
 # authentication vs authoriation
 # what is JWT and how JWT works with authentication
 # add authentication with middleware and jwt
