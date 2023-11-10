@@ -42,6 +42,10 @@
 # File upload
   # form-data - binary data
   # string - base64 encoded
+# authentication vs authoriation
+# what is JWT and how JWT works with authentication
+# add authentication with middleware and jwt
+# use jwt-extended
 # login/signup with session
   # session cookie and jwt
   # Hashing Passwords With Werkzeug
