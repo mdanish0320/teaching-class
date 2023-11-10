@@ -42,6 +42,7 @@
 # File upload
   # form-data - binary data
   # string - base64 encoded
+# encryption AES VS RSA
 # authentication vs authoriation
 # what is JWT and how JWT works with authentication
 # add authentication with middleware and jwt
