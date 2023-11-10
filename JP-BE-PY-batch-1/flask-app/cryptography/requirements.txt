@@ -1,0 +1,5 @@
+pycryptodome
+cryptography
+bcrypt
+rsa
+pyjwt
