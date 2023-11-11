@@ -53,12 +53,13 @@
   # Hashing Passwords With Werkzeug
 # authentication methods - request headers
 # basic auth, digest, token, api_key
-# pytest - functional-or-end-to-end-test
-# project file-structure: small project management
-# create apis with view as function
-# create apis with class view
+# route management
+  # project file-structure: small project management
+  # create apis with view as function
+  # create apis with class view
 
 ## class_4 ##
+# pytest - functional-or-end-to-end-test
 # .env - how to pass env variable to application
 # project file-structure: big project magagement
 # create apis with blueprint with view fuction
