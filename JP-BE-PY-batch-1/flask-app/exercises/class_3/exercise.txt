@@ -1,0 +1,17 @@
+create an app similar to the Google Keep Notes app.
+
+your app should have following features
+- register the user
+- login the user with email and password
+- (after login) user can create the notes
+- user can assign notes one or more categories
+- user can view all his the notes
+- user can view the notes of selected category
+
+Note: restrict user to view it's own content and not others i.e User X cannot view the notes of User Y.
+
+Note:
+- create apis using view function for modular code.
+- use jwt token for session management
+- create decorator named "token_required" and use it on protected apis
+
