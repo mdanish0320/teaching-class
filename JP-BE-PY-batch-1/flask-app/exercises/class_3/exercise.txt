@@ -14,4 +14,8 @@ Note:
 - create apis using view function for modular code.
 - use jwt token for session management
 - create decorator named "token_required" and use it on protected apis
+- db is compulsory
+- include ER Diagram
+- include db schema
+- include automation file
 
