@@ -54,6 +54,9 @@
 
 
 ## class_4 ##
+# route management
+  # create apis with class view
+# pytest - functional-or-end-to-end-test
 # bcrypt
 # encoding vs encryption
 # what is JWT and how JWT works with authentication
@@ -61,24 +64,20 @@
 # authentication methods - request headers
 # basic auth, digest, token, api_key
 # use jwt-extended
-# route management
-  # create apis with class view
-# project file-structure: big project magagement
-# create apis with blueprint with view fuction
-  # # Blueprint
-  # give you a feature to group endpoints and then you can add that group in the flask app
 # create apis with blueprint with class view
-# Data Validation + Swagger API Documention
-# flask-smorest Requires: Python >=3.8
 # File upload
   # form-data - binary data
   # string - base64 encoded
 # pagination
-# pytest - functional-or-end-to-end-test
 # .env - how to pass env variable to application
 # Traceback
 # Use Debugger
 # production ready server - wsgi/gunicor 
+# flask-smorest
+    # Data Validation + Swagger API Documention
+    # flask-smorest Requires: Python >=3.8
+    # give you a feature to group endpoints and then you can add that group in the flask app
+    # project file-structure: big project magagement
 
 
 # assignment: redis
