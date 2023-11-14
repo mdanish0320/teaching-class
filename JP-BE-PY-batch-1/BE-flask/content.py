@@ -73,6 +73,7 @@
 # Traceback
 # Use Debugger
 # production ready server - wsgi/gunicor 
+# convert postman collection to swagger json: https://zerodayhacker.com/exporting-a-postman-collection-to-openapi-3-0/
 # flask-smorest
     # Data Validation + Swagger API Documention
     # flask-smorest Requires: Python >=3.8
