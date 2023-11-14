@@ -4,31 +4,36 @@ import json
 
 
 from flask import Flask, abort, make_response, request
+from flask.views import MethodView
 
 from mysql import db
 
 app = Flask(__name__)
 log = logging.getLogger("flask-app")
 
+class EmployeeView(MethodView):
+    def __init__(self, db):
+        self.db = db
 
-@app.route("/employee", methods=['GET'])
-def get_employees():
-    log.info("get all employees")
+    def get(self):
+        log.info("get all employees")
 
-    conn = db.mysqlconnect()
-    employees = db.get_all_employees(conn)
-    db.disconnect(conn)
-    
-    if len(employees) == 0:
-        log.warning("employee not found")
+        conn = self.db.mysqlconnect()
+        employees = self.db.get_all_employees(conn)
+        self.db.disconnect(conn)
+        
+        if len(employees) == 0:
+            log.warning("employee not found")
+            return {
+                "data": [],
+                "message": "employee not found"
+            }, 200
+
         return {
-            "data": [],
-            "message": "employee not found"
+            "data": employees
         }, 200
 
-    return {
-        "data": employees
-    }, 200
+app.add_url_rule('/employee', view_func=EmployeeView.as_view('employee', db), methods=['GET'])    
 
 
 @app.route("/employee/<user_id>", methods=['GET'])
