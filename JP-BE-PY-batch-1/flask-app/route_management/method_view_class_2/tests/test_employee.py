@@ -2,8 +2,24 @@ import pytest
 import sys
 import random
 import string
+from unittest.mock import patch
+from functools import wraps
+
+def mock_decorator(func):
+    @wraps(func)
+    def _token_required(*args, **kwargs):
+        print("mock decorator")
+        data = {"id": 100}
+        return func(*args, data, **kwargs)
+
+    return _token_required
+
 
 sys.path.append(".")  # Adds higher directory to python modules path.
+
+# PATCH THE DECORATOR HERE
+patch('helper.common.token_required', mock_decorator).start()
+
 from controller.employee import EmployeeView
 from app import app
 

@@ -4,6 +4,7 @@ import json
 
 from flask.views import MethodView
 
+from helper.common import token_required
 
 log = logging.getLogger("flask-app")
 
@@ -13,10 +14,10 @@ class EmployeeView(MethodView):
         self.db = db
         self.model = model
 
-    def test_this_function(self):
+    @token_required
+    def test_this_function(self, data):
         print(self.request)
-        print(self.db)
-        print(self.model)
+        print(data)
         return 123
 
     def _get_employee_list(self):
