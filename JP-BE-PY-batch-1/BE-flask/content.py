@@ -39,28 +39,30 @@
 
 
 ## class_3 ##
-# File upload
-  # form-data - binary data
-  # string - base64 encoded
-# encryption AES VS RSA
-# storing password in plain-text, encryption, hash and special hash function i.e bcrypt etc
-# authentication vs authoriation
-# what is JWT and how JWT works with authentication
-# add authentication with middleware and jwt
-# use jwt-extended
-# login/signup with session
-  # session cookie and jwt
-  # Hashing Passwords With Werkzeug
-# authentication methods - request headers
-# basic auth, digest, token, api_key
 # route management
   # project file-structure: small project management
   # create apis with view as function
-  # create apis with class view
+# login/signup with session
+  # session cookie and jwt
+  # Hashing Passwords With Werkzeug
+# jwt core with python
+# simple login/signup app with jwt
+# encryption AES VS RSA
+# doractors
+# add authentication with middleware and jwt
+# storing password in plain-text, encryption, hash and special hash function i.e bcrypt etc
+
 
 ## class_4 ##
-# pytest - functional-or-end-to-end-test
-# .env - how to pass env variable to application
+# bcrypt
+# encoding vs encryption
+# what is JWT and how JWT works with authentication
+# authentication vs authorisation
+# authentication methods - request headers
+# basic auth, digest, token, api_key
+# use jwt-extended
+# route management
+  # create apis with class view
 # project file-structure: big project magagement
 # create apis with blueprint with view fuction
   # # Blueprint
@@ -68,9 +70,16 @@
 # create apis with blueprint with class view
 # Data Validation + Swagger API Documention
 # flask-smorest Requires: Python >=3.8
+# File upload
+  # form-data - binary data
+  # string - base64 encoded
+# pagination
+# pytest - functional-or-end-to-end-test
+# .env - how to pass env variable to application
 # Traceback
 # Use Debugger
 # production ready server - wsgi/gunicor 
+
 
 # assignment: redis
 # assignment: migration
