@@ -1,0 +1,6 @@
+*package-lock.json
+*.wasm
+*.ts
+*.md
+node_modules/*
+data/*
