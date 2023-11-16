@@ -22,3 +22,28 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
+
+
+"""
+https://editor.swagger.io/
+
+paths:
+  /base-path/list_employee:
+    get:
+      security:
+        - bearerAuth: []
+      summary: New Request 1
+      description: New Request 1
+      operationId: newRequest1
+      responses:
+        '200':
+          description: ''
+
+
+components:
+  securitySchemes:
+    bearerAuth:    # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+"""
