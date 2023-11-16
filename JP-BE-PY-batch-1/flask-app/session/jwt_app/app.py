@@ -12,7 +12,7 @@ app = Flask(__name__)
 # https://flask-jwt-extended.readthedocs.io/en/stable/options.html
 app.config["JWT_SECRET_KEY"] = "super-secret"  # Change this!
 app.config["JWT_TOKEN_LOCATION"] = ["headers"] # specifying the location of JWT 
-app.config["JWT_ALGORITHM"] = "HS256"
+app.config["JWT_ALGORITHM"] = "HS256" # symmetric keyed hashing algorithm
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours=1)
 app.config["JWT_REFRESH_TOKEN_EXPIRES"] = timedelta(days=30)
 
@@ -43,5 +43,6 @@ def protected():
 
 if __name__ == "__main__":
     app.run(
-        debug= True
+        debug= True,
+        port=3000
     )
