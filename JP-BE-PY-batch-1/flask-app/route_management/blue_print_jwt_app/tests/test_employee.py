@@ -22,17 +22,17 @@ from app import app
 
 
 
-# def test_get_employee_profile_api():
-#     with (
-#          patch('flask_jwt_extended.view_decorators.verify_jwt_in_request', new=Mock()) as verify_jwt_in_request,
-#         patch('routes.employee.profile_employee.get_jwt_identity', new=Mock()) as get_jwt_identity
-#     ):
-#         verify_jwt_in_request.return_value = None
-#         get_jwt_identity.return_value = 100
-#         response = app.test_client().get("/employee/2")
-#         print(response.status_code)
-#         print(response.data)
-#         print(response.json)
+def test_get_employee_profile_api():
+    with (
+         patch('flask_jwt_extended.view_decorators.verify_jwt_in_request', new=Mock()) as verify_jwt_in_request,
+        patch('routes.employee.profile_employee.get_jwt_identity', new=Mock()) as get_jwt_identity
+    ):
+        verify_jwt_in_request.return_value = None
+        get_jwt_identity.return_value = 100
+        response = app.test_client().get("/employee/2")
+        print(response.status_code)
+        print(response.data)
+        print(response.json)
 
 def test_get_employee_profile_api_2():
     with app.test_request_context():
