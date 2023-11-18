@@ -30,10 +30,9 @@ CREATE TABLE note (
 
 DROP TABLE IF EXISTS note_category;
 CREATE TABLE note_category (
-	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     note_id INT UNSIGNED NOT NULL,
     category_id INT UNSIGNED NOT NULL,
-    PRIMARY KEY (id),
+    PRIMARY KEY (note_id, category_id),
     CONSTRAINT fk_note_id FOREIGN KEY (note_id) REFERENCES note (id),
     CONSTRAINT fk_category_id FOREIGN KEY (category_id) REFERENCES category (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
