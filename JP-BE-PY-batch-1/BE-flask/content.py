@@ -55,30 +55,30 @@
 
 ## class_4 ##
 # route management
-  # create apis with class view
+  # update existing app and add blueprint
 # pytest - functional-or-end-to-end-test
-# bcrypt
 # encoding vs encryption
-# what is JWT and how JWT works with authentication
-# authentication vs authorisation
+# HMAC
+
+
+## class 5
+# use jwt-extended
+# explain JWT token parts
 # authentication methods - request headers
 # basic auth, digest, token, api_key
-# use jwt-extended
-# create apis with blueprint with class view
+# bcrypt
 # File upload
   # form-data - binary data
   # string - base64 encoded
-# pagination
+# convert postman collection to swagger json: https://zerodayhacker.com/exporting-a-postman-collection-to-openapi-3-0/
+
+# authentication vs authorisation
+# difference between session, cookie and token based authentication
 # .env - how to pass env variable to application
 # Traceback
 # Use Debugger
 # production ready server - wsgi/gunicor 
-# convert postman collection to swagger json: https://zerodayhacker.com/exporting-a-postman-collection-to-openapi-3-0/
-# flask-smorest
-    # Data Validation + Swagger API Documention
-    # flask-smorest Requires: Python >=3.8
-    # give you a feature to group endpoints and then you can add that group in the flask app
-    # project file-structure: big project magagement
+# pagination
 
 
 # assignment: redis
