@@ -2,7 +2,7 @@ import db
 from models import users_query
 from flask import request, Blueprint
 from services import token_services
-from users_validation import *;
+from controllers.users.users_validation import *;
 
 user_bp = Blueprint("user", "user_service")
 

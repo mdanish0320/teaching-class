@@ -2,7 +2,7 @@ from services import token_services
 from flask import request, Blueprint
 from models import notes_query
 import db
-from notes_validation import *
+from controllers.notes.notes_validation import *
 
 note_bp = Blueprint("note", "note_services")
 
