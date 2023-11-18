@@ -7,7 +7,7 @@ from controllers.notes.notes_validation import *
 note_bp = Blueprint("note", "note_services")
 
 
-@note_bp.add_url_rule("/note", methods=["POST"])
+@note_bp.route("/note", methods=["POST"])
 @token_services.token_decrypt
 def add_new_note(user_id):
     if not request.is_json:
@@ -31,7 +31,7 @@ def add_new_note(user_id):
         "data": {"id": user_id}
     }, 200
 
-@note_bp.add_url_rule("/assign-note", methods=["POST"])
+@note_bp.route("/assign-note", methods=["POST"])
 @token_services.token_decrypt
 def assign_note(user_id):
     if not request.is_json:
@@ -56,7 +56,7 @@ def assign_note(user_id):
         }
     }, 200
 
-@note_bp.add_url_rule("/note", methods=["GET"])
+@note_bp.route("/note", methods=["GET"])
 @token_services.token_decrypt
 def get_user_notes(user_id):
     conn = db.mysqlconnect()
@@ -66,7 +66,7 @@ def get_user_notes(user_id):
         "data": notes
     }
 
-@note_bp.add_url_rule("/category-note/<catid>", methods=["GET"])
+@note_bp.route("/category-note/<catid>", methods=["GET"])
 @token_services.token_decrypt
 def get_category_notes(user_id, catid):
     conn = db.mysqlconnect()
