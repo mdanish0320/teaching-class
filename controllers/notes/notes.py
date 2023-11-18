@@ -1,24 +1,13 @@
 from services import token_services
-from flask import request
-from controllers.notes import notes_query
+from flask import request, Blueprint
+from models import notes_query
 import db
+from notes_validation import *
 
-def validate_note_data(data):
-    error_msg = None
-    if data.get("name") is None or len(data.get("name").strip()) == 0:
-        error_msg = "name field is required"
-    if data.get("description") is None or len(data.get("description").strip()) == 0:
-        error_msg = "description field is required"
-    return error_msg
+note_bp = Blueprint("note", "note_services")
 
-def validate_note_category_data(data):
-    error_msg = None
-    if data.get("note_id") is None or len(data.get("note_id").strip()) == 0:
-        error_msg = "note_id field is required"
-    if data.get("category_id") is None or len(data.get("category_id").strip()) == 0:
-        error_msg = "category_id field is required"
-    return error_msg
 
+@note_bp.add_url_rule("/note", methods=["POST"])
 @token_services.token_decrypt
 def add_new_note(user_id):
     if not request.is_json:
@@ -42,6 +31,7 @@ def add_new_note(user_id):
         "data": {"id": user_id}
     }, 200
 
+@note_bp.add_url_rule("/assign-note", methods=["POST"])
 @token_services.token_decrypt
 def assign_note(user_id):
     if not request.is_json:
@@ -66,6 +56,7 @@ def assign_note(user_id):
         }
     }, 200
 
+@note_bp.add_url_rule("/note", methods=["GET"])
 @token_services.token_decrypt
 def get_user_notes(user_id):
     conn = db.mysqlconnect()
@@ -75,6 +66,7 @@ def get_user_notes(user_id):
         "data": notes
     }
 
+@note_bp.add_url_rule("/category-note/<catid>", methods=["GET"])
 @token_services.token_decrypt
 def get_category_notes(user_id, catid):
     conn = db.mysqlconnect()

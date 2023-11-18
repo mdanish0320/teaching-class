@@ -1,26 +1,12 @@
 import db
-from controllers.users import users_query
-from flask import request
+from models import users_query
+from flask import request, Blueprint
 from services import token_services
+from users_validation import *;
 
-def validate_user_data(data):
-    error_msg = None
-    if data.get("name") is None or len(data.get("name").strip()) == 0:
-        error_msg = "name field is required"
-    if data.get("email") is None or len(data.get("email").strip()) == 0:
-        error_msg = "email field is required"
-    if data.get("password") is None or len(data.get("password").strip()) == 0:
-        error_msg = "password field is required"
-    return error_msg
+user_bp = Blueprint("user", "user_service")
 
-def validate_login_data(data):
-    error_msg = None
-    if data.get("email") is None or len(data.get("email").strip()) == 0:
-        error_msg = "email field is required"
-    if data.get("password") is None or len(data.get("password").strip()) == 0:
-        error_msg = "password field is required"
-    return error_msg
-
+@user_bp.route("/user", methods=["POST"])
 def add_new_user():
     if not request.is_json:
         return {
@@ -43,6 +29,7 @@ def add_new_user():
         "data": {"id": user_id}
     }, 200
 
+@user_bp.route("/login", methods=["POST"])
 def login_user():
     if not request.is_json:
         return {
