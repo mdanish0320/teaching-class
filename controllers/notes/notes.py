@@ -25,10 +25,10 @@ def add_new_note(user_id):
         }, 400
     data["user_id"] = user_id
     conn = db.mysqlconnect()
-    user_id = notes_query.add_new_note(conn, data)
+    note_id = notes_query.add_new_note(conn, data)
     db.disconnect(conn)
     return {
-        "data": {"id": user_id}
+        "data": {"id": note_id}
     }, 200
 
 @note_bp.route("/assign-note", methods=["POST"])
