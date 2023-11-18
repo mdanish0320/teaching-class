@@ -1,0 +1,30 @@
+create a library management system
+
+your app should have following features
+- register the customer
+- login the customer with email and password
+- register the admin
+- login the admin with email and password
+
+
+After login customer can perform following tasks
+- user can search for the books by title, description and category (you can use like query where needed)
+- book listing page must only display 10 books per page. Implement pagination.
+- user can request for the book to borrow. Take borrowing date from and to
+
+
+After login the admin can perform following tasks
+- add new books -> title, description and category
+- accept borrow request
+- mark book as returned
+
+
+Note:
+- create apis using blueprint.
+- your project must have folders 'controller' and 'model'
+- use jwt token for session management
+- create decorator named "token_required" and use it on protected apis
+- db is compulsory
+- include ER Diagram
+- include db schema
+- include functional tests using pytest
