@@ -7,7 +7,6 @@ CREATE TABLE user (
     name VARCHAR(45) NOT NULL,
     email VARCHAR(45) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT NOW(),
     PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -15,7 +14,6 @@ DROP TABLE IF EXISTS category;
 CREATE TABLE category (
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT NOW(),
 	PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -25,7 +23,6 @@ CREATE TABLE note (
     name VARCHAR(45) NOT NULL,
     description TEXT NOT NULL,
     user_id INT UNSIGNED NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT NOW(),
 	PRIMARY KEY (id),
     KEY fk_user_id_idx (user_id),
     CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES user(id)
@@ -33,12 +30,9 @@ CREATE TABLE note (
 
 DROP TABLE IF EXISTS note_category;
 CREATE TABLE note_category (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     note_id INT UNSIGNED NOT NULL,
     category_id INT UNSIGNED NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT NOW(),
-    PRIMARY KEY (id),
-    UNIQUE KEY (note_id, category_id),
+    PRIMARY KEY (note_id, category_id),
     CONSTRAINT fk_note_id FOREIGN KEY (note_id) REFERENCES note (id),
     CONSTRAINT fk_category_id FOREIGN KEY (category_id) REFERENCES category (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;

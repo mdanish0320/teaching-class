@@ -1,7 +1,7 @@
 import pymysql
 
 
-def connect():
+def mysqlconnect():
     # To connect MySQL database
     conn = pymysql.connect(
         host='localhost',
@@ -10,6 +10,7 @@ def connect():
         db='google_notes',
         cursorclass=pymysql.cursors.DictCursor
     )
+    print("db connected")
     return conn
 
 def disconnect(conn):

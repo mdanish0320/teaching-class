@@ -5,9 +5,9 @@ import string
 
 sys.path.append(".")  # Adds higher directory to python modules path.
 from main import app
-from db.mysql import connect, disconnect
-from models.users_query import add_new_user
-from models.notes_query import add_new_note
+from db import mysqlconnect, disconnect
+from controllers.users.users_query import add_new_user
+from controllers.notes.notes_query import add_new_note
 from services import token_services
 
 def random_char(char_num):
@@ -16,7 +16,7 @@ def random_char(char_num):
 @pytest.fixture()
 def add_db_dump():
     # create new db session
-    conn = connect()
+    conn = mysqlconnect()
     conn.cursor()
 
     # create new user
@@ -95,7 +95,7 @@ def test_list_notes_happy_case_1_empty_list(add_db_dump):
 
 
 def _create_note(user_id):
-  conn = connect()
+  conn = mysqlconnect()
   conn.cursor()
   note_id = add_new_note(conn, {
       "name": "note 1",
