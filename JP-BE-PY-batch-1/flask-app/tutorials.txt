@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=_zyKvPvh808
 https://www.youtube.com/watch?v=doN3lzzNEIM
 https://www.youtube.com/watch?v=AQDCe585Lnc
 https://www.youtube.com/watch?v=cczlpiiu42M
+
+# how JWT authentication works
+https://www.youtube.com/watch?v=p_sDlCyzUFU
