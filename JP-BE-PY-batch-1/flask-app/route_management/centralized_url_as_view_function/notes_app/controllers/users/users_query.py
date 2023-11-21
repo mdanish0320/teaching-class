@@ -17,14 +17,13 @@ def add_new_user(db_conn, data):
 
 def login_user(db_conn, data):
     query = f"""
-            SELECT id FROM user WHERE email=(%(email)s) AND password=(%(password)s)
+            SELECT * FROM user WHERE email=%(email)s
             """
     cur = db_conn.cursor()
     cur.execute(
         query,
         {
-            "email": data.get("email"),
-            "password": data.get("password")
+            "email": data.get("email")
         }
     )
     return cur.fetchone()

@@ -1,6 +1,8 @@
+from flask import request
+from werkzeug.security import generate_password_hash, check_password_hash
+
 import db
 from controllers.users import users_query
-from flask import request
 from services import token_services
 
 def validate_user_data(data):
@@ -37,6 +39,7 @@ def add_new_user():
         }, 400
     
     conn = db.mysqlconnect()
+    data['password'] = generate_password_hash(data['password'], method='pbkdf2:sha256:1000')
     user_id = users_query.add_new_user(conn, data)
     db.disconnect(conn)
     return {
@@ -58,12 +61,13 @@ def login_user():
             }
         }, 400
     conn = db.mysqlconnect()
-    user_id = users_query.login_user(conn, data)
+    user = users_query.login_user(conn, data)
+    
     db.disconnect(conn)
-    if (user_id != None):
+    if (check_password_hash(user.get("password"), data['password'])):
         return {
             "message": "user login successfully",
-            "token": token_services.enrypt(user_id["id"])
+            "token": token_services.enrypt(user["id"])
         }, 200
     else:
         return {
