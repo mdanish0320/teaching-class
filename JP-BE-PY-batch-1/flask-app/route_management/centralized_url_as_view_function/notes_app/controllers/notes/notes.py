@@ -13,9 +13,9 @@ def validate_note_data(data):
 
 def validate_note_category_data(data):
     error_msg = None
-    if data.get("note_id") is None or len(data.get("note_id").strip()) == 0:
+    if data.get("note_id") is None or len(str(data.get("note_id")).strip()) == 0:
         error_msg = "note_id field is required"
-    if data.get("category_id") is None or len(data.get("category_id").strip()) == 0:
+    if data.get("category_id") is None or len(str(data.get("category_id")).strip()) == 0:
         error_msg = "category_id field is required"
     return error_msg
 

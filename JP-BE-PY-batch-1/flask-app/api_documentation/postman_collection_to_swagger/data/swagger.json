@@ -24,11 +24,6 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": [
-                  "email",
-                  "name",
-                  "password"
-                ],
                 "properties": {
                   "email": {
                     "type": "string",
