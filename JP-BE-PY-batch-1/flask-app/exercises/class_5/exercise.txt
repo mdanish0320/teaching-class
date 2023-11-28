@@ -2,9 +2,18 @@ create a complaint management system
 
 your app should have following features
 - your app must have 1 user by default and that user will be called super_admin
-- superadmin can add more users i.e admin and staff, superadmin
 - all users can login with email and password 
 - staff can also login with nummber and password
+- super admin portal view
+- admin portal view
+- staff portal view
+
+
+After login superadmin can do following tasks
+- add, update and delete new superadmin, admin and staff (perform soft delete)
+- can view all the data that a staff can view
+- can view all the data that an admin can view
+- can add new complaint type
 - Dashboard Metrics
   - Staff Count
   - Admin Count
@@ -12,13 +21,6 @@ your app should have following features
   - last 7 days compltains count / resolved count
   - last 30 days compltians count / resolved count
   - list top five complaint type that frequently lodged / avg days taken to resolve the issue
-  - 
-
-After login superadmin can do following tasks
-- add, update and delete new superadmin, admin and staff (perform soft delete)
-- can view all the data that a staff can view
-- can view all the data that an admin can view
-- can add new complaint type
 
 
 After login the admin can perform following tasks
