@@ -1,0 +1,47 @@
+create a complaint management system
+
+your app should have following features
+- your app must have 1 user by default and that user will be called super_admin
+- superadmin can add more users i.e admin and staff, superadmin
+- all users can login with email and password 
+- staff can also login with nummber and password
+- Dashboard Metrics
+  - Staff Count
+  - Admin Count
+  - Today's total complaints count / resolved count
+  - last 7 days compltains count / resolved count
+  - last 30 days compltians count / resolved count
+  - list top five complaint type that frequently lodged / avg days taken to resolve the issue
+  - 
+
+After login superadmin can do following tasks
+- add, update and delete new superadmin, admin and staff (perform soft delete)
+- can view all the data that a staff can view
+- can view all the data that an admin can view
+- can add new complaint type
+
+
+After login the admin can perform following tasks
+- can add new complaint type
+- can create a new complaint
+- can update a complaint
+- can assign complaint to staff
+- can change the assignee
+- mark complaint as complete
+
+After login the staff can perform following tasks
+- can view his pending assignments
+- can mark the assignemnts as done, uploading file is mandatory
+- can view his done assignments
+
+
+Note:
+- create apis using blueprint.
+- your project must have folders 'controller' and 'model'
+- use flask-jwt-extended for session management
+- include ER Diagram
+- include db schema
+- include functional tests using pytest
+- deploy the project on pythonanywhere
+- project should display the page for Swagger API Documentation on /api/docs
+- code should be uploaded on github and the repo link should be send on assignment
