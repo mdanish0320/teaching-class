@@ -14,3 +14,7 @@ https://www.youtube.com/watch?v=cczlpiiu42M
 
 # how JWT authentication works
 https://www.youtube.com/watch?v=p_sDlCyzUFU
+
+# OpenAPI Documentation
+https://www.youtube.com/watch?v=rkk2h6Tra9A
+https://www.youtube.com/watch?v=87ZFvJ7_-n0
