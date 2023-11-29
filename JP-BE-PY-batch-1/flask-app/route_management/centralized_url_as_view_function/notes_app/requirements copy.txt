@@ -1,5 +1,0 @@
-pyjwt
-pycryptodome
-cryptography
-flask
-pymysql
