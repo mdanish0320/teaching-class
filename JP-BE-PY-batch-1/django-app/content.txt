@@ -6,6 +6,7 @@
   - create models
   - design db with models
   - migration
+5. faker
 
 # class 2
 1. admin panel with customization
