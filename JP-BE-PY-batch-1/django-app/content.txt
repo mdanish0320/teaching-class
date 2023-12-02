@@ -12,6 +12,12 @@
 1. admin panel with customization
 2. create restful apis with class-based
   - APIView vs Viewsets vs Generic Views vs Mixins
+  - https://python.plainenglish.io/all-about-views-in-django-rest-framework-apiview-e3f6a3847d37
+  - https://i.ytimg.com/vi/u5ADBpnP1Bo/maxresdefault.jpg
+  - https://www.youtube.com/watch?v=u5ADBpnP1Bo
+  - https://www.youtube.com/watch?v=H2wPrvnb3p8
+  - https://www.youtube.com/watch?v=b9Rc-Bc-iXk
+  - https://www.youtube.com/watch?v=sx8BVOrWN-8
 
 # class 3
 1. swagger documentation
