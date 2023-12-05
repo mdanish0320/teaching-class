@@ -17,7 +17,7 @@ class PersonModelViewSet(viewsets.ModelViewSet):
 class PersonViewSet(viewsets.ViewSet):
     # it will cache the result
     # queryset = PersonModel.objects.all()
-    
+
     def list(self, request):
         queryset = PersonModel.objects.all()
         serialized_person = PersonSerializer(queryset, many=True)
@@ -48,3 +48,12 @@ class PersonViewSet(viewsets.ViewSet):
 
     # def destroy(self, request, pk=None):
     #     pass
+
+
+"""
+There are four types of ViewSets, from the most basic to the most powerful:
+1. ViewSet
+2. GenericViewSet
+3. ReadOnlyModelViewSet
+4. ModelViewSet
+"""
