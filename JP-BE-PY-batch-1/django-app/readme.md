@@ -75,3 +75,11 @@ Item(name="Item 1")
 ## run server
 python manage.py runserver
 
+
+# open admin panel
+
+## create superadmin or superuser
+python manage.py createsuperuser
+
+## URL: 127.0.0.1/8000/admin
+
