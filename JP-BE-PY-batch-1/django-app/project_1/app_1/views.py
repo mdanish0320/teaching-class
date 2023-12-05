@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import PersonModel
 from .serializers import PersonSerializer
-from rest_framework.request import HttpRequest
+from rest_framework.request import Request
 from rest_framework import status
 import json
 
@@ -43,8 +43,8 @@ def get_dynamic_persons(request):
 
 
 @api_view(['POST'])
-def add_dynamic_persons(request:HttpRequest):
-    serialized_person = PersonSerializer(data=json.loads(request.body))
+def add_dynamic_persons(request:Request):
+    serialized_person = PersonSerializer(data=request.data)
     if serialized_person.is_valid():
         serialized_person.save()
     else:
@@ -53,11 +53,11 @@ def add_dynamic_persons(request:HttpRequest):
 
 
 @api_view(['PATCH'])
-def update_dynamic_persons(request:HttpRequest, id):
+def update_dynamic_persons(request:Request, id):
     person = PersonModel.objects.get(pk=id)
     # person = PersonModel.objects.filter(name=id).first()
     serialized_person = PersonSerializer(person, data=request.data, partial=True)
-    if serialized_person.is_valid():
+    if serialized_person.is_valid(raise_exception=True):
         serialized_person.save()
     else:
         return Response({"error": "invalid data"}, status.HTTP_400_BAD_REQUEST)
@@ -65,7 +65,7 @@ def update_dynamic_persons(request:HttpRequest, id):
 
 
 @api_view(['DELETE'])
-def update_delete_persons(request:HttpRequest, id):
+def update_delete_persons(request:Request, id):
     person = PersonModel.objects.filter(pk=id).first()
     
     if person is None:
