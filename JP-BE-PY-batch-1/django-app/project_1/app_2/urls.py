@@ -1,14 +1,10 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
-from . views import PersonViewSet
+from . views import PersonModelViewSet
 
 router = DefaultRouter()
 router.register(
-    "personvs", PersonViewSet
+    "personmvs", PersonModelViewSet
 )
-
-from . import views
-
-
 
 urlpatterns = [] + router.urls
