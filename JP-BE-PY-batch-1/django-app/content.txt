@@ -33,6 +33,11 @@
 - https://www.vtuallinoneresources.com/latest-blog/19/django-rest-view-hierarchy-in-detail
 - https://testdriven.io/blog/drf-views-part-3/
 
+# Serilizer
+https://www.django-rest-framework.org/api-guide/serializers/#serializers
+# separate serializer for input and output
+https://stribny.name/blog/drf-different-request-response-serializers
+
 # class 3
 1. swagger documentation
 2. pytest
