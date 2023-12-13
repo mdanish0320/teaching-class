@@ -53,6 +53,10 @@ https://stribny.name/blog/drf-different-request-response-serializers
 - https://ctrlzblog.com/django-queryset-filter-15-examples/
 6. order
 7. pagination
+8. model db desgin
+  - one to many
+  - many to many
+  - query data for each using ModelViewSet and mode.objects.filter()
 
 
 
