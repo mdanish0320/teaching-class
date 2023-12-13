@@ -1,0 +1,10 @@
+APIView vs Viewsets vs Generic Views vs Mixins
+  - https://i.ytimg.com/vi/u5ADBpnP1Bo/maxresdefault.jpg
+  - https://www.youtube.com/watch?v=b9Rc-Bc-iXk - APIView
+  - https://www.youtube.com/watch?v=H2wPrvnb3p8 - Generic
+  - https://www.youtube.com/watch?v=sx8BVOrWN-8 - Mixins
+  - https://www.youtube.com/watch?v=u5ADBpnP1Bo - ViewSets
+Blogs
+- https://testdriven.io/blog/drf-views-part-1/
+- https://www.vtuallinoneresources.com/latest-blog/19/django-rest-view-hierarchy-in-detail
+- https://python.plainenglish.io/all-about-views-in-django-rest-framework-apiview-e3f6a3847d37
