@@ -39,6 +39,24 @@ https://www.django-rest-framework.org/api-guide/serializers/#serializers
 https://stribny.name/blog/drf-different-request-response-serializers
 
 # class 3
+
+1. from rest_framework.filters import SearchFilter
+  - ?search=danish
+2. override get_search_fields to do specific field search but with only 1 value
+  - ?search=danish&name=True
+3. override get_queryset for specific field and multiple values
+  - ?name=danish&age=30
+4. from django_filters.rest_framework import DjangoFilterBackend, FilterSet
+  -  for specific field and multiple values
+  - ?name=danish&age=30
+5. filter queryset
+- https://ctrlzblog.com/django-queryset-filter-15-examples/
+6. order
+7. pagination
+
+
+
+
 1. swagger documentation
 2. pytest
 3. HTTP response status
