@@ -8,3 +8,12 @@ Blogs
 - https://testdriven.io/blog/drf-views-part-1/
 - https://www.vtuallinoneresources.com/latest-blog/19/django-rest-view-hierarchy-in-detail
 - https://python.plainenglish.io/all-about-views-in-django-rest-framework-apiview-e3f6a3847d37
+
+
+filter
+- https://www.youtube.com/watch?v=746ar4atUB8
+
+relation
+- https://docs.djangoproject.com/en/dev/topics/db/models/#extra-fields-on-many-to-many-relationships
+- one-to-many: https://www.youtube.com/watch?v=nB1MczHlweA
+- many-to-many: https://www.youtube.com/watch?v=NCBxyw6rDds
