@@ -1,5 +1,5 @@
 """
-URL configuration for drf_filter project.
+URL configuration for drf_relation project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app_1/', include('app_1.urls')),
-    path('app_4/', include('app_4.urls')),
+    path('app_2/', include('app_2.urls')),
 ]
