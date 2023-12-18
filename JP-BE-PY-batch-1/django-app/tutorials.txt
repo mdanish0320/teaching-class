@@ -17,3 +17,9 @@ relation
 - https://docs.djangoproject.com/en/dev/topics/db/models/#extra-fields-on-many-to-many-relationships
 - one-to-many: https://www.youtube.com/watch?v=nB1MczHlweA
 - many-to-many: https://www.youtube.com/watch?v=NCBxyw6rDds
+
+ORM filter
+- https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml&index=2
+- https://www.youtube.com/watch?v=1H8MQkn90SA
+- https://ctrlzblog.com/django-queryset-filter-15-examples/
+
