@@ -1,0 +1,5 @@
+Create a POS application for a restaurant. The application can ony by run by one user, the admin.
+
+Create a Backend for the application displaying in the video
+
+https://www.youtube.com/watch?v=gYw2FcUar9g
