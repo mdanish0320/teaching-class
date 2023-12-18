@@ -3,3 +3,11 @@ Create a POS application for a restaurant. The application can ony by run by one
 Create a Backend for the application displaying in the video
 
 https://www.youtube.com/watch?v=gYw2FcUar9g
+
+Features Required
+- Delivery
+- Takeaway
+- Dinein with table number
+- product CRUD 
+- Menu Listing
+- create and update order
