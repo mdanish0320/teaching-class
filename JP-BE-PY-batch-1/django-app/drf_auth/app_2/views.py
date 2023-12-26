@@ -54,6 +54,7 @@ class Usermvs(ModelViewSet):
     # detail=True means it will require pk in the URL
     @action(detail=False, methods=['post'], permission_classes=[PublicEndpointPermission])
     def login(self, request):
+        print(request.user.groups.all())
         if request.user.is_authenticated:
             print("user already loggedin")
             return Response({"error": {"message": "you are already logged in"}})
