@@ -1,0 +1,21 @@
+create a backend app supporting following features
+- registration
+- login
+- post CRUD
+
+NOTE: your app should have one superuser by default
+
+Registration
+- it can only display 2 fields, username and password. Use APIView
+- the endpoint should be "/user/register"
+- Use the defalt User model i.e django.contrib.auth.models.User
+
+Login
+- It can only display 2 fields, username and password. User APIView
+- the endpoint should be "/user/login"
+
+Post CRUD
+- POST Listing can be viewed by public user
+- POST View can be viewed by loggedin user
+- Only Onwner of the post can Update the post
+- Only Owner of the post can delete the post
