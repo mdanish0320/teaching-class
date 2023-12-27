@@ -71,3 +71,11 @@ class AdminRegisterSerializer(serializers.Serializer):
 class UserLoginSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField()
+
+
+
+class BloggerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("username", "id")
+        read_only_fields = ("username",)
