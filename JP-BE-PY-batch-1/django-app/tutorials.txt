@@ -22,4 +22,4 @@ ORM filter
 - https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml&index=2
 - https://www.youtube.com/watch?v=1H8MQkn90SA
 - https://ctrlzblog.com/django-queryset-filter-15-examples/
-
+- https://books.agiliq.com/projects/django-orm-cookbook/en/latest/query.html
