@@ -1,0 +1,30 @@
+data-structure
+  1. for a given problem, you have to use a correct data-strcuture
+  2. list is good for traversing while dict(hash) is good for retrieving single object
+  3. list, dict, linked list, stack, queue
+
+
+Big O Notation
+  1. time complexity + space complexity = what impact on the application runnnig time or space encouter when the input size grows
+  2. do not confuse it with hardware power, 1 computer can run the the algo in 2 seconds while the other can take 10 seconds.
+  3. https://developerinsider.co/big-o-notation-explained-with-examples/
+  4. summary:
+    - O(1): list[0] -> constant
+    - O(Log n): -> Logarithmic Time
+      - https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly
+      - Divide and conquer
+    - O(n): loop on list and print element -> Linear
+    - O(n2): nested loop -> Quadratic Time
+    - ​​O(n log n) – Quasilinear Time
+    - Order and also exmplanation
+      - https://www.happycoders.eu/algorithms/big-o-notation-time-complexity/
+
+
+Algorithm
+  1. binary serach
+  2. bubble sort
+  3. quick sort
+
+
+NOTE:
+Write examples for each topics
