@@ -3,6 +3,43 @@ data-structure
   2. list is good for traversing while dict(hash) is good for retrieving single object
   3. list, dict, linked list, stack, queue
 
+Linked List: https://www.freecodecamp.org/news/introduction-to-linked-lists-in-python/
+1. Chain like structure
+2. Each element in a linked list is called a node
+3. adding and removal is very fast as it doesn't require the list to re-organize
+4. dones't require fixed or initial size like array
+
+Disadvantage
+1. more memory is required
+2. Search operations on a linked list are very slow.
+3. Unlike an array, you don't have the option of random access.
+
+When Should You Use a Linked List?
+1. You don't need random access to any elements
+2. You want to be able to insert items in the middle of the list.
+3. You need constant time insertion/deletion from the list.
+
+Example (drag and drop functionality where element position is crucial)
+1. Music Playlist
+2. Task Schedular
+3. Employee Hear
+
+"""
+Advantages of Lists:
+
+Dynamic Size:Lists in Python are dynamic, meaning they can grow or shrink in size during runtime. Elements can be added or removed without specifying the size beforehand. This makes lists very flexible for handling varying amounts of data.
+Mutable:Lists are mutable, which means you can modify their elements after creation. You can change, add, or remove items in a list.
+Versatility:Lists can hold elements of different data types. You can have integers, strings, objects, or even other lists within a single list.
+Rich in Built-in Functions:Lists come with a variety of built-in functions and methods for manipulation, such as append(), extend(), remove(), pop(), and more. These functions make it easy to work with lists.
+Ease of Use:Lists are easy to create and manipulate in Python, making them a popular choice for many programming tasks.
+
+Disadvantages of Lists:
+
+Slower Operations:Compared to arrays, lists in Python can be slower for certain operations. This is because lists are implemented as dynamic arrays, which sometimes require resizing and copying elements to accommodate new additions. This resizing operation can be time-consuming.
+Higher Memory Consumption:Lists can consume more memory than arrays or tuples because of their dynamic and versatile nature. They need extra space to accommodate potential resizing and storing different types of objects.
+Less Efficient for Numerical Computations:If you're working with numerical computations, arrays provided by libraries like NumPy are more efficient than lists. NumPy arrays are implemented in C and provide a significant performance boost for numerical operations.
+"""
+
 
 Big O Notation
   1. time complexity + space complexity = what impact on the application runnnig time or space encouter when the input size grows
@@ -24,6 +61,8 @@ Algorithm
   1. binary serach
   2. bubble sort
   3. quick sort
+
+
 
 
 NOTE:
