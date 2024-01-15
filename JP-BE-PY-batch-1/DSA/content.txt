@@ -43,6 +43,19 @@ Higher Memory Consumption:Lists can consume more memory than arrays or tuples be
 Less Efficient for Numerical Computations:If you're working with numerical computations, arrays provided by libraries like NumPy are more efficient than lists. NumPy arrays are implemented in C and provide a significant performance boost for numerical operations.
 """
 
+Queue: https://www.geeksforgeeks.org/queue-in-python/
+1. List is a Python’s built-in data structure that can be used as a queue.
+2. However, lists are quite slow for this purpose because inserting or deleting an element at the beginning requires shifting all of the other elements by one, requiring O(n) time
+
+Stack: https://www.geeksforgeeks.org/stack-in-python/
+1. Python’s built-in data structure list can be used as a stack. Instead of push(), append() is used to add elements to the top of the stack while pop() removes the element in LIFO order. 
+2. Python’s built-in data structure list can be used as a stack. Instead of push(), append() is used to add elements to the top of the stack while pop() removes the element in LIFO order.
+
+Solutions:
+from collections import deque (deque - double ended queue (deck)(
+from queue import Queue
+from queue import LifoQueue
+
 
 Big O Notation
   1. time complexity + space complexity = what impact on the application runnnig time or space encouter when the input size grows
