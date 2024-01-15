@@ -24,6 +24,9 @@ Example (drag and drop functionality where element position is crucial)
 2. Task Schedular
 3. Employee Hear
 
+Question
+1. how to get the middle element from the Singly linked list?
+
 """
 Advantages of Lists:
 
