@@ -47,9 +47,16 @@ Queue: https://www.geeksforgeeks.org/queue-in-python/
 1. List is a Python’s built-in data structure that can be used as a queue.
 2. However, lists are quite slow for this purpose because inserting or deleting an element at the beginning requires shifting all of the other elements by one, requiring O(n) time
 
+Example:
+1. Cinema Tickets
+
 Stack: https://www.geeksforgeeks.org/stack-in-python/
 1. Python’s built-in data structure list can be used as a stack. Instead of push(), append() is used to add elements to the top of the stack while pop() removes the element in LIFO order. 
 2. Python’s built-in data structure list can be used as a stack. Instead of push(), append() is used to add elements to the top of the stack while pop() removes the element in LIFO order.
+
+Example:
+1. Persons in Lift
+2. Naan in box
 
 Solutions:
 from collections import deque (deque - double ended queue (deck)(
