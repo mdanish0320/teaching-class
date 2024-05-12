@@ -1,3 +1,9 @@
+"""
+This is a multi-line comment in Python.
+You can write multiple lines of text within triple quotes,
+and they won't be executed by the interpreter.
+"""
+
 # method 1
 
 """ 

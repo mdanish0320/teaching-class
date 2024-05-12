@@ -1,3 +1,9 @@
+"""
+In Python, print() is a built-in function used to display output on the screen.
+It takes one or more arguments, which can be variables, strings, numbers, or other data types, and prints their values to the standard output.
+"""
+
+
 # print syntax with extra features is given below: 
 # print("text", sep=separator, end=end)
 
