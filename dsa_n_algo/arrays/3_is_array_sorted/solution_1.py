@@ -6,7 +6,7 @@ Note: Two consecutive equal values are considered to be sorted.
 
 Example 1:
 Input:
- N = 5, array[] = {1,2,3,4,5}
+ N = 5, array[] = [1,2,3,4,5]
 Output
 : True.
 Explanation:
