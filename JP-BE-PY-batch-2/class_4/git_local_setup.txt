@@ -1,0 +1,12 @@
+# install git: https://git-scm.com/
+# https://youtu.be/Ez8F0nW6S-w?t=1129
+
+# copy remote repository
+git clone <url>
+
+# made changes in the file and commit
+git add .
+git status
+git commit -m "this is my message"
+git push
+

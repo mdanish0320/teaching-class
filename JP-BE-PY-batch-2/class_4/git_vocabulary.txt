@@ -1,0 +1,34 @@
+Git status
+- Untrack
+- Modified
+- unmodified
+- Staged
+
+Git: version control system that tracks versions of files
+
+version control: tracking and managing changes of files
+
+Github: create, store, manage and share their code.
+
+Local repo or repository: A local directory containing code and files for the project
+
+Remote repository: An online version of the local repository hosted on services like GitHub, GitLab, and BitBucket
+
+Cloning: The act of making a clone or copy of a repository in a new directory
+
+Staging area: a cache that holds changes you want to commit next.
+
+Commit: A snapshot of the project you can come back to
+
+Commit ID or hash: a unique identifier for each commit, used for switching to different save points.
+
+Head: last commit is by default head
+
+.git (folder): git uses this folder for tracking files
+
+Branch: A copy of the project used for working in an isolated environment without affecting the main project
+
+Git merge: The process of combining two branches together
+
+Merge Conflicts: Merge conflicts occur when changes are made to the same line of a file
+

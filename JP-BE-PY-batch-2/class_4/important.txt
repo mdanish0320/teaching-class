@@ -1,0 +1,11 @@
+# copy remote repository
+git clone <url>
+cd your_project_name
+
+# show status (track/untrack/modified/staged file) of the working directory
+git status
+
+# made changes in the file and commit
+git add .
+git commit -m "this is my message"
+git push

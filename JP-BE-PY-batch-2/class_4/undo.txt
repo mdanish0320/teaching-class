@@ -1,0 +1,11 @@
+Git reset <filename>
+Git reset HEAD~1 # by default soft delete
+
+git reset --soft HEAD~5
+Effect: Moves HEAD to the commit 5 steps back but does not change the working directory or the index.
+Result: All changes from the last 5 commits will be staged. The working directory will still reflect the most recent state before the reset, but all changes from those 5 commits will be in the staging area.
+Git reset –hard HEAD~1
+
+# undo git reset command
+git reflog # git running command history
+git reset "HEAD@{num}" 

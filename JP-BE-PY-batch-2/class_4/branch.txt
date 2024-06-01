@@ -1,0 +1,11 @@
+# Create
+git checkout -b "feature-branch"
+
+# Read
+git branch # list all branches locally
+
+# Delete
+git branch -D "feature-branch"
+
+# change branch
+git checkout 

@@ -1,0 +1,19 @@
+## Github
+
+# create account on github
+https://github.com/signup
+
+# login to github
+https://github.com/login
+
+# open profile
+# open repositories
+# create new repository with readme file on github
+# update readme file
+
+# see all commit history
+# commit detail
+  # hash
+  # author
+  # date and time
+
