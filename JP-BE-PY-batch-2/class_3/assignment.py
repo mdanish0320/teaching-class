@@ -116,10 +116,19 @@ If the customer is not a member:
 
 """
 create the same ATM machine program that we do in last class.
-features:
-    allow only affiliated_card if age < 60
-    allow govt employee regardless of age and affiliated_card
-    charge 10 Rs more if grade is less than 18
+
+Features:
+Affiliated Card Requirement:
+Allow transactions only if the user has an affiliated card (affiliated_card is True) and the user's age is less than 60 years (age < 60).
+
+Senior Citizen Exception:
+Allow transactions for senior citizens (is_senior_citizen is True) regardless of their affiliated card status.
+
+Government Employee Exception:
+Allow transactions for government employees (is_govt_employee is True) regardless of their age and affiliated card status.
+
+Additional Charge for Low Grade:
+Charge an additional 10 Rs for transactions if the user's grade (grade) is less than 18.
 
 # hint: filename: if_statement/if_with_nested_if.py
 """
