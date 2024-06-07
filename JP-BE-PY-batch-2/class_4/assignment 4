@@ -1,0 +1,38 @@
+Assignment for 3rd Class
+
+Instructions to follow complete the assignment.
+1. Create a git repository on your github account
+2. Create a file named README.md
+
+3. Add some text in file i.e “Football Eurocup is starting from 15-June-
+2024”.
+
+4. Update the file by adding new line of text i.e “Germany will play
+against scotland”.
+5. Now come in your local machine open up git bash or command line
+clone the github repository in your local machine
+6. Check the status of repository
+7. Update the README.md file i.e “it would be very interesting match”.
+8. Add the file in repository staging area.
+9. Save the changes by git commit command use appropriate or
+meaningful comments when taking snapshot of your project after
+achieving some milestone in project.
+10. Now push the repository on your remote location of github
+account.
+11. Create a new file named LOCAL.txt locally then commit the
+changes and push it on your github repository.
+12. Create another branch named “feature1” or whatever you
+would like from main/master branch
+13. Checkout to your feature1 branch add some text in file then
+commit the changes and push the repository on github account.
+14. After pushing the repository to your github account now move
+to your github account and click on pull request against
+main/master branch
+15. Use git merge command locally to merge the feature branch
+changes into main/master branch.
+16. Checkout to main/master branch add text in LOCAL.txt i.e
+“Germany will win by 4-0” commit the changes.
+17. Now use git log command to view the <sha1-commit-id>
+copy the last or HEAD commit hash-id
+18. Use git reset –-hard with last commit-id to delete the last
+commit changes.
