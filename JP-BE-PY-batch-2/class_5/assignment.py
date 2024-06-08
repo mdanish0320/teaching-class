@@ -1,3 +1,21 @@
+# Extracting Sublist from a List of Temperatures
+# Objective: Given a list of daily temperatures for a month, extract the temperatures for a specific week (e.g., week 2).
+# temperatures = [22, 24, 20, 25, 23, 26, 24, 25, 27, 29, 30, 28, 26, 27, 24, 23, 22, 21, 25, 24, 26, 27, 29, 28, 26, 25, 24, 23, 22, 21]
+
+"""
+Extracting a Substring from a Sentence
+Objective: Given a sentence, extract and print a specific word using string slicing.
+sentence = "The quick brown fox jumps over the lazy dog"
+extract third word "brow"
+"""
+
+"""
+Extracting a Sublist of Favorite Colors
+Objective: Given a list of favorite colors, extract a sublist of the first three colors using list slicing.
+favorite_colors = ["Red", "Blue", "Green", "Yellow", "Purple", "Orange"]
+extract first three colors
+"""
+
 # Write a Python program to check if a list is empty or not.
 
 # 1. output the numbers from 1 to 10 using range function and for loop
