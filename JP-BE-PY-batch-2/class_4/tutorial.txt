@@ -6,3 +6,7 @@ https://www.youtube.com/watch?v=tz82ola3oy0
 # cheetsheet for github comands
 https://education.github.com/git-cheat-sheet-education.pdf
 https://www.datacamp.com/cheat-sheet/git-cheat-sheet
+
+# MarkDown file (i.e readme.md) formatting or styling
+https://www.geeksforgeeks.org/what-is-readme-md-file/
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
