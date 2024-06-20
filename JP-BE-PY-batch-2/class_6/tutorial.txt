@@ -1,0 +1,8 @@
+# dict basic usage
+https://www.youtube.com/watch?v=j2G68uQtOwM
+https://www.youtube.com/watch?v=daefaLgNkw0
+https://www.youtube.com/watch?v=MZZSMaEAC2g
+
+# iterate over the dict
+https://www.youtube.com/watch?v=Hgcd86lQc70
+https://www.youtube.com/watch?v=XVy1PhbFsh0
