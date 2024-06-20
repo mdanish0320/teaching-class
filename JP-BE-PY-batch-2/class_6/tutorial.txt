@@ -6,3 +6,9 @@ https://www.youtube.com/watch?v=MZZSMaEAC2g
 # iterate over the dict
 https://www.youtube.com/watch?v=Hgcd86lQc70
 https://www.youtube.com/watch?v=XVy1PhbFsh0
+
+# nested dict
+https://www.youtube.com/watch?v=jakXbai-Wic
+https://www.youtube.com/watch?v=lffEqO_5Bfk
+https://www.youtube.com/watch?v=xD_URwm5Pug
+https://www.youtube.com/watch?v=oQfNYqz8pLs
