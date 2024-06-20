@@ -1,0 +1,137 @@
+"""
+Create a dictionary named student_scores with the following key-value pairs:
+"Alice": 85
+"Bob": 78
+"Charlie": 92
+"Diana": 88
+"Evan": 76
+
+
+1. Write a for loop to iterate through the student_scores dictionary and print each student's name and their score in the format: Student: [Name], Score: [Score].
+
+2. Write a for loop to calculate the average score of the students. Print the average score.
+
+3. Write a for loop to assign grades based on the following criteria:
+Score >= 90: Grade A
+Score >= 80 and < 90: Grade B
+Score >= 70 and < 80: Grade C
+Score < 70: Grade D
+Store these grades in a new dictionary called student_grades.
+
+4. Modify the student_scores dictionary by adding 5 bonus points to each student's score. 
+Print the updated student_scores dictionary.
+"""
+
+"""
+Create a dictionary named employee_data with the following key-value pairs:
+"John": 55000
+"Emma": 60000
+"Harry": 70000
+"Sophia": 65000
+"Mike": 48000
+
+1. Write a for loop with an if statement to identify employees who earn more than $60,000. Print their names.
+2. Write a for loop to increase the salary of each employee by 10%. Update the dictionary accordingly.
+
+
+"""
+Create a dictionary named library_books with the following key-value pairs:
+"The Great Gatsby": 4
+"1984": 6
+"To Kill a Mockingbird": 3
+"The Catcher in the Rye": 5
+"Moby Dick": 2
+
+1. Write a for loop with range to add 2 more copies to each book. Update the dictionary accordingly.
+2. Write a for loop to calculate the total number of books in the library. Print the total count.
+"""
+
+"""
+Write a for loop to assign book stock categories based on the number of copies available:
+Copies >= 5: "Popular"
+Copies >= 3 and < 5: "Available"
+Copies < 3: "Limited"
+Store these stock categories in a same dict i.e library_books.
+"""
+
+
+"""
+Given the dict
+
+students = {
+    "Alice": {
+                "Subjects": ["Math", "Science", "English"],
+                "Scores": [85, 90, 78],
+                "Class": 10
+            },
+    "Bob": {
+        "Subjects": ["Math", "Science", "English"],
+        "Scores": [75, 80, 88],
+        "Class": 10
+    },
+    "Charlie": {
+        "Subjects": ["Math", "Science", "English"],
+        "Scores": [92, 89, 94],
+        "Class": 11
+    },
+    "Diana": {
+        "Subjects": ["Math", "Science", "English"],
+        "Scores": [88, 76, 85],
+        "Class": 11
+    },
+    "John": {
+        "Subjects": ["Math", "Science", "English"],
+        "Scores": [50, 60, 60],
+        "Class": 11
+    }
+}
+
+
+1. display Alice English Score
+2. display Bob Class
+3. display Charlie Math Score
+4. display Diana's avg score
+5. display John's all subject name and score with format: Student: [Name], Score: [Subject], Score: [Score].
+6. Add new Student and its subject, score and class in same dict i.e students
+7. add new subject and its score in John
+"""
+
+
+"""
+Givent the list of students
+students = [
+    {
+        "name": "Alice",
+        "subjects": ["Math", "Science", "English"],
+        "scores": [85, 90, 78],
+        "Class": 10
+    },
+    {
+        "name": "Bob",
+        "subjects": ["Math", "Science", "English"],
+        "scores": [75, 80, 88],
+        "Class": 10
+    },
+    {
+        "name": "Charlie",
+        "subjects": ["Math", "Science", "English"],
+        "scores": [92, 89, 94],
+        "Class": 11
+    },
+    {
+        "name": "Diana",
+        "subjects": ["Math", "Science", "English"],
+        "scores": [88, 76, 85],
+        "Class": 11
+    }
+]
+
+1. display Alice English Score
+2. display Bob Class
+3. display Charlie Math Score
+4. display Diana's avg score
+5. display John's all subject name and score with format: Student: [Name], Score: [Subject], Score: [Score].
+6. display which class obtained the higher marks
+7. display the student name that obtain high marks in subject Math in class 10
+8. Add new Student and its subject, score and class in same dict i.e students
+"""
