@@ -47,7 +47,7 @@ Create a dictionary named library_books with the following key-value pairs:
 """
 
 """
-Write a for loop to assign book stock categories based on the number of copies available:
+Write a for loop to assign one more detail "stock" based on the number of copies available:
 Copies >= 5: "Popular"
 Copies >= 3 and < 5: "Available"
 Copies < 3: "Limited"
