@@ -1,3 +1,5 @@
+# functions
+
 # Write a program to create a function that takes two arguments, name and age. print them inside function.
 
 # Write a program to create a function show_employee() using the following conditions.
@@ -36,3 +38,50 @@
 # Must start with a letter or a number
 
 # hint: use if statement 6 times to check each rule. if any one rule failed return false
+
+
+
+
+
+
+# loop
+# Write a program to display index and the values (both) of a list using for loop. consider a list l = [100, 200, 300, 400]
+# output: 
+# 0 100
+# 1 200
+# 2 300
+# 3 400
+
+# Write a program that find common values between 2 lists and also tells how many times the common value occurs.
+# consider the list l1 = ['a', 'b', 'c', 'd'] and l2 = ['e', 'b', 'g', 'd', 'f', 'h']
+# output:
+# {"a": 1, "b": 2, "c": 1, "d": 2, "e": 1, "f": 1, "g": 1, "h": 1}
+# hint: use nested loop
+
+# consider the number 2783, the number consists of 4 digits.
+# Count the total number of digits in a number using while loop.
+# instruction (hint):
+# x = 2783
+# counter = 0
+# run while loop as long as x becomes 0
+# increment the counter inside while loop
+# divide x by 10 using floor division syntax "//"
+
+
+# Write a program that takes user input and display it. The program keep ask user the input until user enters “0”
+
+
+# Write a program and ask user to enter number, 5 times using while loop. store each value in list.
+# calculate the sum of all values in a list
+
+# Write a program to ask for a name until the user enters END. Print the name each time. When you are done, print "I am done."
+
+# consider the list l1 [11, 33, 50]. use for loop to output the result like "113350"
+
+# consider the following list ['cat', 'dog', 'hand', 'freedom', 'jump', 'frog', 'happy', 'popcorn', 'tiger']
+# display the word that contains character longer than 5
+# the output should be freedeom and popcorn
+
+
+# nested loop
+# check folder class_7/nested_loop_assignment/
