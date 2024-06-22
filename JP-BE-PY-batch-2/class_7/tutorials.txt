@@ -1,0 +1,16 @@
+# function basics
+https://www.youtube.com/watch?v=dyvxxJSGUsE
+https://www.youtube.com/watch?v=89cGQjB5R4M
+
+# while loop
+https://www.youtube.com/watch?v=rRTjPnVooxE
+https://www.youtube.com/watch?v=S_1QiK_RF2o
+
+# nested loop
+https://www.youtube.com/watch?v=tdjDQ-uVjR0
+https://www.youtube.com/watch?v=APWy6Pc83gE
+
+# patterns using nested loop
+https://www.youtube.com/watch?v=rUy_Nq9DHTs&list=PLzgPDYo_3xuliFyI5dZKgYB99SMUscGyp
+https://www.youtube.com/watch?v=fX64q6sYom0
+https://www.youtube.com/watch?v=iOxF5cDVIZo
