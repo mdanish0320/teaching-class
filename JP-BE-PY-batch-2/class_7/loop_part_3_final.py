@@ -71,3 +71,15 @@ while True:
     if user_number < 0:
         break
     print(user_number)
+    
+
+
+# nested loop
+# find common number in given lists
+list_1 = [10, 20, 30]
+list_2 = [40, 50, 60, 30]
+
+for item_1 in list_1:
+    for item_2 in list_2:
+        if item_1 == item_2:
+            print("common number is", item_1)
