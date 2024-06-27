@@ -61,13 +61,15 @@ get_shipping_price("China")
 
 
 # class task
+# here x_1 and y_1 are called parameters
 def multiply(x_1, y_1):
     print(x_1 * y_1)
    
 x = 2
 y = 5
 
-multiply()
+# here x and y are called arugments
+multiply(x, y)
 
 
 # multiple arguments of the function
