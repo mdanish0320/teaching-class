@@ -1,3 +1,8 @@
+# 3 types of error
+# run time
+# compile time
+# logical
+
 import traceback
 try:
     f = open('book_1.txt')

@@ -7,7 +7,8 @@
 # read whole file as text
 # it will raise error if file dones't exists
 f = open("book_1.txt", "r")
-data = f.read() # get all file data
+content_size = 100
+data = f.read(content_size) # get all file data
 f.close()
 print(data)
 
