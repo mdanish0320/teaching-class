@@ -109,3 +109,11 @@ The program will use file handling to save and read data, and it will be run in 
 #### Additional Notes:
 - Focus on functionality rather than security for this assignment.
 """
+
+"""
+create the same program again but this time file data should be stored in json
+"""
+
+"""
+create the same program again but this time file data should be stored in pickle
+"""
