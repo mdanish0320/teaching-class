@@ -115,5 +115,5 @@ create the same program again but this time file data should be stored in json
 """
 
 """
-create the same program again but this time file data should be stored in pickle
+create the same program again but this time file data should be stored in binary using pickle module
 """
