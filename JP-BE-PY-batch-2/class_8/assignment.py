@@ -40,6 +40,7 @@ Please click *here* to open the article
 
 """
 ### Assignment: Password Manager Program
+Demo: https://www.youtube.com/watch?v=O8596GPSJV4
 
 #### Objective:
 Create a password manager program that allows users to store, retrieve, and manage their passwords. 
