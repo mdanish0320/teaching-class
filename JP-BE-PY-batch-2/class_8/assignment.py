@@ -118,3 +118,59 @@ create the same program again but this time file data should be stored in json
 """
 create the same program again but this time file data should be stored in binary using pickle module
 """
+
+
+"""
+An email with placeholders for user details that need to be formatted.
+An email subject in all lowercase that needs to be converted to uppercase.
+An email body in all uppercase that needs to be converted to lowercase.
+An email with a sentence that needs to have the first letter capitalized.
+An email subject that needs to be converted to title case.
+An email body with leading and trailing spaces that need to be removed.
+An email with a repeated word that needs to be replaced.
+An email that needs to find the position of a keyword.
+An email body that needs to be split into a list of words.
+An email with a list of words that need to be joined into a single sentence.
+
+
+emails.txt
+Email 1:
+Hello, {name}! Your account has been {status}.
+
+Email 2:
+subject: meeting reminder
+body: Don't forget about the meeting tomorrow.
+
+Email 3:
+subject: IMPORTANT UPDATE
+body: PLEASE REVIEW THE ATTACHED DOCUMENT.
+
+Email 4:
+subject: follow up
+body: this email needs to be capitalized.
+
+Email 5:
+subject: weekly update
+body: Here is your weekly update on the project status.
+
+Email 6:
+subject:  Feedback
+body:    Thank you for your feedback. Please respond at your earliest convenience.    
+
+Email 7:
+subject: error report
+body: The system encountered an error error that needs to be addressed.
+
+Email 8:
+subject: keyword search
+body: Please find the keyword 'search' in this email.
+
+Email 9:
+subject: word split
+body: Split this email into individual words.
+
+Email 10:
+subject: words join
+body: join these words into a single sentence
+"""
+
