@@ -1,0 +1,11 @@
+# class and instances
+https://www.youtube.com/watch?v=ZDa-Z5JzLYM
+
+# class variable
+https://www.youtube.com/watch?v=BJ-VvGyQxho
+
+# class method vs static method
+https://www.youtube.com/watch?v=rq8cL2XMM5M
+
+# another 
+# https://www.youtube.com/watch?v=HeW-D6KpDwY
