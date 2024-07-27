@@ -1,3 +1,10 @@
+"""
+O - Open/Closed Principle (OCP):
+
+Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. 
+This means you should be able to add new functionality without altering existing code, 
+usually by using interfaces, abstract classes, or dependency injection.
+"""
 from abc import abc, abstractmethod
 
 class Book:

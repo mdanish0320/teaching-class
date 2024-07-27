@@ -1,3 +1,9 @@
+"""
+S - Single Responsibility Principle (SRP):
+
+A class should have only one reason to change, meaning it should have only one job or responsibility. 
+This principle promotes the separation of concerns, making the system easier to understand and modify.
+"""
 # before
 class BookManager:
     def __init__(self):

@@ -1,3 +1,12 @@
+"""
+D - Dependency Inversion Principle (DIP):
+
+High-level modules should not depend on low-level modules. 
+Both should depend on abstractions (e.g., interfaces). 
+Additionally, abstractions should not depend on details (concrete class). 
+Details (concrete class) should depend on abstractions. 
+This principle helps to decouple components and promotes more flexible and testable designs.
+"""
 # before
 class RedisCache:
     def set(self, key, value):

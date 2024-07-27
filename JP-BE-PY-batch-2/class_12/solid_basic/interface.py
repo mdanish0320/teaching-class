@@ -1,3 +1,13 @@
+"""
+I - Interface Segregation Principle (ISP):
+
+Clients should not be forced to depend on interfaces they do not use. 
+
+This principle encourages the creation of more specific interfaces 
+rather than a single, large, general-purpose interface. 
+
+It helps reduce the impact of changes and makes the code more modular and easier to understand.
+"""
 from abc import abc, abstractmethod
 
 # after

@@ -1,3 +1,12 @@
+"""
+L - Liskov Substitution Principle (LSP):
+
+Objects of a superclass should be replaceable with objects of a subclass 
+without affecting the correctness of the program. 
+
+In other words, subclasses should be substitutable for their base classes 
+without altering the desirable properties of the program (e.g., correctness, task performed, etc.).
+"""
 from abc import abc, abstractmethod
 
 # before
