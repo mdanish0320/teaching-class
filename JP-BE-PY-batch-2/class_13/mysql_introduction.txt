@@ -1,0 +1,15 @@
+MySQL is the world’s most popular open source database. 
+According to DB-Engines, MySQL ranks as the second-most-popular database, behind Oracle Database. 
+MySQL powers many of the most accessed applications, including Facebook, Twitter, Netflix, Uber, Airbnb, Shopify, and Booking.com.
+
+
+MySQL is a relational database management system
+MySQL is open-source
+MySQL is free
+MySQL was first released in 1995
+MySQL is developed, distributed, and supported by Oracle Corporation
+MySQL is named after co-founder Monty Widenius's daughter: My
+MySQL is ideal for both small and large applications
+MySQL is very fast, reliable, scalable, and easy to use
+MySQL is cross-platform
+Data Looks like Excel Sheet (rows and column) and tables

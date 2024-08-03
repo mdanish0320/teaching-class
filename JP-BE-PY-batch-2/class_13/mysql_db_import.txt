@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=7Cbm5vPQvNI
+
+# import below sample database
+
+# sample database 1
+# https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-1/mysql-class/sample-databases/e-commerce-vehicles/vehicle-store-db.sql
+
+# sample database 2
+# https://github.com/mdanish0320/teaching-class/tree/master/JP-BE-PY-batch-1/mysql-class/sample-databases/e-commerce-movies-rental
