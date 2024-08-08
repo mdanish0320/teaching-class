@@ -59,3 +59,5 @@ exercise on the topic Select
 
 # Sub Query
 # Write a query to get department name, manager name, and salary of the manager for all managers whose experience is more than 5 years.
+# Write down the query to display the minimum salary that a company is giving also display the count. Use table employees.
+# Write down the query to display the maximum salary that a company is giving also display the count. Use table employees.
