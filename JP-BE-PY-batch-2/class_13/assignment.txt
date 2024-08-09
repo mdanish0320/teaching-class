@@ -34,7 +34,12 @@ exercise on the topic Select
 ## Datetime
 # Write a query to get the first name and hire date from employees table where hire date between '1987-06-01' and '1987-07-30'
 # Write a query to get first name of employees who joined in 1987.
+# Write a query to get first name of employees who joined in 1987 and 1989.
+# Write a query to get first name of employees who joined in beteen 1987 and 2000.
 # Write a query to get the firstname, lastname who joined in the month of June.
+# Find employees hired within the last 90 days.
+# List employees hired before the year 2010.
+
 
 
 ## Aggregate 1 (Functions only)
