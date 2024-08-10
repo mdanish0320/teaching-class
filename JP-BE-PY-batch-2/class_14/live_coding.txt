@@ -1,0 +1,106 @@
+# functions
+MIN(), Max(), AVG(), COUNT(),  SUM()
+
+select * from payments;
+#
+select MAX(amount) from payments where YEAR(paymentDAte) = 2003;
+select MAX(amount) from payments where YEAR(paymentDAte) = 2004;
+select MAX(amount) from payments where YEAR(paymentDAte) = 2005;
+
+select max(amount), Year(paymentDate) from payments group by YEAR(paymentDate);
+
+Select Distinct( YEAR(paymentDate)) from payments;
+
+Select YEAR(paymentDate) from payments group by YEAR(paymentDate) ;
+
+
+select max(amount) as max_amount, Year(paymentDate) from payments group by YEAR(paymentDate) HAVING max_amount > 116208;
+
+select max(amount) as max_amount, Year(paymentDate) from payments WHERE max_amount > 116208;
+
+
+
+select
+max(amount) as max_amount,
+    Year(paymentDate)
+from payments
+group by YEAR(paymentDate);
+   
+   
+select
+max(amount) as max_amount,
+    Year(paymentDate)
+from payments
+where  Year(paymentDate) != 2004
+group by YEAR(paymentDate)
+    HAVING YEAR(paymentDate) > 2003;
+   
+   
+select * from customers;
+
+select count(*) from customers; # 112
+
+select distinct city from customers;
+select count(distinct city) from customers; # 95
+
+
+select * from customers where city = "Nantes";
+select count(city) from customers where city = "Nantes";
+
+select count(*), country from customers group by country;
+
+select * from customers;
+
+# from
+# select
+# where
+# column
+# group by
+
+select count(*), salesRepEmployeeNumber from customers group by salesRepEmployeeNumber;
+
+select salesRepEmployeeNumber,  max(creditLimit)  from customers group by salesRepEmployeeNumber;
+
+select count(*), salesRepEmployeeNumber as emp_id from customers group by salesRepEmployeeNumber having emp_id is not null;
+
+select max(creditLimit), sum(creditLimit), city from customers group by city;
+
+
+# join
+select * from products;
+
+
+select * from employees;
+select * from customers;
+
+#
+# JOIN
+select * from table_1 join table_2 ON table_1.col = table_2.col;
+select
+e.employeeNumber, e.firstName, e.lastName,
+    c.customerName
+from employees as e
+inner join customers as c ON e.employeeNumber = c.salesRepEmployeeNumber;
+
+select * from products;
+select count(*) from productLines;
+select * from productLines;
+
+select * from products as p inner join productlines as pl ON p.productLine = pl.productLine;
+
+
+select * from products as p left join productlines as pl ON p.productLine = pl.productLine order by p.productLine;
+
+select * from products as p right join productlines as pl ON p.productLine = pl.productLine order by p.productLine;
+
+
+insert into productLines values ('abcd', 'sfdg', NULL, NULL);
+
+
+delete from products where productLine = "Trucks and Buses";
+
+select count(*) from products;
+
+
+select * from productlines as p left join products as pl ON p.productLine = pl.productLine order by p.productLine;
+
