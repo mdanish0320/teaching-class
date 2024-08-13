@@ -1,0 +1,80 @@
+# https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-1/mysql-class/sample-databases/hr_db/db.sql
+
+# Group BY
+
+# Write a query to get the number of employees who has the same job title.
+# list down the lowest salary of the employee of every manager and also display the manager_id.
+# list down the total salaries of every deparment # NOTE: salary should be in ascending order
+# list down the average salaries of every department exluding IT Deparment
+# fetch the top 3 department who is taking the highest salary among all other deparment
+# list down all the department (job_id) whose avg salary is more than overall avg salary of the whole company
+# Write a query to get employee ID, last name, and date of first salary of the employees.
+# find the department that contains more than 10 employees
+# Write a query to get the years in which more than 10 employees joined.
+
+Find the number of employees in each department.
+
+Calculate the average salary for each job title.
+
+List the total salary expenditure for each department.
+
+Find the maximum salary in each department.
+
+Count the number of employees hired in each year.
+
+Determine the number of employees with the same manager.
+
+Find the average commission percentage for each department.
+
+Calculate the total duration (in days) that each employee spent in their job(s) from the `job_history` table.
+
+Find the highest salary offered for each job title.
+
+
+JOIN
+
+List all employees along with their department names.
+
+Find all employees and their job titles.
+
+
+Retrieve the job history of each employee along with the department name they worked in
+
+List the employees who are currently working under the same manager, displaying the manager's name.
+
+Retrieve the details of all departments located in a specific city i.e "Tokyo".
+
+Retrieve the details of all departments located in a specific cities i.e "Sydney" and "Toronto".
+
+### LEFT JOIN
+
+List all employees and their managers, including those without managers.
+
+Find all departments and their employees, including departments with no employees.
+
+Retrieve a list of all job titles and the employees who have that job, including job titles with no employees.
+
+### RIGHT JOIN Assignments
+Find all employees and the locations they are working in, including locations without any employees.
+
+List all countries and the regions they belong to, including regions without any countries.
+
+
+JOIN + Group BY
+
+List the number of employees working in each city.
+
+List the total salary expenditure for each department, along with the department name.
+
+Count the number of employees in each city.
+
+Calculate the average salary for each job title within each department.
+
+List the number of employees hired in each year for each job title.
+
+Find the highest salary paid in each region.
+
+Count the number of employees in each country.
+
+Calculate the average salary and the number of employees for each department located in a specific region.
+
