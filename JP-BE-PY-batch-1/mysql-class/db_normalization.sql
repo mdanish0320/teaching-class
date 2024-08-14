@@ -1,5 +1,23 @@
 explains nomalization using the following tables
 
+# Relationship exmaples
+1. One-to-One Relationship
+Example 1: One person can have only one passport.
+Example 2: One car can have only one registration number.
+Example 3: One employee can have only one company-issued laptop.
+2. One-to-Many Relationship
+Example 1: One author can write multiple books.
+Example 2: One teacher can teach multiple students.
+Example 3: One customer can place multiple orders.
+3. Many-to-One Relationship
+Example 1: Multiple employees can work for one department.
+Example 2: Multiple students can enroll in one course.
+Example 3: Multiple products can belong to one category.
+4. Many-to-Many Relationship
+Example 1: Many students can enroll in many courses.
+Example 2: Many authors can contribute to many books.
+Example 3: Many doctors can treat many patients.  
+  
 ## one to many relation
 # one employee can have multiple customers
 use classicmodels;
