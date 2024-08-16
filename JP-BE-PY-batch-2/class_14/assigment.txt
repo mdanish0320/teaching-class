@@ -7,7 +7,10 @@
 # list down the total salaries of every deparment # NOTE: salary should be in ascending order
 # list down the average salaries of every department exluding IT Deparment
 # fetch the top 3 department who is taking the highest salary among all other deparment
+
+ignore this
 # list down all the department (job_id) whose avg salary is more than overall avg salary of the whole company
+
 # Write a query to get employee ID, last name, and date of first salary of the employees.
 # find the department that contains more than 10 employees
 # Write a query to get the years in which more than 10 employees joined.
