@@ -1,0 +1,54 @@
+# add below data by python application
+
+# add 3 categories
+Electronics
+Furniture
+Books
+
+# add 5 products
+Laptop
+Smartphone
+Table
+Chair
+Kids Bed Time Story
+
+# update 2 products
+"Laptop" to "Gaming Laptop"
+"Chair" to "computer chair"
+
+# delete 1 product
+"Kids Bed Time Story"
+
+_______________________________________________________
+What action do you want to perform:
+1. add categories
+2. add products
+3. update product
+4. delete product
+5. display all categories
+6. display all products
+7. display both product and categories combine
+_______________________________________________________
+
+when user press "1"
+ask user category name and then insert it to category table
+
+when user press "2"
+ask user product name and category id then insert it to product table
+
+when user press "3"
+ask user product id and name then run the update query
+
+when user press "4"
+ask user product id and run the delete query
+
+when user press "5"
+display all categories
+
+when user press "6"
+display all products
+
+when user press "7"
+display both product and categories combine
+
+

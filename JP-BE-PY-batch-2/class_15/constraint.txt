@@ -1,0 +1,24 @@
+# CONSTRAINT
+# NOT NULL
+# UNIQUE
+# FOREIGN KEY
+# CASCADE
+    # SET NULL
+    # RESTRICT
+    # NO ACTION
+    # SET DEFAULT
+
+
+Referential Actions
+When an UPDATE or DELETE operation affects a key value in the parent table that has matching rows in the child table, the result depends on the referential action specified by ON UPDATE and ON DELETE subclauses of the FOREIGN KEY clause. Referential actions include:
+CASCADE: Delete or update the row from the parent table and automatically delete or update the matching rows in the child table. Both ON DELETE CASCADE and ON UPDATE CASCADE are supported. Between two tables, do not define several ON UPDATE CASCADE clauses that act on the same column in the parent table or in the child table.
+If a FOREIGN KEY clause is defined on both tables in a foreign key relationship, making both tables a parent and child, an ON UPDATE CASCADE or ON DELETE CASCADE subclause defined for one FOREIGN KEY clause must be defined for the other in order for cascading operations to succeed. If an ON UPDATE CASCADE or ON DELETE CASCADE subclause is only defined for one FOREIGN KEY clause, cascading operations fail with an error.
+Note
+1. Cascaded foreign key actions do not activate triggers.
+2. SET NULL: Delete or update the row from the parent table and set the foreign key column or columns in the child table to NULL. Both ON DELETE SET NULL and ON UPDATE SET NULL clauses are supported.
+If you specify a SET NULL action, make sure that you have not declared the columns in the child table as NOT NULL.
+3. RESTRICT: Rejects the delete or update operation for the parent table. Specifying RESTRICT (or NO ACTION) is the same as omitting the ON DELETE or ON UPDATE clause.
+4. NO ACTION: A keyword from standard SQL. For InnoDB, this is equivalent to RESTRICT; the delete or update operation for the parent table is immediately rejected if there is a related foreign key value in the referenced table. NDB supports deferred checks, and NO ACTION specifies a deferred check; when this is used, constraint checks are not performed until commit time. Note that for NDB tables, this causes all foreign key checks made for both parent and child tables to be deferred.
+5. SET DEFAULT: This action is recognized by the MySQL parser, but both InnoDB and NDB reject table definitions containing ON DELETE SET DEFAULT or ON UPDATE SET DEFAULT clauses.
+
+    
