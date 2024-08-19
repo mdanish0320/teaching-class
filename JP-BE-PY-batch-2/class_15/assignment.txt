@@ -1,3 +1,5 @@
+# MySQL Sub Query
+
 Assignment 1: Employees in Specific Departments
 Task: Retrieve the EMPLOYEE_ID, FIRST_NAME, and LAST_NAME of employees who work in departments located in cities that start with the letter 'S'.
 Hint: Use a subquery after the WHERE clause to find DEPARTMENT_IDs based on LOCATION_IDs from the locations table.
