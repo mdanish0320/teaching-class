@@ -1,0 +1,39 @@
+Assignment 1: Employees in Specific Departments
+Task: Retrieve the EMPLOYEE_ID, FIRST_NAME, and LAST_NAME of employees who work in departments located in cities that start with the letter 'S'.
+Hint: Use a subquery after the WHERE clause to find DEPARTMENT_IDs based on LOCATION_IDs from the locations table.
+
+Assignment 2: High Salary Jobs
+Task: List the JOB_ID and JOB_TITLE for jobs that have a minimum salary greater than the average salary across all jobs.
+Hint: Use a subquery after the WHERE clause to calculate the average salary.
+
+Assignment 3: Employee and Their Manager's Details
+Task: Display EMPLOYEE_ID, FIRST_NAME, LAST_NAME, and MANAGER_ID of employees along with the FIRST_NAME and LAST_NAME of their managers.
+Hint: Use a subquery after the FROM clause to join the employees table to itself to get the manager's details.
+
+Assignment 4: Departments with Employees Hired After a Specific Date
+Task: Retrieve DEPARTMENT_ID and DEPARTMENT_NAME for departments that have employees hired after '01-JAN-2010'.
+Hint: Use a subquery after the WHERE clause to find departments based on hire dates in the employees table.
+
+Assignment 5: Locations with Multiple Departments
+Task: List LOCATION_ID and CITY for locations that have more than one department.
+Hint: Use a subquery after the FROM clause to group and count departments per location.
+
+Assignment 6: Employees with Maximum Salary in Their Department
+Task: Retrieve the EMPLOYEE_ID, FIRST_NAME, LAST_NAME, and SALARY of employees who earn the maximum salary in their respective departments.
+Hint: Use a subquery after the WHERE clause to find the maximum salary per department.
+
+Assignment 7: Jobs with Employees in More Than One Department
+Task: List JOB_ID and JOB_TITLE for jobs where employees have worked in more than one department (including past jobs from the job_history table).
+Hint: Use a subquery after the WHERE clause to check the number of distinct departments per employee from the job_history table.
+
+Assignment 8: Departments Without Managers
+Task: Retrieve DEPARTMENT_ID and DEPARTMENT_NAME for departments that do not have a manager assigned.
+Hint: Use a subquery after the WHERE clause to identify departments where MANAGER_ID is NULL.
+
+Assignment 9: Employees Hired in Regions with a Specific Name
+Task: Display EMPLOYEE_ID, FIRST_NAME, LAST_NAME, and HIRE_DATE of employees who were hired in regions with the name 'Europe'.
+Hint: Use a subquery after the FROM clause to join employees with locations, countries, and regions tables.
+
+Assignment 10: Recent Job Changes
+Task: List EMPLOYEE_ID, FIRST_NAME, LAST_NAME, and the latest job JOB_ID for employees who have had more than one job.
+Hint: Use a subquery after the FROM clause to get the latest START_DATE from the job_history table.
