@@ -1,0 +1,42 @@
+# db engine
+# InnoDB vs MyISAM
+https://www.youtube.com/watch?v=UezH5KrjL5U
+
+# charset and collation
+https://www.youtube.com/watch?v=lJGGHxafXZE
+https://www.youtube.com/watch?v=2iBg7uGdy38
+https://www.youtube.com/watch?v=dh-gIgPSiN0
+
+# Constraints
+https://www.youtube.com/watch?v=LzAzbVD3Qtw
+
+# Indexing
+https://www.youtube.com/watch?v=t0grczCICMk
+https://www.youtube.com/watch?v=YuRO9-rOgv4
+https://www.youtube.com/watch?v=ITcOiLSfVJQ
+https://www.youtube.com/watch?v=K1a2Bk8NrYQ
+
+# Database relationship
+https://www.youtube.com/watch?v=O1bi5MjqsAc
+
+# Database Normalization
+https://www.youtube.com/watch?v=GFQaEYEc8_8
+https://www.youtube.com/watch?v=ABwD8IYByfk
+
+
+# db export with data
+https://www.youtube.com/watch?v=lbrVhjnM5MQ
+
+# db ERD (entity relationship Diagram) export
+https://www.youtube.com/watch?v=l19Vq_27z-o
+
+
+# database designe
+https://www.youtube.com/watch?v=5RpUmDEsn1k
+https://www.youtube.com/watch?v=yldrIdoXiYk - library managment
+https://www.youtube.com/watch?v=vf_9sUqhjwM - food delivery app
+https://www.youtube.com/watch?v=pAFA2jhTlD0 - stackoverflow
+https://www.youtube.com/watch?v=1YPT6VH256w - school
+https://www.youtube.com/watch?v=PD6jpvAyRNo - train booking
+https://www.youtube.com/watch?v=pYYmvaKy-yQ - hotel
+https://www.youtube.com/watch?v=7m6gXeMDaHc - design process

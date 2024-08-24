@@ -1,0 +1,6 @@
+DDL (Data Definition Language) 		  -> Table Level Commands
+DQL (Data Query Language)      		  -> Query Level Commands
+DML(Data Manipulation Language) 		-> Data Manipulation
+DCL (Data Control Language)			    -> Permission
+TCL (Transaction Control Language) 	-> Transaction
+

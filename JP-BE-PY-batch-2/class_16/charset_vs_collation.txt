@@ -1,0 +1,1 @@
+The character set determines the encoding (multiple languages) of the characters, while the collation determines how the characters are compared and sorted.
