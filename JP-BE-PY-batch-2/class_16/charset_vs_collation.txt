@@ -1,1 +1,6 @@
-The character set determines the encoding (multiple languages) of the characters, while the collation determines how the characters are compared and sorted.
+The character set determines the encoding (multiple languages) of the characters, 
+while the collation determines how the characters are compared and sorted.
+
+https://www.youtube.com/watch?v=lJGGHxafXZE
+https://www.youtube.com/watch?v=2iBg7uGdy38
+https://www.youtube.com/watch?v=dh-gIgPSiN0
