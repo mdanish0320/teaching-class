@@ -1,3 +1,9 @@
+# Indexing
+https://www.youtube.com/watch?v=t0grczCICMk
+https://www.youtube.com/watch?v=YuRO9-rOgv4
+https://www.youtube.com/watch?v=ITcOiLSfVJQ
+https://www.youtube.com/watch?v=K1a2Bk8NrYQ
+
 explanation
 https://docs.google.com/spreadsheets/d/1nk__9mvZeo_pmoZW7_nK25BRJoTI4FDOA8hcGjnkBYc/edit?gid=1358049455#gid=1358049455
 

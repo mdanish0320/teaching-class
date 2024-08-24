@@ -1,3 +1,6 @@
+# Constraints
+https://www.youtube.com/watch?v=LzAzbVD3Qtw
+
 # creating last assignment database design
 # it contains 2 table: product and category
 # https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_15/python_mysql_connection_assignment_db/db.sql

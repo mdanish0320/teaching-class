@@ -1,3 +1,7 @@
+# Database Normalization
+https://www.youtube.com/watch?v=GFQaEYEc8_8
+https://www.youtube.com/watch?v=ABwD8IYByfk
+
 class task:
 design table for employee and department
 explantion: https://docs.google.com/spreadsheets/d/1nk__9mvZeo_pmoZW7_nK25BRJoTI4FDOA8hcGjnkBYc/edit?gid=419368721#gid=419368721

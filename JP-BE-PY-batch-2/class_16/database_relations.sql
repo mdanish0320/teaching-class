@@ -1,3 +1,6 @@
+# Database relationship
+https://www.youtube.com/watch?v=O1bi5MjqsAc
+
 image: https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_16/images/database_relation_notation.png
 
 One-to-One 		represented by straight line in both end
