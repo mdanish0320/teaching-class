@@ -1,0 +1,3 @@
+class task:
+One employee can work on one department
+explantion: https://docs.google.com/spreadsheets/d/1nk__9mvZeo_pmoZW7_nK25BRJoTI4FDOA8hcGjnkBYc/edit?gid=419368721#gid=419368721
