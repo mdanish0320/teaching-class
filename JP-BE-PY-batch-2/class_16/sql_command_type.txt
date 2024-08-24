@@ -1,3 +1,5 @@
+image: https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_16/images/sql_command_type.png
+
 DDL (Data Definition Language) 		  -> Table Level Commands
 DQL (Data Query Language)      		  -> Query Level Commands
 DML(Data Manipulation Language) 		-> Data Manipulation

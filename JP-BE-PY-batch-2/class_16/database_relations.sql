@@ -1,3 +1,5 @@
+image: https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_16/images/database_relation_notation.png
+
 One-to-One 		represented by straight line in both end
 One-to-Many		represented by straight line in end end and 3 lines in other end
 Many-to-Many	represented by straight 3 lines in both ends
