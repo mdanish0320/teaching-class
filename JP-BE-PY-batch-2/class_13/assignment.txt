@@ -50,17 +50,6 @@ exercise on the topic Select
 # Write a query to get the highest, lowest, sum, and average salary among all employees.
 # Write down the query to display the maximum salary that a company is giving in the department IT_PROG
 
-# DO NOT Attempt below this, This is for next week assignment
-# ## Aggregate 2 (Group By) 
-# Write a query to get the number of employees who has the same job title.
-# list down the lowest salary of the employee of every manager and also display the manager_id.
-# list down the total salaries of every deparment # NOTE: salary should be in ascending order
-# list down the average salaries of every department exluding IT Deparment
-# fetch the top 3 department who is taking the highest salary among all other deparment
-# list down all the department (job_id) whose avg salary is more than overall avg salary of the whole company
-# Write a query to get employee ID, last name, and date of first salary of the employees.
-# find the department that contains more than 10 employees
-# Write a query to get the years in which more than 10 employees joined.
 
 # Sub Query
 # Write a query to get department name, manager name, and salary of the manager for all managers whose experience is more than 5 years.
