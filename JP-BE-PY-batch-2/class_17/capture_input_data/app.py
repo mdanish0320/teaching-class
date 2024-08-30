@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -6,11 +6,6 @@ app = Flask(__name__)
 @app.route("/", methods=['GET'])
 def hello():
     return "root of the application"
-
-
-from flask import Flask, request
-
-app = Flask(__name__)
 
 
 @app.route("/input/get/query_string")
