@@ -1,0 +1,10 @@
+# virtualenv
+https://www.youtube.com/watch?v=UPaN3Z49myw
+https://www.youtube.com/watch?v=vsC7KNWUtZE
+https://www.youtube.com/watch?v=KxvKCSwlUv8
+
+# flask in-memory CRUD
+https://www.youtube.com/watch?v=n4orudncbTs
+
+# flask introduction
+https://www.youtube.com/watch?v=0HXg9_r_7MM

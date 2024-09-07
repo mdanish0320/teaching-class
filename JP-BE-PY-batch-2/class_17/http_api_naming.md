@@ -1,36 +1,54 @@
-@app.route("/post")
-def get_all_posts():
-    return "all posts"
-  
-@app.route("/post/1000")
-def get_single_post():
-    return "single post"
-  
-@app.route("/post/1000/comments")
-def get_all_comments_of_post():
-    return "all comments of a post"
-  
-@app.route("/post/1000/comments/50")
-def get_comment_of_a_post():
-    return "a single comment of the pose"  
-  
+# Basic Structure
 
-@app.route("/users")
-def get_all_users():
-    return "all users"
+- **Base URL**: `http://localhost:3000` (Represents the root of the API).
+- **Resources**: Represents the entities or collections within the API.
+- **Sub-resources**: Represents resources related to a parent resource.
 
-@app.route("/users/200")
-def get_single_user():
-    return "a single user"
+## Examples
 
-@app.route("/users/100/post")
-def get_all_posts_of_user():
-    return "all posts of the one user"
+### Single Resource:
+- **URL**: `/users`
+  - **Description**: Represents a collection of user resources.
 
-@app.route("/users/100/posts/6")
-def get_single_post_of_user():
-    return "a single post of one user"
+- **URL**: `/users/{userId}`
+  - **Description**: Represents a specific user resource identified by `userId`.
 
+### Nested Resources:
+- **URL**: `/users/{userId}/posts`
+  - **Description**: Represents a collection of posts belonging to a specific user.
 
+- **URL**: `/users/{userId}/posts/{postId}`
+  - **Description**: Represents a specific post belonging to a specific user.
 
+### Further Nesting:
+- **URL**: `/users/{userId}/posts/{postId}/comments`
+  - **Description**: Represents a collection of comments for a specific post of a specific user.
 
+- **URL**: `/users/{userId}/posts/{postId}/comments/{commentId}`
+  - **Description**: Represents a specific comment on a specific post of a specific user.
+
+---
+
+# Products
+
+- **URL**: `/products`
+  - **Description**: Represents the collection of products.
+
+- **URL**: `/products/{productId}`
+  - **Description**: Represents a specific product.
+
+# Categories
+
+- **URL**: `/categories`
+  - **Description**: Represents the collection of categories.
+
+- **URL**: `/categories/{categoryId}/products`
+  - **Description**: Represents products within a specific category.
+
+# Orders
+
+- **URL**: `/orders`
+  - **Description**: Represents the collection of orders.
+
+- **URL**: `/orders/{orderId}/items`
+  - **Description**: Represents items within a specific order.
