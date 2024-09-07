@@ -2,13 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/", methods=['GET'])
-def hello():
-    return "hello"
-
-@app.route("/", methods=['GET'])
-def world():
-    return "world"
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)

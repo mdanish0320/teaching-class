@@ -20,6 +20,12 @@ def user_input_with_path_parameter(user_id):
     return "success:path_parameter"
   
 
+@app.route("/input/post/json", methods=['POST'])
+def input_post_raw():
+    data = request.get_json()
+    return data
+  
+"""
 @app.route("/input/post/form-data", methods=['POST'])
 def input_post_form_data():
     print(request.form)
@@ -30,18 +36,7 @@ def input_post_form_data():
 def input_post_form_url_encoded():
     print(request.form)
     return "success:form-urlencoded"
-
-
-@app.route("/input/post/json", methods=['POST'])
-def input_post_raw():
-    data = request.get_json()
-    return data
-  
-if __name__ == "__main__":
-    app.run(
-        debug=True,
-        port=3000
-    )
+"""
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
