@@ -16,7 +16,7 @@ This project demonstrates a simple CRUD (Create, Read, Update, Delete) API for m
 
 # Class 15 Assignment Enhancement
 
-In this project, you will expand the previous Class 15 assignment by integrating Flask to create API endpoints that handle CRUD operations for categories and products in an e-commerce application. You will be using the provided database file to manage categories and products data. Your task is to create API routes that allow adding, updating, deleting, and retrieving information from the database.
+In this project, you will expand the previous Class 15 assignment by integrating Flask to create API endpoints that handle CRUD operations for categories and products in an e-commerce application. You will be using the [provided database file](https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_17/db.sql) to manage categories and products data. Your task is to create API routes that allow adding, updating, deleting, and retrieving information from the database.
 
 ## Requirements
 
