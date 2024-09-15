@@ -1,0 +1,9 @@
+# sql injection
+https://www.youtube.com/watch?v=wcaiKgQU6VE
+https://www.youtube.com/watch?v=gaAm8GgLdCk
+https://www.youtube.com/watch?v=k7n90A9X8C8 - prevention
+
+# cookies
+https://www.youtube.com/watch?v=yoE9-tNvhRs
+https://www.youtube.com/watch?v=QWw7Wd2gUJk
+https://www.youtube.com/watch?v=4fQ3N4fVhEE - code example (you can ignore the video after 12:00)
