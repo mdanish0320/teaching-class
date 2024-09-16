@@ -60,7 +60,9 @@ ________________________________________________________________________________
 
 ### Overview
 
-In this assignment, you will create a simple Notes Application API using Flask. The application will allow users to sign up, log in, and perform basic operations such as creating, updating, and deleting notes. Each note can be categorized, and users can only view and manage their own notes. Authentication will be managed via cookies.
+In this assignment, you will create a simple Notes Application API using Flask and Mysql. The application will allow users to sign up, log in, and perform basic operations such as creating, updating, and deleting notes. Each note can be categorized, and users can only view and manage their own notes. Authentication will be managed via cookies.
+
+Create mysql database design that suits the below application requirements.
 
 ### Features to Implement
 
