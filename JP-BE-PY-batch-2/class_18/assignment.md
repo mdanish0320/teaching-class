@@ -1,6 +1,6 @@
 # E-Commerce Database and Flask API Assignment
 In this project, you will expand the previous Class 16 assignment by integrating Flask to create API endpoints that handle CRUD operations.
-Please create centralized routers using `app.add_url_rule()`
+Please create centralized routers using `app.add_url_rule()`. Use your own database and data that you created on assignment 16.
 
 ## API List
 
