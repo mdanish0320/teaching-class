@@ -1,5 +1,6 @@
-
 # E-Commerce Database and Flask API Assignment
+In this project, you will expand the previous Class 16 assignment by integrating Flask to create API endpoints that handle CRUD operations.
+Please create centralized routers using `app.add_url_rule()`. Use your own database and data that you created on assignment 16.
 
 ## API List
 
@@ -60,7 +61,9 @@ ________________________________________________________________________________
 
 ### Overview
 
-In this assignment, you will create a simple Notes Application API using Flask. The application will allow users to sign up, log in, and perform basic operations such as creating, updating, and deleting notes. Each note can be categorized, and users can only view and manage their own notes. Authentication will be managed via cookies.
+In this assignment, you will create a simple Notes Application API using Flask and Mysql. The application will allow users to sign up, log in, and perform basic operations such as creating, updating, and deleting notes. Each note can be categorized, and users can only view and manage their own notes. Authentication will be managed via cookies.
+
+Create mysql database design that suits the below application requirements.
 
 ### Features to Implement
 
