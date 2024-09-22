@@ -14,8 +14,16 @@ This application provides backend APIs for a simple Notes application, allowing 
 Ensure the following environment variables are set before running the application:
 
 ```bash
+# in linux
 export MYSQL_USER=your_mysql_username
 export MYSQL_PASSWORD=your_mysql_password
+```
+
+
+```bash
+# in windows
+set MYSQL_USER=your_mysql_username
+set MYSQL_PASSWORD=your_mysql_password
 ```
 
 ## How to Run
