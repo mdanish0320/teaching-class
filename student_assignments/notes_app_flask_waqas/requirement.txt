@@ -1,0 +1,4 @@
+Flask==3.0.3
+pymysql
+bcrypt==4.2.0
+python-dotenv
