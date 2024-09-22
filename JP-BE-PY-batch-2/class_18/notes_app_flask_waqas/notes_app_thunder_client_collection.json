@@ -1,0 +1,248 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "notes_app",
+    "collectionId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+    "dateExported": "2024-09-22T12:56:56.344Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "88401fe8-130c-437c-b21b-92b6cdb4264c",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-09-22T09:33:51.688Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1aca8385-b1fa-4a6f-8b51-76e584775bbb",
+            "name": "categories",
+            "containerId": "",
+            "created": "2024-09-22T11:04:50.390Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "bbbf9d39-6431-415f-af86-eab3f82bbccb",
+            "name": "notes",
+            "containerId": "",
+            "created": "2024-09-22T09:34:03.587Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "invalid_signup",
+            "containerId": "88401fe8-130c-437c-b21b-92b6cdb4264c",
+            "created": "2024-09-22T09:37:53.807Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "c91b29d8-8ff8-47ff-963d-cfd97cde47fb",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "88401fe8-130c-437c-b21b-92b6cdb4264c",
+            "name": "/signup - create user",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-22T09:35:17.997Z",
+            "modified": "2024-09-22T12:31:34.185Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"danish\",\n  \"email\": \"danish@gmail.com\",\n  \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6b8f4e5d-ab59-4aaf-a969-f0d4d2d8b2e6",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "json is required",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-22T09:50:41.149Z",
+            "modified": "2024-09-22T09:51:24.693Z",
+            "headers": []
+        },
+        {
+            "_id": "d533ba6d-7ab4-46dd-90a7-9bba42e2001c",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "88401fe8-130c-437c-b21b-92b6cdb4264c",
+            "name": "/login",
+            "url": "http://localhost:3000/api/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-22T09:35:38.955Z",
+            "modified": "2024-09-22T12:31:45.815Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"danish@gmail.com\",\n  \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "898252d8-05ea-4c37-9f2a-af511ec422cb",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "empty json",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-22T09:52:20.976Z",
+            "modified": "2024-09-22T09:53:38.497Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cd738ad4-314d-4bb5-b240-4220427153a2",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "88401fe8-130c-437c-b21b-92b6cdb4264c",
+            "name": "/logout",
+            "url": "http://localhost:3000/api/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-09-22T09:35:47.270Z",
+            "modified": "2024-09-22T11:03:42.483Z",
+            "headers": []
+        },
+        {
+            "_id": "d2557a84-58c8-469e-98d1-102ea76ffd38",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "missing required fields",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-09-22T09:54:03.973Z",
+            "modified": "2024-09-22T09:57:41.768Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"username\": \"danish\",\n \"email\": \"danish@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dcd180e5-e588-4ee7-acd0-08162f46061e",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "invalid data",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-09-22T09:57:58.238Z",
+            "modified": "2024-09-22T10:00:01.239Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"username\": [],\n \"email\": 5320,\n \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "abd52947-456b-4ade-bb4c-093047df420d",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "adding only spaces",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-09-22T10:02:04.345Z",
+            "modified": "2024-09-22T10:03:08.478Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"username\": \" \",\n \"email\": \"danish@gmail.com\",\n \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7e2a0da8-6cf7-4f59-acf7-0ccaca21dda8",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "invalid email - 1",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-09-22T10:03:37.525Z",
+            "modified": "2024-09-22T10:04:09.134Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"username\": \"danish\",\n \"email\": \"danish\",\n \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "895caa36-bff5-4066-9268-e97c86642229",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "5346fb63-8d6f-4c18-a961-9a3ca9798cc7",
+            "name": "invalid email - 2",
+            "url": "http://localhost:3000/api/signup",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-09-22T10:04:52.574Z",
+            "modified": "2024-09-22T10:05:19.714Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"username\": \"danish\",\n \"email\": \"danish@.\",\n \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "396ca3c1-8129-4c38-a027-78cfd4238471",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "1aca8385-b1fa-4a6f-8b51-76e584775bbb",
+            "name": "/categories - create category",
+            "url": "http://localhost:3000/api/categories",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-09-22T11:05:42.022Z",
+            "modified": "2024-09-22T11:10:44.657Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"category 1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "db0ed6a6-d31b-4b5a-9ab7-70c9c14a2755",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "1aca8385-b1fa-4a6f-8b51-76e584775bbb",
+            "name": "/categories - get all categories",
+            "url": "http://localhost:3000/api/categories?name=category 1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-09-22T11:05:47.174Z",
+            "modified": "2024-09-22T12:38:42.981Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "category 1",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "372cb4f0-ca2d-4137-888b-e65b8ff8a06c",
+            "colId": "e33e92bf-afc4-47db-a7fe-80923213161e",
+            "containerId": "1aca8385-b1fa-4a6f-8b51-76e584775bbb",
+            "name": "/categories/{id} - get one category",
+            "url": "http://localhost:3000/api/categories/1",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-09-22T11:05:50.725Z",
+            "modified": "2024-09-22T12:56:48.353Z",
+            "headers": []
+        }
+    ],
+    "ref": "QHGzhxWbgxhMoqinSChsFqnSgBZG-La5eJtOyIU-NhSS7FzRQTyw0xn9quOCmtccZ39qPRhUNORn7N4npbLiug"
+}
