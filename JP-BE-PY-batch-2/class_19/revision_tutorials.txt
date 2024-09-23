@@ -1,0 +1,32 @@
+# how internet works
+https://www.youtube.com/watch?v=YtxLexm-9pI
+
+# HTTP
+https://www.youtube.com/watch?v=76CcJ90Lz4U
+https://www.youtube.com/watch?v=wW2A5SZ3GkI
+
+# HTTP 1.1 vs HTTP2
+https://www.youtube.com/watch?v=fVKPrDrEwTI
+https://www.youtube.com/watch?v=jhqrRT4fvOA
+
+# TCP
+https://www.youtube.com/watch?v=PpsEaqJV_A0
+https://www.youtube.com/watch?v=tnAW02zvFhU
+
+
+# TCP VS UDP
+https://www.youtube.com/watch?v=uwoD5YsGACg
+
+# OSI Model
+https://www.youtube.com/watch?v=Jpaz3YuCil4
+https://www.youtube.com/watch?v=aaJ1KcCDz-c
+
+# DNS
+https://www.youtube.com/watch?v=g6R9gRWIIK8
+https://www.youtube.com/watch?v=mpQZVYPuDGU
+
+# Data Journy Animated
+https://www.youtube.com/watch?v=7Zf203Vmbig
+
+
+
