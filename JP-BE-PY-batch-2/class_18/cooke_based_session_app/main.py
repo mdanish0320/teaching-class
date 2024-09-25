@@ -29,8 +29,8 @@ curl -X POST http://localhost:3000/signup \
 """
 @app.route("/signup", methods = ['POST'])
 def create_user():
-    new_book = request.get_json()
-    users.append(new_book)
+    # new_book = request.get_json()
+    # users.append(new_book)
     return users
 
 
