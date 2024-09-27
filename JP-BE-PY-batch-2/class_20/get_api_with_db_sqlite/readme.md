@@ -44,13 +44,13 @@
    - **Create Model** 
      Open the file `e_commerce_app/models.py` and add the following code
      ```python
-    class Product(models.Model):
-      name = models.CharField(max_length=256)
-      description = models.CharField(max_length=256)
-      price = models.FloatField()
-      cat_id = models.IntegerField()
-      created_at = models.DateTimeField(auto_now_add=True)
-    ``` 
+      class Product(models.Model):
+         name = models.CharField(max_length=256)
+         description = models.CharField(max_length=256)
+         price = models.FloatField()
+         cat_id = models.IntegerField()
+         created_at = models.DateTimeField(auto_now_add=True)
+      ``` 
 
    - **Run Migration**  
     run following command to run the migration and create table in sqlite db
