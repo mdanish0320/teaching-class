@@ -1,0 +1,44 @@
+# first_app
+link to readme.md
+
+# first_api
+link to readme.md
+
+# catch data from users
+link to readme.md
+
+# @api_view, models, migration
+https://www.youtube.com/watch?v=cJveiktaOSQ - quick overview
+
+# function based view
+https://www.youtube.com/watch?v=hhaYykv0K5c
+
+
+# models + migrations
+https://www.youtube.com/watch?v=WnQTHZO_HIg
+https://www.youtube.com/watch?v=bBfouMYwLcc - model + migration
+https://www.youtube.com/watch?v=5zNR3E6WRLE - model
+https://www.youtube.com/watch?v=aOLrEkpGWDg - migartion
+
+
+# models 
+https://docs.djangoproject.com/en/5.1/topics/db/models/#quick-example
+https://docs.djangoproject.com/en/5.1/topics/db/models/#field-types
+https://docs.djangoproject.com/en/5.1/topics/db/models/#field-options
+
+
+# ORM
+https://docs.djangoproject.com/en/5.1/topics/db/queries/ - offical documentation
+https://www.youtube.com/watch?v=7E1M1W9o7PA - what is ORM
+https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml&index=1
+https://www.youtube.com/watch?v=1H8MQkn90SA
+https://www.youtube.com/watch?v=46au1MxtOJE&list=PL-2EBeDYMIbQXKsyNweppuFptuogJe2L-&index=3
+https://www.youtube.com/watch?v=eio1wDUHFJE
+https://www.youtube.com/watch?v=mty9pZX6Sa0
+
+
+
+# sqlite vscode extension
+https://www.youtube.com/watch?v=WpLBpSiGW0k
+https://www.youtube.com/watch?v=JrAiefGNUq8
+https://youtu.be/IBgWKTaG_Bs?t=492
