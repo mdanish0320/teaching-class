@@ -87,7 +87,8 @@ This retrieves all objects ordered by a specified field. You can use a minus sig
 
 ## 13. Values and Values List
 ```python
-Model.objects.values('field_name')
-Model.objects.values_list('field_name', flat=True)
+category_model.objects.values('id')
+category_ids = category_model.objects.values_list('id', flat=True)
+products = product_model.objects.filter(id__in=category_ids).all()
 ```
 `values()` returns dictionaries of the specified fields, while `values_list()` returns tuples (or a flat list if `flat=True`).
