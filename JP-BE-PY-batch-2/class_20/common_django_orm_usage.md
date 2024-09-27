@@ -84,3 +84,10 @@ This returns the total number of objects in the database for the model.
 Model.objects.order_by('field_name')
 ```
 This retrieves all objects ordered by a specified field. You can use a minus sign (`-`) to order in descending order (e.g., `-field_name`).
+
+## 13. Values and Values List
+```python
+Model.objects.values('field_name')
+Model.objects.values_list('field_name', flat=True)
+```
+`values()` returns dictionaries of the specified fields, while `values_list()` returns tuples (or a flat list if `flat=True`).
