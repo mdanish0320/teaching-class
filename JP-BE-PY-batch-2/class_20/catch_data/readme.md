@@ -85,24 +85,24 @@
    - **Set Up URLs in urls.py**  
      Open `api/urls.py` and add the following code:  
      ```python
-     from django.urls import path
-     from . import views
+        from django.urls import path
+        from . import views
 
-     urlpatterns = [
-         path("users/", views.create_and_get_all_users),
-         path("users/<int:id>", views.get_update_and_delete_user),
-     ]
+        urlpatterns = [
+            path("users/", views.create_and_get_all_users),
+            path("users/<int:id>", views.get_update_and_delete_user),
+        ]
      ```
 
    - **Update Project URLs**  
      Open `main/urls.py` and include the api URLs:  
      ```python
-     from django.urls import path, include
+        from django.urls import path, include
 
-     urlpatterns = [
-         path('api/', include('api.urls')),
-         ...
-     ]
+        urlpatterns = [
+            path('api/', include('api.urls')),
+            ...
+        ]
      ```
 
 7. **Run the Development Server**  
