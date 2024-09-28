@@ -10,6 +10,10 @@ https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class
 https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/catch_data/readme.md
 
 
+# complete CRUD - example
+https://github.com/mdanish0320/teaching-class/tree/master/JP-BE-PY-batch-2/class_20/crud_with_db
+
+
 # @api_view, models, migration
 https://www.youtube.com/watch?v=cJveiktaOSQ - quick overview
 
