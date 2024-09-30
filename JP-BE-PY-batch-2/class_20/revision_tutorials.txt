@@ -1,14 +1,22 @@
-# first_app
-link to readme.md
+# start django server - instructions
+https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/first_app/readme.md
 
-# first_api
-link to readme.md
 
-# catch data from users
-link to readme.md
+# create first API with static data - instructions
+https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/first_api/readme.md
+
+
+# catch user data from HTTP requests (query string, pata-parameters, json) - instructions
+https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/catch_data/readme.md
+
+
+# complete CRUD - example
+https://github.com/mdanish0320/teaching-class/tree/master/JP-BE-PY-batch-2/class_20/crud_with_db
+
 
 # @api_view, models, migration
 https://www.youtube.com/watch?v=cJveiktaOSQ - quick overview
+
 
 # function based view
 https://www.youtube.com/watch?v=hhaYykv0K5c
@@ -21,13 +29,15 @@ https://www.youtube.com/watch?v=5zNR3E6WRLE - model
 https://www.youtube.com/watch?v=aOLrEkpGWDg - migartion
 
 
-# models 
-https://docs.djangoproject.com/en/5.1/topics/db/models/#quick-example
-https://docs.djangoproject.com/en/5.1/topics/db/models/#field-types
-https://docs.djangoproject.com/en/5.1/topics/db/models/#field-options
+# models - common examples 
+https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/common_django_model_fields.md
 
 
-# ORM
+# ORM - common examples
+https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/common_django_orm_usage.md
+
+
+# ORM videos
 https://docs.djangoproject.com/en/5.1/topics/db/queries/ - offical documentation
 https://www.youtube.com/watch?v=7E1M1W9o7PA - what is ORM
 https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml&index=1
@@ -37,8 +47,12 @@ https://www.youtube.com/watch?v=eio1wDUHFJE
 https://www.youtube.com/watch?v=mty9pZX6Sa0
 
 
-
 # sqlite vscode extension
 https://www.youtube.com/watch?v=WpLBpSiGW0k
 https://www.youtube.com/watch?v=JrAiefGNUq8
 https://youtu.be/IBgWKTaG_Bs?t=492
+
+# ORM - group by
+https://www.youtube.com/watch?v=kDph7PDvCck
+https://youtu.be/oMCOELJa6_I?t=329
+https://www.youtube.com/watch?v=4xKvPjeW5Jo

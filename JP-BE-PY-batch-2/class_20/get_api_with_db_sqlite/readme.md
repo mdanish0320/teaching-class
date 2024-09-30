@@ -24,12 +24,11 @@
    Go inside the project `e_commerce` (where you can see the file `manage.py`) and then run the following command to start the Django development server:  
    `python manage.py runserver`
 
-
-8. **Create APIs**
-
-   - **Create a new App**
+7. **Create a new App**
    go inside the folder `e_commerce` and run the following command
    `python manage.py startapp e_commerce_app`
+
+8. **Create APIs**
 
    - **Update settings.py**  
      Open `main/settings.py` and add `'rest_framework'` to the `INSTALLED_APPS` list:  
