@@ -117,3 +117,48 @@ Create a simple Library Management System that allows users to manage books, aut
 2. **/books/**: This API should return joined data (i.e replace author_id with the auther_name, genre_id with genre_name) without using the join query. hint:[filtering-objects-using-in-clause](https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/common_django_orm_usage.md#5-filtering-objects-using-in-clause)
 and
 [values-list](https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_20/common_django_orm_usage.md#13-values-and-values-list)
+
+```python
+from django.forms.models import model_to_dict
+
+category_id = products_objects.values_list('category_id', flat=True)
+categories = category_model.objects.filter(id__in=category_id).all()
+products = products_objects.all()
+for product in products:
+   for category in categories:
+       if product.category_id == category.id:
+           data = {**model_to_dict(product), "category": model_to_dict(category)}
+           all_data.append(data)
+
+output:
+[
+    {
+        "id": 1,
+        "name": "product 1",
+        "description": null,
+        "quantity": 10,
+        "price": 100,
+        "category_id": 1,
+        "category": {
+            "id": 1,
+            "name": "cat_1",
+            "description": null,
+            "status": null
+        }
+    },
+    {
+        "id": 2,
+        "name": "product 2",
+        "description": null,
+        "quantity": 10,
+        "price": 100,
+        "category_id": 2,
+        "category": {
+            "id": 2,
+            "name": "toy",
+            "description": null,
+            "status": null
+        }
+    }
+]
+```
