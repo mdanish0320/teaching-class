@@ -6,19 +6,11 @@ from rest_framework.permissions import BasePermission, AllowAny, IsAuthenticated
 
 from .models import Book as book_model
 from .serializers import BookSerializer
-
-
-class IsAuthor(BasePermission):
-    """
-    Custom permission to allow only users in the 'author' group to create books.
-    """
-    def has_permission(self, request: Request, view):
-        return request.user.is_authenticated and request.user.groups.filter(name='author').exists()
-
+from .permissions import IsAuthor, IsAuthorOrModerator, IsReader
 
 
 @api_view(['GET'])
-@permission_classes([AllowAny]) # allow accessing this API publically (without auth)
+@permission_classes([IsReader]) # allow accessing this API publically (without auth)
 def get_all_books(requst: Request):
     categories = book_model.objects.all()
     serializer = BookSerializer(categories, many=True)
@@ -38,20 +30,6 @@ def create_book(requst: Request): # only the user having group/role 'author' can
     else:
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-class IsAuthorOrModerator(BasePermission):
-    """
-    Custom permission to allow:
-    - Authors to delete their own books
-    - Moderators to delete any book
-    """
-    def has_object_permission(self, request, view, obj):
-        # Allow access if the user is a moderator
-        if request.user.groups.filter(name='moderator').exists():
-            return True
-        
-        # Allow access if the user is the author of the book
-        return obj.author_id == request.user.id
 
 
 @api_view(['DELETE']) 

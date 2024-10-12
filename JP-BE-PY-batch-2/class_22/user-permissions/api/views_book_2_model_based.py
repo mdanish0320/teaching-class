@@ -6,15 +6,7 @@ from rest_framework.permissions import BasePermission, AllowAny, IsAuthenticated
 
 from .models import Book as book_model
 from .serializers import BookSerializer
-
-
-class IsAuthor(BasePermission):
-    """
-    Custom permission to allow only users in the 'author' group to create books.
-    """
-    def has_permission(self, request: Request, view):
-        return request.user.is_authenticated and request.user.groups.filter(name='author').exists()
-
+from .permissions import IsAuthor
 
 
 @api_view(['GET'])
