@@ -23,9 +23,9 @@ class UserSerializer(serializers.ModelSerializer):
 
 class ProductSerializer(serializers.ModelSerializer):
     # name must match with the models
-    # category = CategorySerializer(read_only=True)
-    # supplier = SupplierSerializer(many=True, read_only=True)
-    # user = UserSerializer(read_only=True)
+    category = CategorySerializer(read_only=True)
+    supplier = SupplierSerializer(many=True, read_only=True)
+    user = UserSerializer(read_only=True)
 
     # name must match with the input json
     # category_id = serializers.PrimaryKeyRelatedField(

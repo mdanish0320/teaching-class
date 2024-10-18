@@ -8,6 +8,8 @@ from rest_framework.pagination import (
     LimitOffsetPagination,
     CursorPagination,
 )
+from rest_framework.decorators import action
+from rest_framework.response import Response
 
 
 class CustomPagination(PageNumberPagination):
@@ -22,6 +24,20 @@ class ProductViewSet(ModelViewSet):
     )
     serializer_class = ProductSerializer
     permission_classes = [IsAuthenticated]
+
+    # http://localhost:8000/app_mvs/products/recent/
+    @action(detail=False, methods=["get"])
+    def recent(self, request):
+        recent_products = Product.objects.filter(price__gte=200)
+        serializer = self.get_serializer(recent_products, many=True)
+        return Response(serializer.data)
+
+    # http://localhost:8000/app_mvs/products/2/special/
+    @action(detail=True, methods=["get"])
+    def special(self, request, pk=None):
+        product = self.get_object()
+        serializer = self.get_serializer(product)
+        return Response(serializer.data)
 
     def perform_create(self, serializer: ProductSerializer):
         # Get validated data
