@@ -20,7 +20,7 @@ class CustomPagination(PageNumberPagination):
 
 class ProductViewSet(ModelViewSet):
     queryset = (
-        Product.objects.select_related("category").prefetch_related("supplier").all()
+        Product.objects.all()
     )
     serializer_class = ProductSerializer
     permission_classes = [IsAuthenticated]
@@ -44,8 +44,8 @@ class ProductViewSet(ModelViewSet):
         validated_data = serializer.validated_data
 
         # Extract supplier and category from validated data
-        supplier = validated_data.pop("supplier")  # Use the correct field name
-        category = validated_data.pop("category")  # Use the correct field name
+        supplier = validated_data.pop("supplier_id")  # Use the correct field name
+        category = validated_data.pop("category_id")  # Use the correct field name
 
         # Create the product instance
         product: Product = serializer.save(category=category, user=self.request.user)
@@ -70,26 +70,26 @@ class ProductViewSet(ModelViewSet):
 
     # in modelviewset, this is class scope method.
     # it will run on every http methods even in single object api like get, put, delete etc
-    def filter_queryset(self, queryset):
-        filter_queryset = super().filter_queryset(queryset)
-        input = self.request.query_params
-        if input.get("id") is not None:
-            filter_queryset = filter_queryset.filter(category__id=input.get("id"))
-        return filter_queryset
+    # def filter_queryset(self, queryset):
+    #     filter_queryset = super().filter_queryset(queryset)
+    #     input = self.request.query_params
+    #     if input.get("id") is not None:
+    #         filter_queryset = filter_queryset.filter(category__id=input.get("id"))
+    #     return filter_queryset
 
     # this will only run in single object API i.e put, delete, patch and get with id
-    def get_object(self):
-        result = super().get_object()
-        if result.user_id == 2:
-            raise PermissionDenied("You do not have permission to access this product.")
+    # def get_object(self):
+    #     result = super().get_object()
+    #     if result.user_id == 2:
+    #         raise PermissionDenied("You do not have permission to access this product.")
 
-        return result
+    #     return result
 
-    def get_permissions(self):
-        permissions = super().get_permissions()
-        if self.request.user.is_superuser:
-            return [IsAuthenticated(), IsAdminUser()]
-        return permissions
+    # def get_permissions(self):
+    #     permissions = super().get_permissions()
+    #     if self.request.user.is_superuser:
+    #         return [IsAuthenticated(), IsAdminUser()]
+    #     return permissions
 
     def get_pagination_class(self):
         # You can conditionally return different pagination classes based on the request

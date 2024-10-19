@@ -28,23 +28,20 @@ class ProductSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
 
     # name must match with the input json
-    # category_id = serializers.PrimaryKeyRelatedField(
-    #     queryset=Category.objects.all(), write_only=True
-    # )
-    # supplier_id = serializers.PrimaryKeyRelatedField(
-    #     queryset=Supplier.objects.all(),
-    #     many=True,
-    #     allow_empty=False,  # Do not allow empty arrays
-    #     write_only=True,
-    # )
+    category_id = serializers.PrimaryKeyRelatedField(
+        queryset=Category.objects.all(), write_only=True
+    )
+    supplier_id = serializers.PrimaryKeyRelatedField(
+        queryset=Supplier.objects.all(),
+        many=True,
+        allow_empty=False,  # Do not allow empty arrays
+        write_only=True,
+    )
+    
 
     # category_id = serializers.IntegerField(write_only=True)
     # supplier_id = serializers.IntegerField(write_only=True)
-
-    # # Making the 'user' field optional in the serializer
-    # user = serializers.PrimaryKeyRelatedField(
-    #     queryset=User.objects.all(), allow_null=True, required=False
-    # )
+    
 
     class Meta:
         model = Product
