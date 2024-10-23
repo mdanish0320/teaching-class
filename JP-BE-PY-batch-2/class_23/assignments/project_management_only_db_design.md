@@ -9,7 +9,6 @@ Students will build a basic project management application that includes user ro
 
 ### **Instructions:**
 - You are required to implement both the backend and frontend of the application.
-- Use Flask/Django for the backend and MySQL/PostgreSQL for the database.
 - The application should include authentication, user roles, project management, and task management functionalities.
 - Ensure proper validation, error handling, and secure code practices.
 

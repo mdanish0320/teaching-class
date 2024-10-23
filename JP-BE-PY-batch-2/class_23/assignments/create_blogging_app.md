@@ -1,25 +1,71 @@
-### Assignment: Database Design for Blogging Application
+### Assignment: Blogging Application Development
 
 #### Instructions:
-You are tasked with creating a **database design** for a blogging application. This will involve defining the structure of the database, creating tables, and establishing relationships between these tables. Use **MySQL Workbench** to create the database, tables, and relationships, then export the database as an `.sql` file and generate an **Entity-Relationship Diagram (ERD)** for review.
+You are tasked with creating a **blogging application** that will allow users to create, manage, and interact with blog posts. The application will support different user roles, including superusers and authors, and will have features such as categorizing posts, commenting, and liking both posts and comments. You will need to implement APIs to handle these functionalities and ensure that the application meets the defined requirements.
+
+You must also implement features that allow authors and superusers to see various statistics related to posts, comments, and likes.
 
 ### Requirements:
 
-The blogging application needs to support multiple users with different roles (e.g., authors, superusers, moderators), posts, categories for organizing content, comments, and the ability to like both posts and comments. One key feature is that each post can have **one owner** and **multiple co-authors**.
-
-Use these requirements as hints to guide your design.
+The blogging application must meet the following functional and non-functional requirements:
 
 ---
 
-### Key Features (Hints):
+### Key Features:
 
-- The application will have different types of users such as:
-    - **Superuser**: Has full control over the platform, can manage all content and users.
-    - **Moderator**: Can moderate content such as posts and comments.
-    - **Author**: Can create, update, and manage their own posts.
-    - **Reader**: Can only view the blogs, like the blog/comment and provide comment.
-  - The blog will consist of posts written by users (specifically authors).
-  - Each post will have one **owner** (the main author) but can also have **co-authors** who contribute to the post.
-  - Each post can belong to one or more **categories** for better organization.
-  - Logged in Users can comment on posts.
-  - Logged in Users should be able to like both **posts** and **comments**.
+- **User Roles**:
+  - **Superuser**:
+    - Can manage all content and users.
+    - Can view the total number of posts, the total number of comments, and the total number of likes across the entire platform.
+  - **Author**:
+    - Can create, update, and delete their own posts.
+    - Can view the total number of posts they've created.
+    - Can view the total number of comments and likes for each of their posts.
+    - Can add co-authors to their posts.
+  - **Moderator**:
+    - Can moderate content such as posts and comments.
+  - **Reader**:
+    - Can view blog posts, like posts and comments, and leave comments.
+
+---
+
+### Application Features:
+
+1. **Authentication and Authorization**:
+   - Implement user registration and login.
+   - Ensure role-based access control (RBAC) so that different users have access to only their permitted features.
+
+2. **Blog Posts**:
+   - Authors can create and manage their own blog posts.
+   - Each post should have one **owner** (main author) but can also have **co-authors**.
+   - Posts can belong to one or more **categories**.
+   - Posts should display the total number of **comments** and **likes**.
+   - Superusers can view all posts across the platform.
+
+3. **Categories**:
+   - Posts can be organized by categories.
+   - Users should be able to view posts by category.
+
+4. **Comments**:
+   - Logged-in users can comment on posts.
+   - Users can like comments.
+
+5. **Likes**:
+   - Logged-in users can like posts and comments.
+   - Each post and comment should display the number of likes it has received.
+
+---
+
+### Author Statistics:
+
+- Authors should be able to view:
+  - The total number of posts they have created.
+  - The total number of comments on each of their posts.
+  - The total number of likes on each of their posts.
+
+### Superuser Statistics:
+
+- Superusers should be able to view:
+  - The total number of posts created on the platform.
+  - The total number of comments on all posts.
+  - The total number of likes across all posts and comments.
