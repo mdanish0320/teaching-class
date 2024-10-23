@@ -79,3 +79,33 @@ Each task should include:
   
 #### **Task Comments:**
 - Users should have the ability to add comments to tasks for collaboration and discussion purposes.
+
+
+---
+
+### Task Breakdown:
+1. **Create the Database**: Use MySQL Workbench to create a new database for the blogging application.
+
+2. **Define the Tables**:
+   - Define tables for each of the features described above (e.g., users, posts, categories, comments, likes, etc.).
+   - Ensure that the relationships between the tables are established correctly (e.g., one-to-many and many-to-many).
+
+3. **Establish Relationships**:
+   - Set **primary keys** and **foreign keys** as needed to ensure data integrity.
+   - Ensure that each post is associated with a user (author), each comment is linked to a post and a user, and categories can be linked to multiple posts.
+
+4. **Generate the ERD**:
+   - Once you have completed the database design, use MySQL Workbench to generate an **ERD (Entity-Relationship Diagram)** to visually represent the database structure.
+   - hint: (class_16 revision_tutorials.txt)[https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_16/revision_tutorial.txt#L30C1-L31C44]
+
+5. **Export the Database**:
+   - Export the database design as a `.sql` file (the export should include the schema for all tables and relationships).
+   - hint: (class_16 revision_tutorials.txt)[https://github.com/mdanish0320/teaching-class/blob/master/JP-BE-PY-batch-2/class_16/revision_tutorial.txt#L27C1-L28C44]
+
+---
+
+### Submission:
+- Submit the **ERD** for review.
+- Provide the **exported database schema** as a `.sql` file.
+
+Good luck!
