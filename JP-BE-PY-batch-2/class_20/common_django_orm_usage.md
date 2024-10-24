@@ -121,5 +121,33 @@ products = ProductModel.objects.filter(id__in=category_ids).all()
 - `values()` returns a queryset of dictionaries with the specified fields.
 - `values_list()` returns a queryset of tuples (or a flat list if `flat=True`), providing a more straightforward way to extract a single field.
 
+Here’s an improved version of the **11. OR Query** section in your `README.md` file, formatted for clarity and consistency with the rest of the guide:
+
+---
+
+## 11. OR Query
+
+To perform an OR query on the `Product` model, you can utilize either the `extra()` method or `Q` objects.
+
+### Method 1: Using `extra()`
+```python
+products = Product.objects.extra(
+    where=["category_id = %s OR price > %s"],
+    params=[category_id, price_limit]
+)
+```
+**Description**: This method retrieves all products where either the `category_id` matches the specified `category_id` or the `price` exceeds the specified `price_limit`. This approach uses raw SQL expressions and is considered less optimal in newer Django versions.
+
+### Method 2: Using `Q` Objects
+```python
+from django.db.models import Q
+
+products = Product.objects.filter(
+    Q(category__id=category_id) | Q(price__gt=price_limit)
+)
+```
+**Description**: This method employs `Q` objects to create a more readable and expressive query. It retrieves all products where either the `category_id` matches the specified `category_id` or the `price` is greater than the specified `price_limit`. This approach is recommended for better clarity and maintainability.
+
+
 ## Summary
 This guide provides an overview of common operations using Django's ORM. Understanding these queries will help you interact with your database efficiently and effectively in Django applications. For more advanced usage and features, refer to the official Django documentation.
