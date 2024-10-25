@@ -44,6 +44,7 @@ urlpatterns = [
     path("app_pagination/", include("pagination_app.urls")),
     path("app_file_upload/", include("file_upload_app.urls")),
     path("app_swagger/", include("swagger_app.urls")),
+    path("app_permission/", include("permission_app.urls")),
     path(
         "swagger/",
         schema_view.with_ui("swagger", cache_timeout=0),

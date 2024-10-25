@@ -41,12 +41,14 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_filters",
     "drf_yasg",
+    "guardian",
     "app",  # app 1
     "manual_filter",  # app 2
-    "adv_filter",  # app 2
-    "pagination_app",  # app 3
-    "file_upload_app",  # app 4
-    "swagger_app",  # app 5
+    "adv_filter",  # app 3
+    "pagination_app",  # app 4
+    "file_upload_app",  # app 5
+    "swagger_app",  # app 6
+    "permission_app",  # app 7
 ]
 
 MIDDLEWARE = [
@@ -94,20 +96,20 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
-    },
-]
+# AUTH_PASSWORD_VALIDATORS = [
+#     {
+#         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+#     },
+#     {
+#         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+#     },
+#     {
+#         "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+#     },
+#     {
+#         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+#     },
+# ]
 
 
 # Internationalization
@@ -142,3 +144,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 #     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
 #     "PAGE_SIZE": 2,  # Adjust this number as per your requirement
 # }
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',  # Default
+    'guardian.backends.ObjectPermissionBackend',
+)
+
+ANONYMOUS_USER_ID = -1

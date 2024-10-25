@@ -1,3 +1,4 @@
 djangorestframework
 django-filter
 drf-yasg
+django-guardian
