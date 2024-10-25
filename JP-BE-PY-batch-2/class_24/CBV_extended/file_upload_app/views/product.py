@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 from app.models import Product
-from app.serializers import ProductSerialzer
+from ..serializers import ProductSerialzer
 from rest_framework.parsers import MultiPartParser, FormParser
 
 

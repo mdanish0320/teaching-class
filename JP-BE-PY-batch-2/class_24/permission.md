@@ -1,24 +1,26 @@
 # Django Guardian Integration
 
-This guide provides instructions on how to integrate the Django Guardian library for object-level permissions in your Django application.
+This guide provides detailed instructions for integrating the **Django Guardian** library, enabling object-level permissions in your Django application.
 
 ## Prerequisites
 
-Ensure you have Django installed and set up in your project.
+Before proceeding, ensure that you have Django installed and set up in your project.
 
 ## Installation
 
-1. Install the `django-guardian` package:
+To install the `django-guardian` package, run the following command:
 
-   ```bash
-   pip install django-guardian
-   ```
+```bash
+pip install django-guardian
+```
 
 ## Configuration
 
 ### Update `settings.py`
 
-1. Add `guardian` to your `INSTALLED_APPS`:
+1. **Add `guardian` to `INSTALLED_APPS`**:
+
+   Open your `settings.py` file and include `guardian` in the `INSTALLED_APPS` list:
 
    ```python
    INSTALLED_APPS = [
@@ -27,7 +29,9 @@ Ensure you have Django installed and set up in your project.
    ]
    ```
 
-2. Configure authentication backends to include Guardian:
+2. **Configure Authentication Backends**:
+
+   Modify the `AUTHENTICATION_BACKENDS` setting to include the Guardian backend, allowing for object-level permissions:
 
    ```python
    AUTHENTICATION_BACKENDS = (
@@ -36,7 +40,9 @@ Ensure you have Django installed and set up in your project.
    )
    ```
 
-3. Set the `ANONYMOUS_USER_ID` to allow permissions for anonymous users:
+3. **Set `ANONYMOUS_USER_ID`**:
+
+   Specify an ID for anonymous users, enabling them to have permissions:
 
    ```python
    ANONYMOUS_USER_ID = -1
@@ -45,8 +51,6 @@ Ensure you have Django installed and set up in your project.
 ## Implementing Object-Level Permissions in Views
 
 ### Update `views.py`
-
-Create a `ProductViewSet` that utilizes Django's built-in permissions:
 
 ```python
 from rest_framework import viewsets
@@ -62,13 +66,17 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 ## Migrations and Superuser Setup
 
-1. Run the migrations for the guardian package:
+1. **Run Migrations**:
+
+   Execute the following command to apply migrations for the `guardian` package:
 
    ```bash
    python manage.py migrate
    ```
 
-2. Create a superuser for accessing the admin interface:
+2. **Create a Superuser**:
+
+   To access the admin interface, create a superuser account:
 
    ```bash
    python manage.py createsuperuser
@@ -76,28 +84,28 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 ## Assigning Object-Level Permissions
 
-You can dynamically assign object-level permissions to users or groups. Below is an example of how to do this:
+You can dynamically assign object-level permissions to users or groups. Below is an example:
 
 ```python
 from guardian.shortcuts import assign_perm
 from django.contrib.auth.models import User, Group
 
-# Assign object-level permissions for a user
+# Assign object-level permissions for a specific user
 user = User.objects.get(username='username')  # Replace with the actual username
-assign_perm('view_product', user, self)
-assign_perm('change_product', user, self)
-assign_perm('delete_product', user, self)
+assign_perm('view_product', user, product)
+assign_perm('change_product', user, product)
+assign_perm('delete_product', user, product)
 
 # Assign object-level permissions for a group
 group = Group.objects.get(name='Product Managers')  # Replace with the actual group name
-assign_perm('view_product', group, self)
-assign_perm('change_product', group, self)
-assign_perm('delete_product', group, self)
+assign_perm('view_product', group, product)
+assign_perm('change_product', group, product)
+assign_perm('delete_product', group, product)
 ```
 
 ## Applying Object-Level Permissions in the Admin Interface
 
-To apply object-level permissions in the Django admin interface, modify `admin.py` as follows:
+To enforce object-level permissions in the Django admin interface, modify `admin.py` as follows:
 
 ```python
 from django.contrib import admin
@@ -106,28 +114,99 @@ from .models import Product
 
 class ProductAdmin(GuardedModelAdmin):
     def has_view_permission(self, request, obj=None):
-        # Check if the user has view permission at the object level
+        """Check if the user has view permission at the object level."""
         if obj is not None:
             return request.user.has_perm('view_product', obj)
         return super().has_view_permission(request, obj)
 
     def has_change_permission(self, request, obj=None):
-        # Check if the user has change permission at the object level
+        """Check if the user has change permission at the object level."""
         if obj is not None:
             return request.user.has_perm('change_product', obj)
         return super().has_change_permission(request, obj)
 
     def has_delete_permission(self, request, obj=None):
-        # Check if the user has delete permission at the object level
+        """Check if the user has delete permission at the object level."""
         if obj is not None:
             return request.user.has_perm('delete_product', obj)
         return super().has_delete_permission(request, obj)
 
     def has_add_permission(self, request):
-        # For adding, just use the regular model-level permission
+        """Use the regular model-level permission for adding."""
         return super().has_add_permission(request)
 
 admin.site.register(Product, ProductAdmin)
 ```
 
+### Configuration Dictionary for Permissions
 
+Instead of hardcoding group permissions in your `create` method, consider using a configuration dictionary. This approach allows you to define roles and their associated permissions more flexibly, making it easier to update permissions without altering core logic.
+
+```python
+from guardian.shortcuts import assign_perm
+from django.contrib.auth.models import User, Group
+
+# Define permissions in a configuration dictionary
+PERMISSIONS_CONFIG = {
+    "moderator": ["view_post", "change_post"],
+    "author": ["view_post"],
+}
+
+def create(self, validated_data):
+    ...
+    # Assign permissions based on the configuration
+    for group_name, permissions in PERMISSIONS_CONFIG.items():
+        try:
+            group = Group.objects.get(name=group_name)
+            for perm in permissions:
+                assign_perm(perm, group, product)
+        except Group.DoesNotExist:
+            print(f"Group {group_name} does not exist.")
+
+    # Assign owner permissions
+    assign_perm("view_post", logged_in_user, product)
+    assign_perm("change_post", logged_in_user, product)
+    assign_perm("delete_post", logged_in_user, product)
+```
+
+### Custom Object-Level Permission
+
+To implement a custom permission check for object-level permissions, you can define a custom permission class:
+
+```python
+from rest_framework import permissions
+
+class ObjectPermission(permissions.BasePermission):
+    """
+    Custom permission to check object-level permissions.
+    """
+
+    def has_object_permission(self, request, view, obj):
+        # Check if the user is the owner of the object
+        if request.method in permissions.SAFE_METHODS:  # For read-only methods
+            return obj.user == request.user  # Ensure the user is the owner
+        
+        # For write methods (POST, PUT, PATCH, DELETE)
+        return obj.user == request.user  # Ensure the user is the owner
+```
+
+### Update to use queryset for listing api `views.py`
+
+Create a `ProductViewSet` that utilizes Django's built-in permissions
+
+```python
+from rest_framework import viewsets
+from rest_framework.permissions import DjangoModelPermissions, DjangoObjectPermissions
+from .models import Product
+from .serializers import ProductSerializer
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_authenticated:
+            return super().get_queryset().filter(user=user)  # Assuming Product has a ForeignKey to User
+        return Product.objects.none()  # Return an empty queryset if the user is not authenticated
+```

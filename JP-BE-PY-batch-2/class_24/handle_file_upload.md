@@ -54,7 +54,7 @@ To configure your project for serving static and media files, follow these steps
 
 **Important**: The following configuration is not recommended for production environments.
 
-To serve media files during development, add the following to the end of your `urls.py`:
+To serve media files during development, add the following to the end of your `main/urls.py`:
 ```python
 from django.conf import settings
 from django.conf.urls.static import static

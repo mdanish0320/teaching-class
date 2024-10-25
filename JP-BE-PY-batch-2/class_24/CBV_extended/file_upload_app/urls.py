@@ -14,7 +14,3 @@ router.register("product", ProductModelViewSet, "product-file")
 router.register("supplier", SupplierModelViewSet, "supplier-file")
 
 urlpatterns = [] + router.urls
-
-# Add this at the end of your urls.py
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

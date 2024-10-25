@@ -2,13 +2,13 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from .views.category import CategoryModelViewSet
-from .views.product import ProductModelViewSet
-from .views.supplier import SupplierModelViewSet
+from .views.post import PostModelViewSet
+from .views.user import UserModelViewSet
 
 
 router = DefaultRouter()
-router.register("category", CategoryModelViewSet, 'category-permission')
-router.register("product", ProductModelViewSet, 'product-permission')
-router.register("supplier", SupplierModelViewSet, 'supplier-permission')
+router.register("category", CategoryModelViewSet, "category-permission")
+router.register("post", PostModelViewSet, "post-permission")
+router.register("user", UserModelViewSet, "user-permission")
 
 urlpatterns = [] + router.urls

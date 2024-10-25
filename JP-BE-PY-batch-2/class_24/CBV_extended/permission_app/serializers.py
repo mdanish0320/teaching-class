@@ -1,5 +1,8 @@
 from rest_framework import serializers
-from .models import Category, Supplier, Product
+from app.models import Category, Supplier, Product
+from .models import Post
+from django.contrib.auth.models import User, Group
+from guardian.shortcuts import assign_perm
 
 # class CategorySerialzer(serializers.Serializer):
 
@@ -10,34 +13,60 @@ class CategorySerialzer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class SupplierSerialzer(serializers.ModelSerializer):
+class UserSerialzer(serializers.ModelSerializer):
+    user_type = serializers.PrimaryKeyRelatedField(
+        queryset=Group.objects.all(), write_only=True
+    )
+
     class Meta:
-        model = Supplier
-        fields = "__all__"
+        model = User
+        fields = ["username", "email", "password", "user_type"]
 
 
-class ProductSerialzer(serializers.ModelSerializer):
+class PostSerialzer(serializers.ModelSerializer):
     category = CategorySerialzer(read_only=True)
-    supplier = SupplierSerialzer(many=True, read_only=True)
+    user = UserSerialzer(read_only=True)
 
     category_id = serializers.PrimaryKeyRelatedField(
         queryset=Category.objects.all(), write_only=True
     )
-    supplier_id = serializers.PrimaryKeyRelatedField(
-        queryset=Supplier.objects.all(), many=True, write_only=True, allow_empty=False
-    )
 
     class Meta:
-        model = Product
+        model = Post
         fields = "__all__"
 
     def create(self, validated_data):
         category_obj = validated_data.pop("category_id")
-        supplier_obj = validated_data.pop("supplier_id")
 
-        product = Product.objects.create(**validated_data, category=category_obj)
-        product.supplier.set(supplier_obj)
+        # Get the logged-in user from the context
+        logged_in_user = self.context["request"].user
 
-        serialzier = ProductSerialzer(product)
+        product = Post.objects.create(
+            **validated_data, category=category_obj, user=logged_in_user
+        )
+
+        moderator_group = Group.objects.get(
+            name="moderator"
+        )  # Replace with the actual group name
+        author_group = Group.objects.get(
+            name="author"
+        )  # Replace with the actual group name
+
+        # moderator
+        assign_perm("view_post", moderator_group, product)
+        assign_perm("change_post", moderator_group, product)
+
+        # author
+        assign_perm("view_post", author_group, product)
+
+        # owner
+        assign_perm("view_post", logged_in_user, product)
+        assign_perm("change_post", logged_in_user, product)
+        assign_perm("delete_post", logged_in_user, product)
+
+        serialzier = PostSerialzer(product)
 
         return serialzier.data
+
+    def update(self, instance, validated_data):
+        return super().update(instance, validated_data)

@@ -7,8 +7,8 @@ from .views.supplier import SupplierModelViewSet
 
 
 router = DefaultRouter()
-router.register("category", CategoryModelViewSet)
-router.register("product", ProductModelViewSet)
-router.register("supplier", SupplierModelViewSet)
+router.register("category", CategoryModelViewSet, "category-app")
+router.register("product", ProductModelViewSet, "product-app")
+router.register("supplier", SupplierModelViewSet, "supplier-app")
 
 urlpatterns = [] + router.urls
