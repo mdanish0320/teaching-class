@@ -41,3 +41,6 @@ class ProductSerialzer(serializers.ModelSerializer):
         serialzier = ProductSerialzer(product)
 
         return serialzier.data
+
+    def update(self, instance, validated_data):
+        return super().update(instance, validated_data)
