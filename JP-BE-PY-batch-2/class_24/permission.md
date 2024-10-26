@@ -169,25 +169,49 @@ def create(self, validated_data):
     assign_perm("delete_post", logged_in_user, product)
 ```
 
-### Custom Object-Level Permission
+### Custom Object-Level Permission and View-Level Permission
 
 To implement a custom permission check for object-level permissions, you can define a custom permission class:
 
 ```python
 from rest_framework import permissions
 
-class ObjectPermission(permissions.BasePermission):
-    """
-    Custom permission to check object-level permissions.
-    """
+class IsAdminUserOrReadOnly(BasePermission):
+    def has_permission(self, request, view):
+        # View level permission
+        if request.method in ['GET']:
+            return True
+        # Only allow POST requests if the user is an admin
+        return request.user and request.user.is_staff
 
     def has_object_permission(self, request, view, obj):
-        # Check if the user is the owner of the object
-        if request.method in permissions.SAFE_METHODS:  # For read-only methods
-            return obj.user == request.user  # Ensure the user is the owner
+        # Allow any GET request on the object
+        if request.method in ['GET']:
+            return True
+        # Only allow PUT and DELETE if the user is an admin
+        return request.user and request.user.is_staff
+
+class IsAuthor(BasePermission):
+    """
+    View Level Permssion
+    Custom permission to allow only users in the 'author' group to create books.
+    """
+    def has_permission(self, request: Request, view):
+        return request.user.is_authenticated and request.user.groups.filter(name='author').exists()  
+
+class IsAuthorOrModerator(BasePermission):
+    """
+    Custom permission to allow:
+    - Authors to delete their own books
+    - Moderators to delete any book
+    """
+    def has_object_permission(self, request, view, obj):
+        # Allow access if the user is a moderator
+        if request.user.groups.filter(name='moderator').exists():
+            return True
         
-        # For write methods (POST, PUT, PATCH, DELETE)
-        return obj.user == request.user  # Ensure the user is the owner
+        # Allow access if the user is the author of the book
+        return obj.author_id == request.user.id    
 ```
 
 ### Update to use queryset for listing api `views.py`
