@@ -1,0 +1,18 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>Post Details</h1>
+
+  <h2>{{ post.title }}</h2>
+  <p>Status: {{ post.status }}</p>
+  <p>Content: {{ post.content }}</p>
+  
+  <h3>Related Dataa</h3>
+  <ul>
+    
+      <li>{{ related_data.category }}</li>
+
+  </ul>
+
+{% endblock %}
