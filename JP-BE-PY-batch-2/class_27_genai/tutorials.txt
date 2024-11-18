@@ -26,6 +26,10 @@ https://www.youtube.com/watch?v=aywZrzNaKjs
 # Playlist of GenAI Understanding
 https://www.youtube.com/playlist?list=PLTWE_lmu2InArCDgP-4ftUg89PO1zvnWj
 
+# Technical Terms and differentiation
+https://www.youtube.com/watch?v=k2P_pHQDlp0
+https://www.youtube.com/watch?v=X7Zd4VyUgL0
+
 
 # create chatbot using openai
 https://www.youtube.com/watch?v=q5HiD5PNuck
