@@ -13,6 +13,7 @@ https://www.youtube.com/watch?v=eC6Hd1hFvos
 
 # vector database
 https://www.youtube.com/watch?v=72XgD322wZ8
+https://www.youtube.com/watch?v=dN0lsF2cvm4
 
 # RAG
 https://www.youtube.com/watch?v=T-D1OfcDW1M
